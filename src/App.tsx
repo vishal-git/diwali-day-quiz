@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { QUESTIONS } from './data/questions';
 import type { CategoryId, Cell, Question as Q } from './data/types';
 import { luckyPool, remainingIn, spareFor } from './state/game';
@@ -9,6 +9,8 @@ import { Board } from './screens/Board';
 import { Pick } from './screens/Pick';
 import { Question } from './screens/Question';
 import { Lucky } from './screens/Lucky';
+import { Answers } from './screens/Answers';
+import { useKey } from './hooks/useKey';
 
 const rng = mulberry32(314);
 
@@ -22,7 +24,24 @@ type Screen =
 export default function App() {
   const game = useGame();
   const [screen, setScreen] = useState<Screen>({ kind: 'opening' });
+  const [hash, setHash] = useState(() => window.location.hash);
   const toBoard = () => setScreen({ kind: 'board' });
+
+  useEffect(() => {
+    const onHash = () => setHash(window.location.hash);
+    window.addEventListener('hashchange', onHash);
+    return () => window.removeEventListener('hashchange', onHash);
+  }, []);
+
+  useKey((e) => {
+    if ((e.key === 'f' || e.key === 'F') && !e.ctrlKey && !e.metaKey) {
+      if (document.fullscreenElement) void document.exitFullscreen?.();
+      else void document.documentElement.requestFullscreen?.();
+    }
+    if (e.key === 'Escape' && window.location.hash === '#/answers') window.location.hash = '';
+  });
+
+  if (hash === '#/answers') return <Answers questions={QUESTIONS} />;
 
   const openCell = (cell: Cell) => {
     const q = remainingIn(QUESTIONS, game.state, cell)[0];
