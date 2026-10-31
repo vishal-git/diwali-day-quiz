@@ -13,7 +13,11 @@ npm run build && npm start   # production build served on $PORT (default 3000)
 
 ## Deploy on Railway
 
-Connect the GitHub repo `vishal-git/diwali-day-quiz` to a Railway service. `railway.json` tells Nixpacks to build with `npm ci && npm run build` and start with `npm start`, which serves `dist/` on Railway's `$PORT`. No environment variables are needed.
+Connect the GitHub repo `vishal-git/diwali-day-quiz` to a Railway service. `railway.json` tells Nixpacks to build with `npm run build` and start with `npm start`, which serves `dist/` on Railway's `$PORT` (Railway injects 8080). No environment variables are needed.
+
+When generating the public domain, set its **target port to 8080**. Railway guesses 5173 (Vite's dev port) otherwise and the domain returns 502. To fix an existing domain: `railway domain update <domain> --port 8080`.
+
+Live: https://diwali-day-quiz-production.up.railway.app
 
 ## Host controls
 
