@@ -1,0 +1,15 @@
+:root {
+  --bg: #1a1035;
+  --bg-raised: #261a4d;
+  --bg-deep: #120b26;
+  --marigold: #f4a300;
+  --gold: #ffd166;
+  --magenta: #e0409a;
+  --cream: #fff4e0;
+  --muted: #9a8fb8;
+  --flame: #ff7a1a;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Nunito', system-ui, sans-serif;
+  --radius: 1.1rem;
+  --glow: 0 0 1.4rem rgba(244, 163, 0, 0.45);
+}
