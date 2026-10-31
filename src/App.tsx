@@ -1,12 +1,16 @@
 import { useState } from 'react';
 import { QUESTIONS } from './data/questions';
 import type { CategoryId, Cell, Question as Q } from './data/types';
-import { remainingIn, spareFor } from './state/game';
+import { luckyPool, remainingIn, spareFor } from './state/game';
+import { mulberry32 } from './state/rng';
 import { useGame } from './state/useGame';
 import { Opening } from './screens/Opening';
 import { Board } from './screens/Board';
 import { Pick } from './screens/Pick';
 import { Question } from './screens/Question';
+import { Lucky } from './screens/Lucky';
+
+const rng = mulberry32(314);
 
 type Screen =
   | { kind: 'opening' }
@@ -41,7 +45,13 @@ export default function App() {
     case 'pick':
       return <Pick questions={QUESTIONS} state={game.state} category={screen.category} onPick={openCell} onBack={toBoard} />;
     case 'lucky':
-      return <section className="placeholder" onClick={toBoard}>Lucky Diya coming soon</section>;
+      return (
+        <Lucky
+          pool={luckyPool(QUESTIONS, game.state)}
+          rng={rng}
+          onLand={(q) => setScreen({ kind: 'question', q, cell: { category: q.category, mode: q.mode, region: q.region }, via: 'lucky' })}
+        />
+      );
     case 'question': {
       const { q, cell, via } = screen;
       const spare = spareFor(QUESTIONS, game.state, cell);

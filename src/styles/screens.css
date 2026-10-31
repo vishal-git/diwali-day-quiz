@@ -117,3 +117,18 @@
 @media (prefers-reduced-motion: reduce) {
   .diya .flame, .spark, .tile-featured { animation: none; }
 }
+
+/* ---------- lucky ---------- */
+.lucky {
+  min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.5rem;
+  background: radial-gradient(ellipse at 50% 50%, #3a1f6b 0%, var(--bg) 60%);
+}
+.lucky-title { font-family: var(--font-display); font-size: 3rem; color: var(--gold); margin: 0; }
+.lucky-wheel {
+  width: 16rem; height: 16rem; border-radius: 50%; display: grid; place-items: center;
+  background: var(--bg-raised); border: 4px solid var(--marigold);
+  box-shadow: 0 0 3rem rgba(244, 163, 0, 0.5), inset 0 0 3rem rgba(244, 163, 0, 0.2);
+}
+.lucky-icon { font-size: 8rem; line-height: 1; animation: pop 120ms ease-out; }
+.lucky-cat { font-size: 2rem; color: var(--muted); margin: 0; min-height: 1.4em; }
+@keyframes pop { from { transform: scale(0.7); opacity: 0.4; } to { transform: scale(1); opacity: 1; } }
