@@ -12,7 +12,7 @@ Diwali 2026: **Sunday, Nov 8** (Dhanteras Fri Nov 6 · Kali Chaudas Sat Nov 7 ·
 ## Part 1 — Rules (starting hand — host may change anything on the night)
 
 ### The board
-10 categories. Nine regular categories: **10 live questions** each (every Kids/Adult × US/India cell has two; Hard has one for Kids and one for Adults) plus spares for Swap tokens. **Diwali** is the centerpiece (11 live, every point **1.5×**). **Riddles** have no options — a team may ask for one hint instead, at the "after options" point value.
+10 tiles: eight regular categories, Diwali, and Lucky Diya. Each regular category has **10 live questions** (every Kids/Adult × US/India cell has two; Hard has one for Kids and one for Adults) plus spares for Swap tokens. **Diwali** is the centerpiece (11 live, every point **1.5×**). **Riddles** have no options — a team may ask for one hint instead, at the "after options" point value.
 
 | # | Category | US side | India side |
 |---|---|---|---|
@@ -537,4 +537,4 @@ A) 2081 B) 2082 C) 2083 D) 2084 → **Vikram Samvat 2083**
 - 📊 Run-scorers bar chart (8.10)
 
 ## Totals
-9 regular categories × 10 live = 90 · Diwali 11 · **101 live questions** · 20 spares.
+8 regular categories × 10 live = 80 · Diwali 11 · **91 live questions** · 19 spares (Geography 2 · Movies 2 · Local 4 · Diwali 0 · Celebrity 2 · Riddles 2 · Food 2 · Sports 3 · Growing Up 2).
