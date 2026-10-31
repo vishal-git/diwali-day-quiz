@@ -2,6 +2,12 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { Question } from './Question';
 import { QUESTION_BY_ID } from '../data/questions';
 
+// A mocked clock: each helper advance() steps 1s so the double-click guard sees distinct clicks.
+let clock = 0;
+beforeEach(() => { clock = 100_000; vi.spyOn(Date, 'now').mockImplementation(() => clock); });
+afterEach(() => vi.restoreAllMocks());
+const tick = (ms = 1000) => { clock += ms; };
+
 function setup(id: string, over: Partial<React.ComponentProps<typeof Question>> = {}) {
   const props = {
     q: QUESTION_BY_ID[id], via: 'board' as const, canSwap: true,
@@ -9,7 +15,7 @@ function setup(id: string, over: Partial<React.ComponentProps<typeof Question>> 
   };
   const utils = render(<Question {...props} />);
   const root = utils.container.querySelector('.question')!;
-  return { ...utils, props, root, advance: () => fireEvent.click(root) };
+  return { ...utils, props, root, advance: () => { tick(); fireEvent.click(root); }, rawClick: () => fireEvent.click(root) };
 }
 
 test('stage 0 shows the question text only', () => {
@@ -36,12 +42,12 @@ test('click → options; click → answer highlighted with reveal; click → don
 
 test('Space and ArrowRight advance; Backspace and ArrowLeft step back', () => {
   setup('1.1');
-  fireEvent.keyDown(window, { key: ' ' });
+  tick(); fireEvent.keyDown(window, { key: ' ' });
   expect(screen.getByText('Texas')).toBeInTheDocument();
-  fireEvent.keyDown(window, { key: 'Backspace' });
+  tick(); fireEvent.keyDown(window, { key: 'Backspace' });
   expect(screen.queryByText('Texas')).toBeNull();
-  fireEvent.keyDown(window, { key: 'ArrowRight' });
-  fireEvent.keyDown(window, { key: 'ArrowLeft' });
+  tick(); fireEvent.keyDown(window, { key: 'ArrowRight' });
+  tick(); fireEvent.keyDown(window, { key: 'ArrowLeft' });
   expect(screen.queryByText('Texas')).toBeNull();
 });
 
@@ -107,7 +113,7 @@ test('chart question renders hidden letters, then names on the answer stage', ()
   expect(chart()).not.toMatch(/Tendulkar/);
   expect(screen.getByText('B')).toBeInTheDocument();
   advance(); advance();
-  expect(chart()).toMatch(/Sachin Tendulkar/);
+  expect(chart()).toMatch(/Tendulkar/);
   expect(chart()).toMatch(/34,357/);
 });
 
@@ -121,4 +127,22 @@ test('video question embeds YouTube with autoplay off', () => {
   const frame = document.querySelector('iframe')!;
   expect(frame.getAttribute('src')).toContain('XqZsoesa55w');
   expect(frame.getAttribute('src')).toContain('autoplay=0');
+});
+
+test('a double-click advances only one stage', () => {
+  const { props, advance, rawClick } = setup('1.1');
+  advance(); rawClick();
+  expect(screen.getByText('Texas')).toBeInTheDocument();
+  expect(document.querySelector('.option.correct')).toBeNull();
+  tick(400);
+  rawClick();
+  expect(document.querySelector('.option.correct')).not.toBeNull();
+  expect(props.onDone).not.toHaveBeenCalled();
+});
+
+test('a question with neither options nor hint skips the options stage', () => {
+  const { advance } = setup('8.10');
+  advance();
+  expect(document.querySelector('.run-chart')!.textContent).toMatch(/Tendulkar/);
+  expect(document.querySelectorAll('.stage-dots i')).toHaveLength(3);
 });

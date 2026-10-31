@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import type { Question as Q } from '../data/types';
 import { cellLabel } from '../data/types';
 import { CATEGORY_BY_ID } from '../data/categories';
@@ -24,16 +24,28 @@ interface Props {
 }
 
 export function Question({ q, via, canSwap, onDone, onPass, onSwap, onAbandon }: Props) {
-  const stages: Stage[] = ['question', 'options', 'answer', ...(q.story ? (['story'] as Stage[]) : [])];
+  const hasMiddle = Boolean(q.options || q.hint);
+  const stages: Stage[] = [
+    'question',
+    ...(hasMiddle ? (['options'] as Stage[]) : []),
+    'answer',
+    ...(q.story ? (['story'] as Stage[]) : []),
+  ];
   const [i, setI] = useState(0);
   const stage = stages[i];
   const cat = CATEGORY_BY_ID[q.category];
+  // Ignore a second advance within this window: a double-click or key bounce must never skip a stage.
+  const lastMove = useRef(0);
+  const DEBOUNCE_MS = 350;
 
   const next = useCallback(() => {
+    const now = Date.now();
+    if (now - lastMove.current < DEBOUNCE_MS) return;
+    lastMove.current = now;
     if (i + 1 >= stages.length) onDone(q.id);
     else setI(i + 1);
   }, [i, stages.length, onDone, q.id]);
-  const back = useCallback(() => setI((v) => Math.max(0, v - 1)), []);
+  const back = useCallback(() => { lastMove.current = Date.now(); setI((v) => Math.max(0, v - 1)); }, []);
   useStageKeys({ next, back, abandon: onAbandon });
 
   const showAnswer = stage === 'answer' || stage === 'story';

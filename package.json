@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "start": "serve -s dist -l ${PORT:-3000}",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "check:layout": "node scripts/check-layout.mjs"
   },
   "dependencies": {
     "@fontsource/fraunces": "^5.1.1",

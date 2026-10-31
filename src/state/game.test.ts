@@ -82,3 +82,9 @@ test('shuffle is a seeded permutation', () => {
   expect(shuffle(xs, mulberry32(314))).toEqual(out);
   expect(xs).toEqual([1, 2, 3, 4, 5]);
 });
+
+test('spareFor can exclude the question currently on screen', () => {
+  // 1.S1 is on screen after a swap; another Swap must not offer 1.S1 again
+  expect(spareFor(QUESTIONS, EMPTY, GEO_KIDS_US, '1.S1')).toBeUndefined();
+  expect(spareFor(QUESTIONS, EMPTY, { category: 'local', mode: 'kids', region: 'us' }, '3.S1')?.id).toBe('3.S2');
+});

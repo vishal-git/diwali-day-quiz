@@ -20,3 +20,10 @@ test('revealed mode shows names and totals', () => {
   expect(screen.getByText(/Tendulkar/)).toBeInTheDocument();
   expect(screen.getByText('34,357')).toBeInTheDocument();
 });
+
+test('revealed labels are surnames so five names fit under five bars', () => {
+  render(<RunChart bars={[...bars, { label: 'Kumar Sangakkara', value: 28016 }]} revealNames />);
+  expect(screen.getByText('Sangakkara')).toBeInTheDocument();
+  expect(screen.queryByText('Kumar Sangakkara')).toBeNull();
+  expect(screen.getByText('Tendulkar')).toBeInTheDocument();
+});

@@ -35,9 +35,11 @@ function spareMode(mode: Mode): Mode {
   return mode === 'hard-kids' ? 'kids' : mode === 'hard-adult' ? 'adult' : mode;
 }
 
-export function spareFor(qs: Question[], s: GameState, cell: Cell): Question | undefined {
+export function spareFor(qs: Question[], s: GameState, cell: Cell, excludeId?: string): Question | undefined {
   const want = spareMode(cell.mode);
-  return qs.find((q) => !q.live && q.category === cell.category && q.mode === want && isUntouched(q, s));
+  return qs.find(
+    (q) => !q.live && q.id !== excludeId && q.category === cell.category && q.mode === want && isUntouched(q, s),
+  );
 }
 
 export function cellCounts(qs: Question[], s: GameState, category: CategoryId): CellCounts {

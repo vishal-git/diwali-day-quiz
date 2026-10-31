@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { QUESTIONS } from './data/questions';
+import { QUESTIONS, QUESTION_BY_ID } from './data/questions';
 import type { CategoryId, Cell, Question as Q } from './data/types';
 import { luckyPool, remainingIn, spareFor } from './state/game';
 import { mulberry32 } from './state/rng';
@@ -23,7 +23,13 @@ type Screen =
 
 export default function App() {
   const game = useGame();
-  const [screen, setScreen] = useState<Screen>({ kind: 'opening' });
+  const [screen, setScreen] = useState<Screen>(() => {
+    // #/q/<id> opens a question directly — used by the layout check and handy for rehearsal.
+    const m = /^#\/q\/(.+)$/.exec(window.location.hash);
+    const q = m ? QUESTION_BY_ID[decodeURIComponent(m[1])] : undefined;
+    if (q) return { kind: 'question', q, cell: { category: q.category, mode: q.mode, region: q.region }, via: 'board' };
+    return { kind: 'opening' };
+  });
   const [hash, setHash] = useState(() => window.location.hash);
   const toBoard = () => setScreen({ kind: 'board' });
 
@@ -73,7 +79,7 @@ export default function App() {
       );
     case 'question': {
       const { q, cell, via } = screen;
-      const spare = spareFor(QUESTIONS, game.state, cell);
+      const spare = spareFor(QUESTIONS, game.state, cell, q.id);
       return (
         <Question
           key={q.id}

@@ -2,6 +2,7 @@ interface Bar { label: string; value: number }
 interface Props { bars: Bar[]; revealNames: boolean; unit?: string }
 
 const LETTERS = 'ABCDEFGH';
+const surname = (name: string) => name.split(' ').pop() ?? name;
 
 /** Horizontal-baseline bar chart; names hidden behind letters until revealed. */
 export function RunChart({ bars, revealNames, unit = 'runs' }: Props) {
@@ -27,7 +28,7 @@ export function RunChart({ bars, revealNames, unit = 'runs' }: Props) {
               </text>
             )}
             <text x={x + barW / 2} y={H - padB + 44} textAnchor="middle" fill="var(--cream)" fontSize={revealNames ? 28 : 40} fontWeight={700}>
-              {revealNames ? b.label : LETTERS[i]}
+              {revealNames ? surname(b.label) : LETTERS[i]}
             </text>
           </g>
         );
