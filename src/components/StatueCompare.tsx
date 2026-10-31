@@ -7,7 +7,7 @@ const STATUES = [
 
 /** Proportional height comparison for 3.3. */
 export function StatueCompare() {
-  const W = 1000, H = 560, base = 470, top = 40, max = 182;
+  const W = 1000, H = 600, base = 510, top = 90, max = 182;
   const slot = W / STATUES.length;
   return (
     <svg className="statue-compare" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Height comparison of four statues">

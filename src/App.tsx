@@ -1,18 +1,19 @@
 import { useState } from 'react';
 import { QUESTIONS } from './data/questions';
-import type { CategoryId, Cell, Question } from './data/types';
-import { remainingIn } from './state/game';
+import type { CategoryId, Cell, Question as Q } from './data/types';
+import { remainingIn, spareFor } from './state/game';
 import { useGame } from './state/useGame';
 import { Opening } from './screens/Opening';
 import { Board } from './screens/Board';
 import { Pick } from './screens/Pick';
+import { Question } from './screens/Question';
 
 type Screen =
   | { kind: 'opening' }
   | { kind: 'board' }
   | { kind: 'pick'; category: CategoryId }
   | { kind: 'lucky' }
-  | { kind: 'question'; q: Question; cell: Cell; via: 'board' | 'lucky' | 'swap' };
+  | { kind: 'question'; q: Q; cell: Cell; via: 'board' | 'lucky' | 'swap' };
 
 export default function App() {
   const game = useGame();
@@ -41,7 +42,25 @@ export default function App() {
       return <Pick questions={QUESTIONS} state={game.state} category={screen.category} onPick={openCell} onBack={toBoard} />;
     case 'lucky':
       return <section className="placeholder" onClick={toBoard}>Lucky Diya coming soon</section>;
-    case 'question':
-      return <section className="placeholder" onClick={toBoard}>{screen.q.question}</section>;
+    case 'question': {
+      const { q, cell, via } = screen;
+      const spare = spareFor(QUESTIONS, game.state, cell);
+      return (
+        <Question
+          key={q.id}
+          q={q}
+          via={via}
+          canSwap={spare !== undefined}
+          onDone={(id) => { game.markUsed(id); toBoard(); }}
+          onPass={(id) => { game.markUsed(id); toBoard(); }}
+          onSwap={(id) => {
+            game.markBurned(id);
+            if (spare) setScreen({ kind: 'question', q: spare, cell, via: 'swap' });
+            else toBoard();
+          }}
+          onAbandon={toBoard}
+        />
+      );
+    }
   }
 }

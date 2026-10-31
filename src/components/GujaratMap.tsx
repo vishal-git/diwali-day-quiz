@@ -20,7 +20,7 @@ export function GujaratMap({ filled }: { filled: boolean }) {
   if (!filled) {
     return (
       <svg className="map map-outline" viewBox={GUJARAT_BOX} role="img" aria-label="Outline of an Indian state">
-        <path d={GUJARAT} fill="var(--bg-raised)" stroke="var(--gold)" strokeWidth={3} strokeLinejoin="round" />
+        <path d={GUJARAT} fill="var(--bg-raised)" stroke="var(--gold)" strokeWidth={1.2} strokeLinejoin="round" />
       </svg>
     );
   }

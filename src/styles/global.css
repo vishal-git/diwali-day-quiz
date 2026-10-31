@@ -5,6 +5,7 @@
 @import './tokens.css';
 @import './screens.css';
 @import './media.css';
+@import './question.css';
 
 *, *::before, *::after { box-sizing: border-box; }
 /* 20px root so 2rem = 40px at 1080p (the minimum body size on the question screen). */
