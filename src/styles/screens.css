@@ -153,3 +153,7 @@
   body, .answers { background: #fff; color: #000; height: auto; overflow: visible; }
   .answers td:nth-child(4), .answers h1, .answers h2 { color: #000; }
 }
+
+/* ---------- flags on the Which-side buttons ---------- */
+.flag { display: block; border-radius: 0.4rem; box-shadow: 0 0.3rem 1rem rgba(0,0,0,0.45); margin-bottom: 0.4rem; }
+.btn-big:disabled .flag { filter: grayscale(0.8); }
