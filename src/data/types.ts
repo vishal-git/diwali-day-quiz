@@ -16,6 +16,8 @@ export interface Story {
 
 export interface Question {
   id: string;
+  /** Host-facing code, derived at load: CATEGORY-MODE-SCOPE-N, e.g. GEO-K-US-1, DIW-A-H-1, LOC-A-S-2. */
+  code: string;
   category: CategoryId;
   mode: Mode;
   region: Region;
@@ -34,6 +36,11 @@ export interface Question {
   video?: { youtubeId: string; start: number };
   chart?: { bars: { label: string; value: number }[]; unit?: string };
 }
+
+export const CATEGORY_CODE: Record<CategoryId, string> = {
+  geography: 'GEO', movies: 'MOV', local: 'LOC', diwali: 'DIW', celebrity: 'CEL',
+  riddles: 'RID', food: 'FOO', sports: 'SPO', 'growing-up': 'GRW',
+};
 
 export interface Cell { category: CategoryId; mode: Mode; region: Region }
 

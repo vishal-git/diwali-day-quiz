@@ -48,6 +48,7 @@ test('Which side shows flags without repeating the category flavour; the header 
   fireEvent.click(screen.getByRole('button', { name: /^Adult/ }));
   const us = screen.getByRole('button', { name: /^US/ });
   expect(us.querySelector('.flag-us')).not.toBeNull();
+  expect(us.textContent).toBe('');
   expect(screen.getByRole('button', { name: /^India/ }).querySelector('.flag-india')).not.toBeNull();
   expect(screen.queryByText(/Hollywood/)).toBeNull();
   expect(screen.queryByText(/Bollywood/)).toBeNull();

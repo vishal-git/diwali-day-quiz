@@ -15,3 +15,8 @@ test('spares are marked', () => {
   render(<Answers questions={QUESTIONS} />);
   expect(screen.getAllByText('spare').length).toBe(19);
 });
+
+test('the sheet lists the code next to the bank number', () => {
+  render(<Answers questions={QUESTIONS} />);
+  expect(screen.getByText('GEO-K-US-1')).toBeInTheDocument();
+});

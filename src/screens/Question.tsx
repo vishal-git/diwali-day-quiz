@@ -82,6 +82,7 @@ export function Question({ q, via, canSwap, onDone, onPass, onSwap, onAbandon }:
     <section className={`question type-${q.type} stage-${stage}`} onClick={next}>
       <header className="question-header" onClick={stop}>
         <span className="chip"><span aria-hidden="true">{cat.icon}</span> {cat.name}</span>
+        <span className="qcode" title="question code">{q.code}</span>
         {via === 'lucky' && <span className="chip chip-lucky">🪔 Lucky Diya — {cat.name} · {cellLabel(q.mode, q.region)}</span>}
         {via === 'swap' && <span className="chip chip-swap">🔄 Swapped</span>}
         <span className={`chip ${q.mode.startsWith('hard') ? 'chip-hard' : ''}`}>{cellLabel(q.mode, q.region)}</span>
@@ -94,7 +95,7 @@ export function Question({ q, via, canSwap, onDone, onPass, onSwap, onAbandon }:
         <div className="question-body fade-in" key={stage}>
           <p className={`question-text ${q.type === 'emoji' ? 'question-emoji' : ''}`}>{q.question}</p>
 
-          {q.type === 'image' && q.media && <SafeImage className="question-image" src={q.media.src} alt={q.media.alt} />}
+          {q.media && <SafeImage className="question-image" src={q.media.src} alt={q.media.alt} />}
           {q.type === 'map' && <GujaratMap filled={false} />}
           {q.type === 'chart' && q.chart && <RunChart bars={q.chart.bars} revealNames={showAnswer} unit={q.chart.unit} />}
           {q.type === 'video' && q.video && <VideoEmbed youtubeId={q.video.youtubeId} start={q.video.start} title={q.answerText} />}

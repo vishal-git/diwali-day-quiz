@@ -36,9 +36,13 @@ export function Pick({ questions, state, category, onPick, onBack }: Props) {
   }) => {
     const n = left(mode, region);
     return (
-      <button className={`btn-big ${hard ? 'btn-hard' : ''}`} disabled={n === 0} onClick={() => onPick(cell(mode, region))}>
-        {flag && <Flag region={flag} />}
-        <span>{label}</span>
+      <button
+        className={`btn-big ${hard ? 'btn-hard' : ''} ${flag ? 'btn-flag' : ''}`}
+        disabled={n === 0}
+        aria-label={flag ? label : undefined}
+        onClick={() => onPick(cell(mode, region))}
+      >
+        {flag ? <Flag region={flag} height={150} /> : <span>{label}</span>}
         <Pips kind={pip} left={n} total={total(mode, region)} />
       </button>
     );

@@ -23,6 +23,23 @@ await page.route('**/img/*.jpg', (route) => {
 });
 
 const failures = [];
+const overflows = () => page.evaluate(() => {
+  const d = document.documentElement;
+  return d.scrollWidth > innerWidth || d.scrollHeight > innerHeight;
+});
+
+// The board and the pick screens must fit too: their glyph rows set each tile's minimum width.
+await page.goto(`${BASE}/?n=board`, { waitUntil: 'networkidle' });
+await page.getByRole('button', { name: /begin/i }).click();
+await page.waitForSelector('.board');
+if (await overflows()) failures.push('board overflows 1080p');
+await page.getByRole('button', { name: /Diwali/ }).click();
+await page.waitForSelector('.pick');
+if (await overflows()) failures.push('pick (who) overflows 1080p');
+await page.getByRole('button', { name: /^Adult/ }).click();
+await page.waitForTimeout(100);
+if (await overflows()) failures.push('pick (side) overflows 1080p');
+
 for (const q of questions) {
   await page.goto(`${BASE}/?n=${encodeURIComponent(q.id)}#/q/${encodeURIComponent(q.id)}`, { waitUntil: "networkidle" });
   await page.waitForSelector('.question');

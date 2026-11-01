@@ -33,7 +33,24 @@ Live: https://diwali-day-quiz-production.up.railway.app
 | `#/answers` in the address bar | host cheat sheet for the paper scorer (print-friendly) |
 | Reset game (board footer) | clears played/burned state after a confirm |
 
-Board tiles show one icon per question (🧒 kids, 🧑 adult, 🔥 hard); an icon dims when that question has been played. The Which-side step shows the US and India flags, with the category and mode breadcrumbed in the top-left chip.
+Board tiles show one glyph per question: a marigold for kids, a diya for adult, a firework burst for hard. A glyph goes dark when that question has been played. The Which-side step shows only the US and India flags, with the category and mode breadcrumbed in the top-left chip.
+
+## Question codes
+
+Every question has a host-facing code shown in the question header and on the `#/answers` sheet, derived from its cell so it never drifts from the data:
+
+```
+CATEGORY-MODE-SCOPE-N      e.g.  GEO-K-US-1   DIW-A-H-1   LOC-A-S-2
+```
+
+| Part | Values |
+|---|---|
+| CATEGORY | GEO geography · MOV movies & TV · LOC local · DIW diwali · CEL celebrity · RID riddles · FOO food · SPO sports · GRW growing up |
+| MODE | K kids · A adult |
+| SCOPE | US · IN · H (hard, no region) · S (spare, only reachable by Swap) |
+| N | position within that group, in bank order |
+
+The bank's own numbers (`1.1`, `4.S2`) are still the `id` in `src/data/questions.json` and are listed beside the code on the answers sheet. `#/q/<code>` and `#/q/<id>` both open a question directly.
 
 State lives in the browser's localStorage under `diwali-quiz-2026`, so a refresh keeps the board.
 

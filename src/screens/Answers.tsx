@@ -13,11 +13,12 @@ export function Answers({ questions }: { questions: Question[] }) {
           <h2>{c.icon} {c.name}</h2>
           <table>
             <thead>
-              <tr><th>#</th><th>Cell</th><th>Question</th><th>Answer</th></tr>
+              <tr><th>Code</th><th>#</th><th>Cell</th><th>Question</th><th>Answer</th></tr>
             </thead>
             <tbody>
               {questions.filter((q) => q.category === c.id).map((q) => (
                 <tr key={q.id} className={q.live ? '' : 'row-spare'}>
+                  <td><code>{q.code}</code></td>
                   <td>{q.id}</td>
                   <td>{cellLabel(q.mode, q.region)}{!q.live && <> <em>spare</em></>}</td>
                   <td>{q.question}{q.hint && <> <span className="muted">(hint: {q.hint})</span></>}</td>
@@ -31,10 +32,10 @@ export function Answers({ questions }: { questions: Question[] }) {
       <div className="answers-group">
         <h2>🏁 Final round</h2>
         <table>
-          <thead><tr><th>#</th><th>Cell</th><th>Question</th><th>Answer</th></tr></thead>
+          <thead><tr><th>Code</th><th>#</th><th>Cell</th><th>Question</th><th>Answer</th></tr></thead>
           <tbody>
             <tr>
-              <td>{FINAL_QUESTION.id}</td><td>wager</td>
+              <td><code>FINAL</code></td><td>{FINAL_QUESTION.id}</td><td>wager</td>
               <td>{FINAL_QUESTION.question}</td>
               <td><strong>{FINAL_QUESTION.answerText}</strong></td>
             </tr>

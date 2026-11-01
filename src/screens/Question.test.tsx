@@ -227,3 +227,21 @@ test('keys A–D and 1–4 pick an option during the options stage only', () => 
   expect(document.querySelectorAll('.option')[2]).toHaveClass('wrong');
   expect(document.querySelector('.option.correct')).toBeNull();
 });
+
+test('the header shows the question code for the host', () => {
+  setup('1.1');
+  expect(screen.getByText('GEO-K-US-1')).toBeInTheDocument();
+});
+
+test('a question with media but a text type still shows the picture', () => {
+  const q = { ...QUESTION_BY_ID['1.4'], media: { src: 'img/1.4-himalayas.jpg', alt: 'Mountains' } };
+  render(<Question q={q} via="board" canSwap onDone={vi.fn()} onPass={vi.fn()} onSwap={vi.fn()} onAbandon={vi.fn()} />);
+  expect(screen.getByRole('img', { name: 'Mountains' })).toBeInTheDocument();
+});
+
+test('any category with option pictures renders them as art cards', () => {
+  const q = { ...QUESTION_BY_ID['4.1'], optionMedia: ['img/a.jpg', 'img/b.jpg', 'img/c.jpg', 'img/d.jpg'] };
+  render(<Question q={q} via="board" canSwap onDone={vi.fn()} onPass={vi.fn()} onSwap={vi.fn()} onAbandon={vi.fn()} />);
+  tick(); fireEvent.click(document.querySelector('.question')!);
+  expect(document.querySelectorAll('.option .art, .option .img-placeholder.art')).toHaveLength(4);
+});

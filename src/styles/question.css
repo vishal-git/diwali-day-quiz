@@ -19,11 +19,12 @@
 .question-emoji { font-size: 8rem; line-height: 1.1; }
 .stage-options .question-emoji, .stage-answer .question-emoji { font-size: 5rem; }
 .stage-options .question-text, .stage-answer .question-text { font-size: clamp(2rem, 2.4vw, 2.6rem); }
-.type-image .question-image, .type-image .img-placeholder { max-height: 50vh; max-width: 60vw; border-radius: var(--radius); box-shadow: 0 1rem 3rem rgba(0,0,0,0.5); }
-/* Once options show, the photo shares the screen with four faces: budget it. */
-.stage-options.type-image .question-image, .stage-answer.type-image .question-image,
-.stage-options.type-image .img-placeholder, .stage-answer.type-image .img-placeholder { max-height: 20vh; }
-.stage-options.type-image .question-text, .stage-answer.type-image .question-text { font-size: 2rem; }
+.has-media .question-image, .has-media .question-body > .img-placeholder { max-height: 50vh; max-width: 60vw; border-radius: var(--radius); box-shadow: 0 1rem 3rem rgba(0,0,0,0.5); }
+/* Once options show, the picture shares the screen with four cards: budget it. */
+.stage-options.has-media .question-image, .stage-answer.has-media .question-image,
+.stage-options.has-media .question-body > .img-placeholder, .stage-answer.has-media .question-body > .img-placeholder { max-height: 20vh; }
+.stage-options.has-media .question-text, .stage-answer.has-media .question-text { font-size: 2rem; }
+.qcode { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.95rem; color: var(--muted); letter-spacing: 0.06em; margin-right: auto; }
 .stage-options .video-wrap, .stage-answer .video-wrap { width: min(34vw, 100%); }
 .stage-answer .run-chart { max-height: 36vh; }
 .stage-answer.type-chart .question-text { font-size: 2rem; max-width: 40ch; }
@@ -48,8 +49,11 @@
 .options-visual .option-text { font-size: 2rem; line-height: 1.15; }
 /* Posters and faces are sized by height so four fit in a row under the question text. */
 .poster, .option .img-placeholder.poster { height: 36vh; width: auto; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 0.6rem; }
-.type-image .face, .type-image .option .img-placeholder.face { height: 20vh; }
+.has-media .face, .has-media .option .img-placeholder.face { height: 20vh; }
 .face, .option .img-placeholder.face { height: 28vh; width: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; }
+/* Paintings and prints: portrait frames with a thin gold mat. */
+.art, .option .img-placeholder.art { height: 32vh; width: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 0.5rem; border: 3px solid rgba(255, 209, 102, 0.35); }
+.has-media .art, .has-media .option .img-placeholder.art { height: 24vh; }
 .option .img-placeholder { min-height: 0; padding: 0.4rem; }
 .option .img-placeholder-alt { font-size: 0.9rem; }
 .option .img-placeholder-icon { font-size: 1.6rem; }

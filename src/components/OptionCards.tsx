@@ -17,7 +17,8 @@ interface Props {
 
 export function OptionCards({ q, showAnswer, wrong = [], onPick, celebrate = false }: Props) {
   const opts = q.options ?? [];
-  const visual = q.optionMedia && (q.category === 'movies' || q.category === 'celebrity');
+  const visual = Boolean(q.optionMedia);
+  const shape = q.category === 'movies' ? 'poster' : q.category === 'celebrity' ? 'face' : 'art';
   return (
     <ul className={`options ${visual ? 'options-visual' : ''} options-${opts.length}`}>
       {opts.map((text, i) => {
@@ -34,7 +35,7 @@ export function OptionCards({ q, showAnswer, wrong = [], onPick, celebrate = fal
             onClick={(e) => { if (onPick) { e.stopPropagation(); if (!isWrong) onPick(i); } }}
           >
             <span className="option-letter">{LETTERS[i]}</span>
-            {visual && <SafeImage className={q.category === 'movies' ? 'poster' : 'face'} src={q.optionMedia![i]} alt={text} />}
+            {visual && <SafeImage className={shape} src={q.optionMedia![i]} alt={text} />}
             <span className="option-text">{text}</span>
             {isWrong && (
               <span className="snuff" aria-hidden="true">

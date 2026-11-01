@@ -22,9 +22,9 @@ export function Tile({ category, counts, featured, onClick }: Props) {
       <span className="tile-name">{category.name}</span>
       {featured && <span className="tile-badge">1.5×</span>}
       <span className="tile-counts">
-        <Pips kind="kids" left={counts.kids} total={counts.kidsTotal} />
-        <Pips kind="adult" left={counts.adult} total={counts.adultTotal} />
-        <Pips kind="hard" left={Number(counts.hardKids) + Number(counts.hardAdult)} total={2} />
+        <Pips kind="kids" left={counts.kids} total={counts.kidsTotal} caption />
+        <Pips kind="adult" left={counts.adult} total={counts.adultTotal} caption />
+        <Pips kind="hard" left={Number(counts.hardKids) + Number(counts.hardAdult)} total={2} caption />
       </span>
     </button>
   );
