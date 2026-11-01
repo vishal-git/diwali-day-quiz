@@ -1098,10 +1098,10 @@
     "region": "india",
     "live": true,
     "type": "image",
-    "question": "Who is this Delhi schoolboy in cricket whites?",
+    "question": "Who is this chubby-cheeked Delhi schoolboy in cricket whites, collecting a trophy?",
     "media": {
       "src": "img/5.4-kohli-then.jpg",
-      "alt": "Chubby-cheeked schoolboy in cricket whites"
+      "alt": "Chubby-cheeked schoolboy in cricket whites collecting a trophy"
     },
     "options": [
       "Rohit Sharma",
@@ -1125,10 +1125,10 @@
     "region": "us",
     "live": true,
     "type": "image",
-    "question": "Who is this young Nashville TV news anchor from the 1970s?",
+    "question": "Who is the young TV news anchor in the middle of this 1976 Baltimore snapshot?",
     "media": {
       "src": "img/5.5-oprah-then.jpg",
-      "alt": "Young TV news anchor, 1970s"
+      "alt": "Three young women in a 1976 newsroom snapshot"
     },
     "options": [
       "Whoopi Goldberg",
@@ -1179,10 +1179,10 @@
     "region": "india",
     "live": true,
     "type": "image",
-    "question": "Who is this curly-haired 14-year-old at Shivaji Park, Mumbai?",
+    "question": "Who is the curly-haired teenager on the right, on a Mumbai maidan in 1988?",
     "media": {
       "src": "img/5.7-tendulkar-then.jpg",
-      "alt": "Curly-haired teenager at Shivaji Park"
+      "alt": "Two teenage cricketers in whites on a maidan"
     },
     "options": [
       "Sunil Gavaskar",
@@ -1260,10 +1260,10 @@
     "region": null,
     "live": true,
     "type": "image",
-    "question": "Who is this young man from the early 1980s? Clue: left Stanford's MBA program in 1981 to join his father's polyester business.",
+    "question": "Who is the garlanded schoolboy on the left, with his younger brother? Clue: left Stanford's MBA program in 1981 to join his father's polyester business.",
     "media": {
       "src": "img/5.10-ambani-then.jpg",
-      "alt": "Young man, early 1980s"
+      "alt": "Two garlanded schoolboys in a 1960s photo"
     },
     "options": [
       "Anand Mahindra",

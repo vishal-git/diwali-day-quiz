@@ -246,3 +246,9 @@ test('any category with option pictures renders them as art cards', () => {
   tick(); fireEvent.click(document.querySelector('.question')!);
   expect(document.querySelectorAll('.option .art, .option .img-placeholder.art')).toHaveLength(4);
 });
+
+test('image questions use the mystery fallback when the photo is missing', () => {
+  setup('5.9');
+  fireEvent.error(screen.getByRole('img', { name: /Pretoria/ }));
+  expect(document.querySelector('.question-body .mystery-card')).not.toBeNull();
+});

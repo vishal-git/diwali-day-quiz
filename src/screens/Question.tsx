@@ -95,7 +95,7 @@ export function Question({ q, via, canSwap, onDone, onPass, onSwap, onAbandon }:
         <div className="question-body fade-in" key={stage}>
           <p className={`question-text ${q.type === 'emoji' ? 'question-emoji' : ''}`}>{q.question}</p>
 
-          {q.media && <SafeImage className="question-image" src={q.media.src} alt={q.media.alt} />}
+          {q.media && <SafeImage className="question-image" src={q.media.src} alt={q.media.alt} fallback={q.type === 'image' ? 'mystery' : 'pending'} />}
           {q.type === 'map' && <GujaratMap filled={false} />}
           {q.type === 'chart' && q.chart && <RunChart bars={q.chart.bars} revealNames={showAnswer} unit={q.chart.unit} />}
           {q.type === 'video' && q.video && <VideoEmbed youtubeId={q.video.youtubeId} start={q.video.start} title={q.answerText} />}

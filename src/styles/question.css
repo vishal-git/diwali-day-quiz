@@ -19,10 +19,20 @@
 .question-emoji { font-size: 8rem; line-height: 1.1; }
 .stage-options .question-emoji, .stage-answer .question-emoji { font-size: 5rem; }
 .stage-options .question-text, .stage-answer .question-text { font-size: clamp(2rem, 2.4vw, 2.6rem); }
-.has-media .question-image, .has-media .question-body > .img-placeholder { max-height: 50vh; max-width: 60vw; border-radius: var(--radius); box-shadow: 0 1rem 3rem rgba(0,0,0,0.5); }
+.has-media .question-image, .has-media .question-body > .img-placeholder, .has-media .question-body > .mystery-card { max-height: 50vh; max-width: 60vw; border-radius: var(--radius); box-shadow: 0 1rem 3rem rgba(0,0,0,0.5); }
 /* Once options show, the picture shares the screen with four cards: budget it. */
 .stage-options.has-media .question-image, .stage-answer.has-media .question-image,
-.stage-options.has-media .question-body > .img-placeholder, .stage-answer.has-media .question-body > .img-placeholder { max-height: 20vh; }
+.stage-options.has-media .question-body > .img-placeholder, .stage-answer.has-media .question-body > .img-placeholder,
+.stage-options.has-media .question-body > .mystery-card, .stage-answer.has-media .question-body > .mystery-card { max-height: 20vh; }
+.mystery-card {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem;
+  height: 50vh; aspect-ratio: 4 / 3; padding: 1rem; color: var(--muted);
+  background: radial-gradient(ellipse at 50% 30%, #3a2a66, var(--bg-deep) 75%); border: 3px double rgba(255, 209, 102, 0.4);
+}
+.mystery-silhouette { height: 60%; color: #6b5a98; }
+.mystery-text { font-size: 1.3rem; font-style: italic; color: var(--cream); text-align: center; }
+.stage-options .mystery-card, .stage-answer .mystery-card { gap: 0.2rem; }
+.stage-options .mystery-text, .stage-answer .mystery-text { display: none; }
 .stage-options.has-media .question-text, .stage-answer.has-media .question-text { font-size: 2rem; }
 .qcode { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.95rem; color: var(--muted); letter-spacing: 0.06em; margin-right: auto; }
 .stage-options .video-wrap, .stage-answer .video-wrap { width: min(34vw, 100%); }

@@ -24,3 +24,13 @@ test('a poster that fails to load becomes a title card rather than an "image pen
   expect(card).toHaveTextContent('Toy Story 5');
   expect(container.textContent).not.toMatch(/pending/);
 });
+
+test('a missing "then" photo becomes a mystery silhouette card with the clue line, not an "image pending" note', () => {
+  const { container } = render(<SafeImage src="img/5.9-musk-then.jpg" alt="Teenager in Pretoria, 1980s" className="question-image" fallback="mystery" />);
+  fireEvent.error(container.querySelector('img')!);
+  const card = container.querySelector('.mystery-card');
+  expect(card).not.toBeNull();
+  expect(card!.querySelector('svg')).not.toBeNull();
+  expect(card).toHaveTextContent('Teenager in Pretoria, 1980s');
+  expect(container.textContent).not.toMatch(/pending/);
+});
