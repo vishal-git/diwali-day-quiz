@@ -114,3 +114,10 @@ test('the sourced artwork is wired in and every referenced file exists', () => {
   expect(sourced.length).toBeGreaterThanOrEqual(19);
   for (const p of sourced) expect(here(p), p).toBe(true);
 });
+
+test('every image a question references is on disk, except the two then-photos nobody could find', () => {
+  const onDisk = new Set(Object.keys(import.meta.glob('../../public/img/*.jpg')).map((k) => k.replace('../../public/', '')));
+  const refs = QUESTIONS.flatMap((q) => [q.media?.src, q.story?.image, ...(q.optionMedia ?? [])]).filter(Boolean) as string[];
+  const missing = [...new Set(refs)].filter((p) => !onDisk.has(p)).sort();
+  expect(missing).toEqual(['img/5.8-nooyi-then.jpg', 'img/5.9-musk-then.jpg']);
+});
