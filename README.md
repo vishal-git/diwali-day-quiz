@@ -24,13 +24,16 @@ Live: https://diwali-day-quiz-production.up.railway.app
 | Key / click | Does |
 |---|---|
 | Click anywhere, Space, →, Enter | advance: question → options → answer → story (if any) → board |
+| Click an option card, or A–D / 1–4 | the answer a team called out. Wrong: the card greys out and its diya is snuffed; the right answer stays hidden so the next team can try. Right: fireworks, answer revealed |
 | Backspace, ← | step back one stage |
 | Esc | leave the question without consuming it |
 | F | toggle fullscreen |
-| Swap (bottom right) | burn this question, draw a spare from the same category and mode |
-| Pass (bottom right) | mark used and return to the board |
+| Swap (bottom right) | burn this question, draw a spare from the same category and mode. Only while the question alone is showing |
+| Pass (bottom right) | mark used and return to the board. Only while the question alone is showing; once options or a hint appear, both lock |
 | `#/answers` in the address bar | host cheat sheet for the paper scorer (print-friendly) |
 | Reset game (board footer) | clears played/burned state after a confirm |
+
+Board tiles show one icon per question (🧒 kids, 🧑 adult, 🔥 hard); an icon dims when that question has been played. The Which-side step shows the US and India flags, with the category and mode breadcrumbed in the top-left chip.
 
 State lives in the browser's localStorage under `diwali-quiz-2026`, so a refresh keeps the board.
 

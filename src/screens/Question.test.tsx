@@ -146,3 +146,84 @@ test('a question with neither options nor hint skips the options stage', () => {
   expect(document.querySelector('.run-chart')!.textContent).toMatch(/Tendulkar/);
   expect(document.querySelectorAll('.stage-dots i')).toHaveLength(3);
 });
+
+test('Swap and Pass lock once the options or hint have been shown, and stay locked after stepping back', () => {
+  const { advance } = setup('1.1');
+  const swap = () => screen.getByRole('button', { name: /swap/i });
+  const pass = () => screen.getByRole('button', { name: /pass/i });
+  expect(swap()).toBeEnabled();
+  expect(pass()).toBeEnabled();
+  advance();
+  expect(swap()).toBeDisabled();
+  expect(pass()).toBeDisabled();
+  tick(); fireEvent.keyDown(window, { key: 'Backspace' });
+  expect(screen.queryByText('Texas')).toBeNull();
+  expect(swap()).toBeDisabled();
+  expect(pass()).toBeDisabled();
+});
+
+test('the hint locks Swap and Pass on a riddle too', () => {
+  const { advance } = setup('6.1');
+  advance();
+  expect(screen.getByRole('button', { name: /swap/i })).toBeDisabled();
+  expect(screen.getByRole('button', { name: /pass/i })).toBeDisabled();
+});
+
+const option = (text: string) => screen.getByText(text).closest('.option')!;
+
+test('picking a wrong option greys it out without revealing the right one or advancing', () => {
+  const { props, advance } = setup('1.1');
+  advance();
+  tick(); fireEvent.click(option('California'));
+  expect(option('California')).toHaveClass('wrong');
+  expect(option('California').querySelector('.snuff')).not.toBeNull();
+  expect(document.querySelector('.option.correct')).toBeNull();
+  expect(screen.queryByText(/Alaska 665,000/)).toBeNull();
+  expect(props.onDone).not.toHaveBeenCalled();
+  tick(); fireEvent.click(option('Montana'));
+  expect(document.querySelectorAll('.option.wrong')).toHaveLength(2);
+  expect(document.querySelector('.option.correct')).toBeNull();
+});
+
+test('picking the right option reveals the answer with fireworks; wrong picks stay grey', () => {
+  const { props, advance } = setup('1.1');
+  advance();
+  tick(); fireEvent.click(option('California'));
+  tick(); fireEvent.click(option('Texas'));
+  expect(option('Texas')).toHaveClass('correct');
+  expect(option('Texas')).toHaveClass('celebrate');
+  expect(option('California')).toHaveClass('wrong');
+  expect(document.querySelector('.fireworks')).not.toBeNull();
+  expect(screen.getByText(/Alaska 665,000/)).toBeInTheDocument();
+  expect(props.onDone).not.toHaveBeenCalled();
+  advance();
+  expect(props.onDone).toHaveBeenCalledWith('1.1');
+});
+
+test('a correct pick cannot be finished by the same double-click', () => {
+  const { props, advance, rawClick } = setup('1.1');
+  advance();
+  tick(); fireEvent.click(option('Texas'));
+  rawClick();
+  expect(props.onDone).not.toHaveBeenCalled();
+});
+
+test('revealing by clicking through (nobody answered) has no fireworks', () => {
+  const { advance } = setup('1.1');
+  advance(); advance();
+  expect(document.querySelector('.option.correct')).not.toBeNull();
+  expect(document.querySelector('.option.celebrate')).toBeNull();
+  expect(document.querySelector('.fireworks')).toBeNull();
+});
+
+test('keys A–D and 1–4 pick an option during the options stage only', () => {
+  const { advance } = setup('1.1');
+  tick(); fireEvent.keyDown(window, { key: 'b' });
+  expect(document.querySelector('.option.wrong')).toBeNull();
+  advance();
+  tick(); fireEvent.keyDown(window, { key: 'b' });
+  expect(document.querySelectorAll('.option')[1]).toHaveClass('wrong');
+  tick(); fireEvent.keyDown(window, { key: '3' });
+  expect(document.querySelectorAll('.option')[2]).toHaveClass('wrong');
+  expect(document.querySelector('.option.correct')).toBeNull();
+});

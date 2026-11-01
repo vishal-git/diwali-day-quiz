@@ -53,6 +53,33 @@
 .option .img-placeholder { min-height: 0; padding: 0.4rem; }
 .option .img-placeholder-alt { font-size: 0.9rem; }
 .option .img-placeholder-icon { font-size: 1.6rem; }
+.option.pickable { cursor: pointer; }
+.option.pickable:hover { border-color: rgba(255, 209, 102, 0.6); transform: translateY(-2px); }
+/* A wrong pick: the card greys out but the snuffed diya on top stays fully visible. */
+.option.wrong { border-color: rgba(154,143,184,0.25); background: var(--bg-deep); cursor: default; animation: shake 420ms ease; }
+.option.wrong .option-letter, .option.wrong .option-text, .option.wrong img, .option.wrong .img-placeholder { opacity: 0.3; filter: grayscale(1); }
+.option.wrong .option-text { text-decoration: line-through; text-decoration-thickness: 3px; }
+.snuff { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none; animation: snuffFade 500ms ease 2.4s forwards; }
+.snuff .diya .flame { animation: snuffOut 480ms ease-in 160ms forwards; }
+.smoke {
+  position: absolute; left: 50%; top: 32%; width: 1rem; height: 1rem; border-radius: 50%;
+  background: rgba(205, 200, 225, 0.6); filter: blur(3px); opacity: 0;
+  animation: smokeRise 1.5s ease-out 560ms forwards;
+}
+.smoke.s2 { animation-delay: 760ms; width: 0.8rem; height: 0.8rem; }
+.smoke.s3 { animation-delay: 980ms; width: 1.2rem; height: 1.2rem; }
+@keyframes snuffOut { to { transform: scaleY(0.05) scaleX(0.3); opacity: 0; } }
+@keyframes smokeRise {
+  0% { opacity: 0; transform: translate(-50%, 0) scale(0.6); }
+  20% { opacity: 0.85; }
+  100% { opacity: 0; transform: translate(-10%, -5rem) scale(2.2); }
+}
+@keyframes snuffFade { to { opacity: 0; } }
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-0.6rem); } 40% { transform: translateX(0.5rem); }
+  60% { transform: translateX(-0.3rem); } 80% { transform: translateX(0.2rem); }
+}
 .option.correct { border-color: var(--gold); box-shadow: 0 0 2rem rgba(255, 209, 102, 0.55), inset 0 0 2rem rgba(244, 163, 0, 0.2); transform: scale(1.03); }
 .option.dim { opacity: 0.35; filter: saturate(0.3); }
 
@@ -77,9 +104,37 @@
 .stage-dots { display: flex; gap: 0.5rem; }
 .stage-dots i { width: 0.7rem; height: 0.7rem; border-radius: 50%; background: rgba(154,143,184,0.3); }
 .stage-dots i.on { background: var(--marigold); }
-.host-buttons { display: flex; gap: 0.8rem; opacity: 0.6; }
+.host-buttons { display: flex; gap: 0.8rem; align-items: center; opacity: 0.6; }
+.host-note { font-size: 0.9rem; color: var(--muted); font-style: italic; }
 .host-buttons:hover { opacity: 1; }
 
 .fade-in { animation: fadeIn 220ms ease-out both; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
-@media (prefers-reduced-motion: reduce) { .fade-in { animation: none; } }
+/* ---------- fireworks on a correct pick ---------- */
+.fireworks { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 5; }
+.burst { position: absolute; width: 0; height: 0; }
+.flash {
+  position: absolute; left: -1.5rem; top: -1.5rem; width: 3rem; height: 3rem; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,244,224,0.95), rgba(255,209,102,0) 70%);
+  opacity: 0; animation: fwFlash 500ms ease-out var(--d) forwards;
+}
+.particle {
+  position: absolute; left: -0.3rem; top: -0.3rem; width: 0.6rem; height: 0.6rem; border-radius: 50%;
+  background: var(--c); box-shadow: 0 0 0.7rem var(--c); opacity: 0;
+  animation: fwFly 1400ms cubic-bezier(0.12, 0.75, 0.3, 1) var(--d) forwards;
+}
+@keyframes fwFlash { 0% { opacity: 0; transform: scale(0.2); } 30% { opacity: 1; transform: scale(1.6); } 100% { opacity: 0; transform: scale(3); } }
+@keyframes fwFly {
+  0% { opacity: 0; transform: translate(0, 0) scale(0.6); }
+  8% { opacity: 1; transform: translate(0, 0) scale(1.2); }
+  70% { opacity: 1; }
+  100% { opacity: 0; transform: translate(var(--dx), var(--dy)) scale(0.2); }
+}
+.option.correct.celebrate { animation: popIn 500ms cubic-bezier(0.2, 1.4, 0.4, 1); }
+@keyframes popIn { from { transform: scale(0.96); } to { transform: scale(1.03); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in, .option.wrong, .snuff .diya .flame, .smoke { animation: none; }
+  .snuff .diya .flame { opacity: 0; }
+  .fireworks { display: none; }
+}
