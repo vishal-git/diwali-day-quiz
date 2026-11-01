@@ -79,7 +79,7 @@ export function Question({ q, via, canSwap, onDone, onPass, onSwap, onAbandon }:
   const stop = (e: React.SyntheticEvent) => e.stopPropagation();
 
   return (
-    <section className={`question type-${q.type} stage-${stage}`} onClick={next}>
+    <section className={`question type-${q.type} stage-${stage} ${q.media ? 'has-media' : ''}`} onClick={next}>
       <header className="question-header" onClick={stop}>
         <span className="chip"><span aria-hidden="true">{cat.icon}</span> {cat.name}</span>
         <span className="qcode" title="question code">{q.code}</span>

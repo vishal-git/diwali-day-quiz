@@ -97,3 +97,20 @@ test('the special records are wired', () => {
   expect(byId['3.S2'].options).toEqual(['True', 'False']);
   expect(QUESTIONS.filter((q) => q.mustPlay)).toHaveLength(1);
 });
+
+test('the sourced artwork is wired in and every referenced file exists', () => {
+  const byId = Object.fromEntries(QUESTIONS.map((q) => [q.id, q])) as Record<string, Question>;
+  const onDisk = new Set(Object.keys(import.meta.glob('../../public/img/*.jpg')).map((k) => k.replace('../../public/', '')));
+  const here = (p: string) => onDisk.has(p);
+  expect(byId['4.1'].optionMedia).toEqual(['img/4.1-opt-krishna.jpg', 'img/4.1-opt-rama.jpg', 'img/4.1-opt-arjuna.jpg', 'img/4.1-opt-hanuman.jpg']);
+  expect(byId['4.1'].story?.image).toBe('img/4.1-rama-return-ayodhya.jpg');
+  expect(byId['4.6'].optionMedia).toHaveLength(4);
+  expect(byId['4.7'].optionMedia).toHaveLength(4);
+  expect(byId['3.4'].media).toBeUndefined();
+  expect(byId['3.4'].story?.image).toBe('img/3.4-asiatic-lion.jpg');
+  for (const id of ['1.4', '3.3', '3.7', '3.8', '4.8']) expect(byId[id].media?.src, id).toMatch(/^img\//);
+  const refs = QUESTIONS.flatMap((q) => [q.media?.src, q.story?.image, ...(q.optionMedia ?? [])]).filter(Boolean) as string[];
+  const sourced = refs.filter((p) => /^(img\/(1\.4|3\.[3478]|4\.[1678]))/.test(p));
+  expect(sourced.length).toBeGreaterThanOrEqual(19);
+  for (const p of sourced) expect(here(p), p).toBe(true);
+});

@@ -29,6 +29,9 @@ Quick list:
 grep -o '"img/[^"]*"' src/data/questions.json | sort -u
 ```
 
+## Already in place (Wikimedia Commons, credits in `CREDITS.md`)
+Deity and demon art for 4.1, 4.6 and 4.7 option cards (Raja Ravi Varma and Ravi Varma Press prints, a Kalighat Kali, a Mughal Narakasura folio); the Rama-returns-to-Ayodhya story page; photos for 1.4 Himalayas, 3.3 Statue of Unity, 3.7 Marine Drive, 3.8 Lothal, 4.8 Mahavira; the Gir lion on 3.4's story page. CC-BY / CC-BY-SA photos need the author named if the quiz is ever shared beyond the living room; `CREDITS.md` has each one.
+
 ## Rendered in code (no file needed)
 - 3.3 statue height comparison (`StatueCompare`)
 - 8.10 run-scorers bar chart (`RunChart`)

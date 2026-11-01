@@ -1,120 +1,2186 @@
 [
-{"id":"1.1","category":"geography","mode":"kids","region":"us","live":true,"type":"text","question":"Which US state is the second-largest by area, after Alaska?","options":["Texas","California","Montana","New Mexico"],"answer":0,"answerText":"Texas","reveal":"Alaska 665,000 sq mi · Texas 269,000 · California 164,000 · Montana 147,000 · New Mexico 122,000"},
-{"id":"1.2","category":"geography","mode":"kids","region":"us","live":true,"type":"text","question":"Which river forms most of the border between Texas and Mexico?","options":["Colorado","Rio Grande","Mississippi","Brazos"],"answer":1,"answerText":"Rio Grande"},
-{"id":"1.3","category":"geography","mode":"kids","region":"india","live":true,"type":"text","question":"What is the capital city of India?","options":["Mumbai","Kolkata","New Delhi","Bengaluru"],"answer":2,"answerText":"New Delhi"},
-{"id":"1.4","category":"geography","mode":"kids","region":"india","live":true,"type":"text","question":"Which mountain range runs along India's northern border?","options":["Western Ghats","Himalayas","Andes","Alps"],"answer":1,"answerText":"Himalayas"},
-{"id":"1.5","category":"geography","mode":"adult","region":"us","live":true,"type":"text","question":"Which is the only US state that borders exactly one other state?","options":["Maine","Florida","Alaska","Washington"],"answer":0,"answerText":"Maine","reveal":"Its only neighbour is New Hampshire."},
-{"id":"1.6","category":"geography","mode":"adult","region":"us","live":true,"type":"text","question":"Which US state has the largest population?","options":["Texas","Florida","New York","California"],"answer":3,"answerText":"California","reveal":"2024 est.: California ~39.4M · Texas ~31.3M · Florida ~23.4M · New York ~19.9M"},
-{"id":"1.7","category":"geography","mode":"adult","region":"india","live":true,"type":"text","question":"Which Indian state has the longest coastline?","options":["Tamil Nadu","Maharashtra","Gujarat","Andhra Pradesh"],"answer":2,"answerText":"Gujarat","reveal":"Gujarat ~1,600 km · Tamil Nadu ~1,075 · Andhra Pradesh ~975 · Maharashtra ~720"},
-{"id":"1.8","category":"geography","mode":"adult","region":"india","live":true,"type":"text","question":"Which Indian state has the smallest population?","options":["Goa","Sikkim","Mizoram","Arunachal Pradesh"],"answer":1,"answerText":"Sikkim","reveal":"2024 proj.: Sikkim ~0.7M · Mizoram ~1.3M · Goa ~1.6M · Arunachal Pradesh ~1.7M"},
-{"id":"1.9","category":"geography","mode":"hard-kids","region":null,"live":true,"type":"text","question":"How many states does India have?","options":["22","25","28","32"],"answer":2,"answerText":"28","reveal":"Plus 8 union territories. It was 29 until Jammu & Kashmir became a union territory in 2019."},
-{"id":"1.10","category":"geography","mode":"hard-adult","region":null,"live":true,"type":"text","question":"India shares its longest land border with which country?","options":["China","Pakistan","Bangladesh","Nepal"],"answer":2,"answerText":"Bangladesh","reveal":"Bangladesh 4,097 km · China 3,488 · Pakistan 3,323 · Nepal 1,751"},
-{"id":"1.S1","category":"geography","mode":"kids","region":"india","live":false,"type":"map","question":"Which Indian state is this?","options":["Rajasthan","Gujarat","Maharashtra","Kerala"],"answer":1,"answerText":"Gujarat","story":{"title":"Gujarat","graphic":"map-gujarat","lines":["India's westernmost state, with the country's longest coastline.","Home turf for most of this room."]}},
-{"id":"1.S2","category":"geography","mode":"adult","region":"us","live":false,"type":"text","question":"Which US state has the most coastline?","options":["Florida","California","Alaska","Hawaii"],"answer":2,"answerText":"Alaska","reveal":"Tidal shoreline: Alaska ~34,000 mi · Florida ~8,400 · California ~3,400 · Hawaii ~1,050"},
-
-{"id":"2.1","category":"movies","mode":"kids","region":"us","live":true,"type":"text","question":"Which film was the biggest hit at the US box office in 2026?","options":["Spider-Man: Brand New Day","The Super Mario Galaxy Movie","Toy Story 5","Michael"],"optionMedia":["img/2.1-opt-spiderman.jpg","img/2.1-opt-mario.jpg","img/2.1-opt-toystory5.jpg","img/2.1-opt-michael.jpg"],"answer":0,"answerText":"Spider-Man: Brand New Day","reveal":"Domestic gross (Box Office Mojo, 29 Oct 2026): Spider-Man $958.8M · Toy Story 5 $480.3M · Super Mario Galaxy $429.8M · Michael $372.3M"},
-{"id":"2.2","category":"movies","mode":"kids","region":"us","live":true,"type":"emoji","question":"🦁👑🌅","options":["The Lion King","Madagascar","Zootopia","The Jungle Book"],"optionMedia":["img/2.2-opt-lionking.jpg","img/2.2-opt-madagascar.jpg","img/2.2-opt-zootopia.jpg","img/2.2-opt-junglebook.jpg"],"answer":0,"answerText":"The Lion King","reveal":"Guess the movie from emojis."},
-{"id":"2.3","category":"movies","mode":"kids","region":"india","live":true,"type":"text","question":"Which 2026 Ranveer Singh sequel became the second-highest-grossing Bollywood film ever worldwide, behind only Dangal?","options":["Border 2","Don 3","Dhurandhar: The Revenge","Pathaan 2"],"optionMedia":["img/2.3-opt-border2.jpg","img/2.3-opt-don3.jpg","img/2.3-opt-dhurandhar2.jpg","img/2.3-opt-pathaan2.jpg"],"answer":2,"answerText":"Dhurandhar: The Revenge"},
-{"id":"2.4","category":"movies","mode":"kids","region":"india","live":true,"type":"text","question":"The song \"Naatu Naatu\" won an Oscar in 2023. Which film is it from?","options":["RRR","Baahubali","Pushpa","KGF"],"optionMedia":["img/2.4-opt-rrr.jpg","img/2.4-opt-baahubali.jpg","img/2.4-opt-pushpa.jpg","img/2.4-opt-kgf.jpg"],"answer":0,"answerText":"RRR"},
-{"id":"2.5","category":"movies","mode":"adult","region":"us","live":true,"type":"text","question":"Which 2026 biopic became the highest-grossing musician biopic ever, passing Bohemian Rhapsody?","options":["Elvis","Michael","Bob Marley: One Love","A Complete Unknown"],"optionMedia":["img/2.5-opt-elvis.jpg","img/2.5-opt-michael.jpg","img/2.5-opt-onelove.jpg","img/2.5-opt-completeunknown.jpg"],"answer":1,"answerText":"Michael"},
-{"id":"2.6","category":"movies","mode":"adult","region":"us","live":true,"type":"text","question":"The Devil Wears Prada 2 came out in 2026. Which real-life magazine editor is Miranda Priestly widely believed to be modelled on?","options":["Anna Wintour","Tina Brown","Diana Vreeland","Grace Coddington"],"optionMedia":["img/2.6-opt-wintour.jpg","img/2.6-opt-brown.jpg","img/2.6-opt-vreeland.jpg","img/2.6-opt-coddington.jpg"],"answer":0,"answerText":"Anna Wintour","reveal":"Editor-in-chief of Vogue."},
-{"id":"2.7","category":"movies","mode":"adult","region":"india","live":true,"type":"text","question":"Which was the first Indian film nominated for the Academy Award for Best Foreign Language Film?","options":["Pather Panchali","Mother India","Mughal-e-Azam","Lagaan"],"optionMedia":["img/2.7-opt-patherpanchali.jpg","img/2.7-opt-motherindia.jpg","img/2.7-opt-mughaleazam.jpg","img/2.7-opt-lagaan.jpg"],"answer":1,"answerText":"Mother India","reveal":"1957 — it lost by a single vote."},
-{"id":"2.8","category":"movies","mode":"adult","region":"india","live":true,"type":"text","question":"Dilip Kumar holds the record for most Filmfare Best Actor awards with eight. Which actor shares that record?","options":["Amitabh Bachchan","Shah Rukh Khan","Aamir Khan","Dharmendra"],"optionMedia":["img/2.8-opt-bachchan.jpg","img/2.8-opt-srk.jpg","img/2.8-opt-aamir.jpg","img/2.8-opt-dharmendra.jpg"],"answer":1,"answerText":"Shah Rukh Khan"},
-{"id":"2.9","category":"movies","mode":"hard-kids","region":null,"live":true,"type":"text","question":"What was the first full-length movie made entirely with computer animation, released in 1995?","options":["Shrek","Toy Story","Finding Nemo","The Incredibles"],"optionMedia":["img/2.9-opt-shrek.jpg","img/2.9-opt-toystory.jpg","img/2.9-opt-nemo.jpg","img/2.9-opt-incredibles.jpg"],"answer":1,"answerText":"Toy Story","reveal":"Pixar's first feature."},
-{"id":"2.10","category":"movies","mode":"hard-adult","region":null,"live":true,"type":"text","question":"What was India's first full-length talkie film, released in 1931?","options":["Raja Harishchandra","Alam Ara","Achhut Kanya","Devdas"],"optionMedia":["img/2.10-opt-rajaharishchandra.jpg","img/2.10-opt-alamara.jpg","img/2.10-opt-achhutkanya.jpg","img/2.10-opt-devdas.jpg"],"answer":1,"answerText":"Alam Ara","reveal":"Raja Harishchandra (1913) was the first silent feature."},
-{"id":"2.S1","category":"movies","mode":"kids","region":"india","live":false,"type":"emoji","question":"3️⃣🤪🎓","options":["3 Idiots","Taare Zameen Par","Munna Bhai M.B.B.S.","PK"],"optionMedia":["img/2.S1-opt-3idiots.jpg","img/2.S1-opt-tzp.jpg","img/2.S1-opt-munnabhai.jpg","img/2.S1-opt-pk.jpg"],"answer":0,"answerText":"3 Idiots","reveal":"Guess the movie from emojis."},
-{"id":"2.S2","category":"movies","mode":"adult","region":"us","live":false,"type":"text","question":"Which film won the very first Academy Award for Best Picture, in 1929?","options":["Wings","Sunrise","The Jazz Singer","Metropolis"],"optionMedia":["img/2.S2-opt-wings.jpg","img/2.S2-opt-sunrise.jpg","img/2.S2-opt-jazzsinger.jpg","img/2.S2-opt-metropolis.jpg"],"answer":0,"answerText":"Wings"},
-
-{"id":"3.1","category":"local","mode":"kids","region":"us","live":true,"type":"text","question":"During the American Civil War, Richmond was the capital of which side?","options":["The Union","The Confederacy","Neither","Both at different times"],"answer":1,"answerText":"The Confederacy","reveal":"1861–65"},
-{"id":"3.2","category":"local","mode":"kids","region":"us","live":true,"type":"text","question":"Patrick Henry's famous 1775 speech, delivered in Richmond, is known by which line?","options":["\"I have a dream\"","\"Give me liberty or give me death\"","\"Don't tread on me\"","\"We the people\""],"answer":1,"answerText":"\"Give me liberty or give me death!\"","reveal":"St. John's Church, Church Hill."},
-{"id":"3.3","category":"local","mode":"kids","region":"india","live":true,"type":"text","mustPlay":true,"question":"The world's tallest statue, the Statue of Unity in Gujarat, honours which leader?","options":["Mahatma Gandhi","Sardar Vallabhbhai Patel","Jawaharlal Nehru","B.R. Ambedkar"],"answer":1,"answerText":"Sardar Patel","reveal":"Statue of Unity 182 m (Kevadia, Gujarat, 2018)","story":{"title":"How tall is 182 metres?","graphic":"statue","lines":["Statue of Unity 182 m · Spring Temple Buddha 128 m · Statue of Liberty 93 m with pedestal · Christ the Redeemer 38 m with pedestal.","Kevadia, Gujarat — unveiled 2018."]}},
-{"id":"3.4","category":"local","mode":"kids","region":"india","live":true,"type":"text","question":"Gir National Park in Gujarat is the only place in the world where which animal still lives in the wild?","options":["Bengal tiger","Asiatic lion","Snow leopard","One-horned rhino"],"answer":1,"answerText":"Asiatic lion"},
-{"id":"3.5","category":"local","mode":"adult","region":"us","live":true,"type":"text","question":"Richmond International Airport (RIC) is actually in which county?","options":["City of Richmond","Henrico","Chesterfield","Hanover"],"answer":1,"answerText":"Henrico","reveal":"Sandston, Henrico County."},
-{"id":"3.6","category":"local","mode":"adult","region":"us","live":true,"type":"text","question":"Capital One was created in 1994 as a spin-off from which Richmond bank?","options":["Crestar","Signet Bank","Wachovia","Central Fidelity"],"answer":1,"answerText":"Signet Bank","reveal":"Richard Fairbank and Nigel Morris's credit-card division."},
-{"id":"3.7","category":"local","mode":"adult","region":"india","live":true,"type":"text","question":"Mumbai's curved seaside promenade, famous for its necklace of lights at night, is nicknamed what?","options":["The Golden Mile","The Queen's Necklace","The Pearl Strand","The Diamond Curve"],"answer":1,"answerText":"The Queen's Necklace","reveal":"Marine Drive."},
-{"id":"3.8","category":"local","mode":"adult","region":"india","live":true,"type":"text","question":"Lothal, in Gujarat, was a dockyard city of which ancient civilisation?","options":["Mauryan","Indus Valley (Harappan)","Gupta","Chola"],"answer":1,"answerText":"Indus Valley","reveal":"One of the world's oldest known docks, ~2400 BCE."},
-{"id":"3.9","category":"local","mode":"hard-kids","region":null,"live":true,"type":"text","question":"How many US presidents were born in Virginia — more than any other state?","options":["4","6","8","10"],"answer":2,"answerText":"Eight","reveal":"Washington, Jefferson, Madison, Monroe, W.H. Harrison, Tyler, Taylor, Wilson — \"the Mother of Presidents\"."},
-{"id":"3.10","category":"local","mode":"hard-adult","region":null,"live":true,"type":"text","question":"Who became the first Indian American elected to statewide office in Virginia, sworn in as Lieutenant Governor in January 2026?","options":["Suhas Subramanyam","Ghazala Hashmi","Kiran Ahuja","Nikki Haley"],"answer":1,"answerText":"Ghazala Hashmi"},
-{"id":"3.S1","category":"local","mode":"kids","region":"us","live":false,"type":"text","question":"Richmond's minor-league baseball team is named after which animal?","options":["Squirrels","Otters","Crabs","Hens"],"answer":0,"answerText":"Squirrels","reveal":"The Flying Squirrels."},
-{"id":"3.S2","category":"local","mode":"kids","region":"us","live":false,"type":"text","question":"True or false: the James River flows out of Virginia into another state.","options":["True","False"],"answer":1,"answerText":"False","reveal":"~340 miles from the Alleghenies to Chesapeake Bay, entirely inside Virginia."},
-{"id":"3.S3","category":"local","mode":"adult","region":"us","live":false,"type":"text","question":"Which Founding Father designed the Virginia State Capitol building in Richmond?","options":["George Washington","James Madison","Thomas Jefferson","Patrick Henry"],"answer":2,"answerText":"Thomas Jefferson","reveal":"Modelled on a Roman temple in Nîmes."},
-{"id":"3.S4","category":"local","mode":"adult","region":"india","live":false,"type":"text","question":"Mumbai was originally how many separate islands?","options":["3","5","7","9"],"answer":2,"answerText":"Seven"},
-
-{"id":"4.1","category":"diwali","mode":"kids","region":"india","live":true,"type":"text","question":"Diwali celebrates the return of which prince to Ayodhya after 14 years of exile?","options":["Krishna","Rama","Arjuna","Hanuman"],"answer":1,"answerText":"Rama","reveal":"With Sita and Lakshmana."},
-{"id":"4.2","category":"diwali","mode":"kids","region":"india","live":true,"type":"text","question":"The word Deepavali literally means what?","options":["Festival of sweets","Row of lamps","Night of fireworks","Victory of good"],"answer":1,"answerText":"Row of lamps","reveal":"deepa = lamp, avali = row"},
-{"id":"4.3","category":"diwali","mode":"kids","region":"india","live":true,"type":"text","question":"The morning after Diwali, Gujarati families greet each other \"Saal Mubarak!\" What are they wishing?","options":["Happy birthday","Happy New Year","Good harvest","Safe travels"],"answer":1,"answerText":"Happy New Year","reveal":"Gujarati New Year (Bestu Varas) is the day after Diwali."},
-{"id":"4.4","category":"diwali","mode":"kids","region":"india","live":true,"type":"text","question":"How many days does the full Diwali festival run, from Dhanteras to Bhai Bij?","options":["3","5","7","9"],"answer":1,"answerText":"Five"},
-{"id":"4.5","category":"diwali","mode":"adult","region":"india","live":true,"type":"text","question":"In the Gujarati calendar, Diwali falls on the last day of which month — the one just before Kartik begins?","options":["Shravan","Bhadarvo","Aaso (Ashwin)","Magshar"],"answer":2,"answerText":"Aaso","reveal":"Aaso vad amas; Kartik Sud 1 is New Year."},
-{"id":"4.6","category":"diwali","mode":"adult","region":"india","live":true,"type":"text","question":"Kali Chaudas, the night before Diwali, is also called Narak Chaturdashi. Which demon did Krishna defeat that day?","options":["Ravana","Hiranyakashipu","Narakasura","Mahishasura"],"answer":2,"answerText":"Narakasura"},
-{"id":"4.7","category":"diwali","mode":"adult","region":"india","live":true,"type":"text","question":"In West Bengal, Diwali night is not mainly a Lakshmi puja. Which goddess is worshipped instead?","options":["Saraswati","Durga","Kali","Parvati"],"answer":2,"answerText":"Kali","reveal":"Kali Puja."},
-{"id":"4.8","category":"diwali","mode":"adult","region":"india","live":true,"type":"text","question":"Jains also celebrate Diwali. What does the day mark for them?","options":["Birth of Mahavira","Mahavira attaining nirvana (moksha)","Mahavira's first sermon","The founding of Jainism"],"answer":1,"answerText":"Mahavira's nirvana","reveal":"527 BCE by tradition."},
-{"id":"4.9","category":"diwali","mode":"adult","region":"us","live":true,"type":"text","question":"In 2016 the US Postal Service issued a Diwali \"Forever\" stamp. What did it show?","options":["Lord Ganesha","A lit diya on a gold background","A rangoli","Fireworks over the Taj Mahal"],"answer":1,"answerText":"A lit diya","story":{"title":"The 2016 Diwali Forever stamp","image":"img/4.9-usps-diwali-stamp.jpg","lines":["Issued 5 October 2016 — the first US stamp for Diwali, after a decade-long campaign."]}},
-{"id":"4.10","category":"diwali","mode":"hard-kids","region":null,"live":true,"type":"text","question":"Why does the date of Diwali change every year on the Western calendar?","options":["It follows the monsoon","It's the new-moon night of a lunar month, so it drifts against the solar calendar","The government picks it","It follows the autumn equinox"],"answer":1,"answerText":"New-moon night of a lunar month","reveal":"Aaso amas."},
-{"id":"4.11","category":"diwali","mode":"hard-adult","region":null,"live":true,"type":"text","question":"Which US president was the first to personally light a diya at a White House Diwali celebration, in 2009?","options":["George W. Bush","Barack Obama","Bill Clinton","Joe Biden"],"answer":1,"answerText":"Barack Obama","reveal":"The White House had hosted Diwali since 2003, but Obama was the first president to attend and light the lamp himself."},
-
-{"id":"5.1","category":"celebrity","mode":"kids","region":"us","live":true,"type":"image","question":"Who is this?","media":{"src":"img/5.1-rock-then.jpg","alt":"1990s photo: fanny pack and black turtleneck"},"options":["John Cena","Vin Diesel","Dwayne \"The Rock\" Johnson","Jason Momoa"],"optionMedia":["img/5.1-opt-cena.jpg","img/5.1-opt-diesel.jpg","img/5.1-opt-rock.jpg","img/5.1-opt-momoa.jpg"],"answer":2,"answerText":"The Rock"},
-{"id":"5.2","category":"celebrity","mode":"kids","region":"us","live":true,"type":"text","question":"She grew up on a Christmas-tree farm in Pennsylvania, moved to Nashville at 14, and her Eras Tour was the first to pass a billion dollars.","options":["Taylor Swift","Sabrina Carpenter","Billie Eilish","Olivia Rodrigo"],"optionMedia":["img/5.2-opt-swift.jpg","img/5.2-opt-carpenter.jpg","img/5.2-opt-eilish.jpg","img/5.2-opt-rodrigo.jpg"],"answer":0,"answerText":"Taylor Swift"},
-{"id":"5.3","category":"celebrity","mode":"kids","region":"india","live":true,"type":"image","question":"Who is this? Clue: once rejected by All India Radio for his voice.","media":{"src":"img/5.3-bachchan-then.jpg","alt":"Lean early-1970s photo, before Zanjeer"},"options":["Dharmendra","Amitabh Bachchan","Rajesh Khanna","Shashi Kapoor"],"optionMedia":["img/5.3-opt-dharmendra.jpg","img/5.3-opt-bachchan.jpg","img/5.3-opt-khanna.jpg","img/5.3-opt-kapoor.jpg"],"answer":1,"answerText":"Amitabh Bachchan"},
-{"id":"5.4","category":"celebrity","mode":"kids","region":"india","live":true,"type":"image","question":"Who is this Delhi schoolboy in cricket whites?","media":{"src":"img/5.4-kohli-then.jpg","alt":"Chubby-cheeked schoolboy in cricket whites"},"options":["Rohit Sharma","Virat Kohli","MS Dhoni","Hardik Pandya"],"optionMedia":["img/5.4-opt-rohit.jpg","img/5.4-opt-kohli.jpg","img/5.4-opt-dhoni.jpg","img/5.4-opt-pandya.jpg"],"answer":1,"answerText":"Virat Kohli"},
-{"id":"5.5","category":"celebrity","mode":"adult","region":"us","live":true,"type":"image","question":"Who is this young Nashville TV news anchor from the 1970s?","media":{"src":"img/5.5-oprah-then.jpg","alt":"Young TV news anchor, 1970s"},"options":["Whoopi Goldberg","Oprah Winfrey","Michelle Obama","Tyra Banks"],"optionMedia":["img/5.5-opt-goldberg.jpg","img/5.5-opt-oprah.jpg","img/5.5-opt-obama.jpg","img/5.5-opt-banks.jpg"],"answer":1,"answerText":"Oprah Winfrey"},
-{"id":"5.6","category":"celebrity","mode":"adult","region":"us","live":true,"type":"image","question":"Who is this, in a cramped office in 1999?","media":{"src":"img/5.6-bezos-then.jpg","alt":"1999 office with a spray-painted amazon.com sign"},"options":["Bill Gates","Steve Jobs","Jeff Bezos","Larry Page"],"optionMedia":["img/5.6-opt-gates.jpg","img/5.6-opt-jobs.jpg","img/5.6-opt-bezos.jpg","img/5.6-opt-page.jpg"],"answer":2,"answerText":"Jeff Bezos"},
-{"id":"5.7","category":"celebrity","mode":"adult","region":"india","live":true,"type":"image","question":"Who is this curly-haired 14-year-old at Shivaji Park, Mumbai?","media":{"src":"img/5.7-tendulkar-then.jpg","alt":"Curly-haired teenager at Shivaji Park"},"options":["Sunil Gavaskar","Sourav Ganguly","Sachin Tendulkar","Rahul Dravid"],"optionMedia":["img/5.7-opt-gavaskar.jpg","img/5.7-opt-ganguly.jpg","img/5.7-opt-tendulkar.jpg","img/5.7-opt-dravid.jpg"],"answer":2,"answerText":"Sachin Tendulkar"},
-{"id":"5.8","category":"celebrity","mode":"adult","region":"india","live":true,"type":"image","question":"Who is this Chennai college student from the 1970s? Clue: played guitar in an all-girl rock band, later ran PepsiCo for 12 years.","media":{"src":"img/5.8-nooyi-then.jpg","alt":"Chennai college student, 1970s"},"options":["Indra Nooyi","Kiran Mazumdar-Shaw","Chanda Kochhar","Padmasree Warrior"],"optionMedia":["img/5.8-opt-nooyi.jpg","img/5.8-opt-mazumdarshaw.jpg","img/5.8-opt-kochhar.jpg","img/5.8-opt-warrior.jpg"],"answer":0,"answerText":"Indra Nooyi"},
-{"id":"5.9","category":"celebrity","mode":"hard-kids","region":null,"live":true,"type":"image","question":"Who is this teenager in Pretoria, South Africa, in the 1980s? Clue: sold his first video game at 12, now runs Tesla and SpaceX.","media":{"src":"img/5.9-musk-then.jpg","alt":"Teenager in Pretoria, 1980s"},"options":["Mark Zuckerberg","Elon Musk","Sam Altman","Jeff Bezos"],"optionMedia":["img/5.9-opt-zuckerberg.jpg","img/5.9-opt-musk.jpg","img/5.9-opt-altman.jpg","img/5.9-opt-bezos.jpg"],"answer":1,"answerText":"Elon Musk"},
-{"id":"5.10","category":"celebrity","mode":"hard-adult","region":null,"live":true,"type":"image","question":"Who is this young man from the early 1980s? Clue: left Stanford's MBA program in 1981 to join his father's polyester business.","media":{"src":"img/5.10-ambani-then.jpg","alt":"Young man, early 1980s"},"options":["Anand Mahindra","Mukesh Ambani","Gautam Adani","Ratan Tata"],"optionMedia":["img/5.10-opt-mahindra.jpg","img/5.10-opt-ambani.jpg","img/5.10-opt-adani.jpg","img/5.10-opt-tata.jpg"],"answer":1,"answerText":"Mukesh Ambani"},
-{"id":"5.S1","category":"celebrity","mode":"kids","region":"india","live":false,"type":"text","question":"He grew up in Chennai in a two-room flat with no telephone until he was 12, studied at IIT Kharagpur, and now runs Google.","options":["Satya Nadella","Sundar Pichai","Arvind Krishna","Shantanu Narayen"],"optionMedia":["img/5.S1-opt-nadella.jpg","img/5.S1-opt-pichai.jpg","img/5.S1-opt-krishna.jpg","img/5.S1-opt-narayen.jpg"],"answer":1,"answerText":"Sundar Pichai"},
-{"id":"5.S2","category":"celebrity","mode":"adult","region":"india","live":false,"type":"image","question":"Who is this teenager from Bareilly, before Miss World 2000?","media":{"src":"img/5.S2-priyanka-then.jpg","alt":"Teenager in Bareilly, late 1990s"},"options":["Deepika Padukone","Aishwarya Rai","Priyanka Chopra","Alia Bhatt"],"optionMedia":["img/5.S2-opt-padukone.jpg","img/5.S2-opt-rai.jpg","img/5.S2-opt-chopra.jpg","img/5.S2-opt-bhatt.jpg"],"answer":2,"answerText":"Priyanka Chopra"},
-
-{"id":"6.1","category":"riddles","mode":"kids","region":"us","live":true,"type":"riddle","question":"What has keys but can't open a single lock?","hint":"It's related to music.","answer":"A piano","answerText":"A piano"},
-{"id":"6.2","category":"riddles","mode":"kids","region":"us","live":true,"type":"riddle","question":"I have cities but no houses, forests but no trees, and water but no fish. What am I?","hint":"You unfold me, or open me on your phone.","answer":"A map","answerText":"A map"},
-{"id":"6.3","category":"riddles","mode":"kids","region":"india","live":true,"type":"riddle","question":"Five diyas are burning on the windowsill on Diwali night. A gust blows out two. How many diyas are left in the morning?","hint":"What happens to a diya that keeps burning all night?","answer":"Two","answerText":"Two","reveal":"The two that blew out — the other three burned down to nothing."},
-{"id":"6.4","category":"riddles","mode":"kids","region":"india","live":true,"type":"riddle","question":"I go up when the rain comes down. What am I?","hint":"You carry me in the monsoon.","answer":"An umbrella","answerText":"An umbrella (chhatri)"},
-{"id":"6.5","category":"riddles","mode":"adult","region":"us","live":true,"type":"riddle","question":"What can travel all the way around the world while staying in a corner?","hint":"It's on an envelope.","answer":"A postage stamp","answerText":"A postage stamp"},
-{"id":"6.6","category":"riddles","mode":"adult","region":"us","live":true,"type":"riddle","question":"I have a neck but no head, and two arms but no hands. What am I?","hint":"You're probably wearing one.","answer":"A shirt","answerText":"A shirt"},
-{"id":"6.7","category":"riddles","mode":"adult","region":"india","live":true,"type":"riddle","question":"Ukhana: \"Ek raja ni anokhi rani, puchhdi thi pive paani.\" — A king's unusual queen, who drinks water through her tail.","hint":"She's lit tonight.","answer":"A diya (divo)","answerText":"A diya / divo","reveal":"It drinks oil through its wick."},
-{"id":"6.8","category":"riddles","mode":"adult","region":"india","live":true,"type":"riddle","question":"\"Ek thaal moti se bhara, sabke sir par aundha dhara.\" — A plate full of pearls, turned upside down over everyone's head.","hint":"Look up after dark.","answer":"The night sky with stars","answerText":"The night sky with stars"},
-{"id":"6.9","category":"riddles","mode":"hard-kids","region":null,"live":true,"type":"riddle","question":"What can fill a whole room but takes up no space at all?","hint":"Think about what this festival celebrates.","answer":"Light","answerText":"Light"},
-{"id":"6.10","category":"riddles","mode":"hard-adult","region":null,"live":true,"type":"riddle","question":"I am taken from a mine and shut up in a wooden case, from which I am never released, and yet almost everyone uses me. What am I?","hint":"You sharpen me.","answer":"Pencil lead","answerText":"Pencil lead (graphite)"},
-{"id":"6.S1","category":"riddles","mode":"kids","region":"us","live":false,"type":"riddle","question":"What has hands but cannot clap?","hint":"It's on the wall.","answer":"A clock","answerText":"A clock"},
-{"id":"6.S2","category":"riddles","mode":"adult","region":"us","live":false,"type":"riddle","question":"The more of me there is, the less you can see. What am I?","hint":"The opposite of tonight.","answer":"Darkness","answerText":"Darkness"},
-
-{"id":"7.1","category":"food","mode":"kids","region":"us","live":true,"type":"text","question":"Which fast-food chain is famously closed every Sunday?","options":["Chick-fil-A","Popeyes","Chipotle","Panera"],"answer":0,"answerText":"Chick-fil-A"},
-{"id":"7.2","category":"food","mode":"kids","region":"us","live":true,"type":"text","question":"Sweet Frog, the frozen-yogurt chain founded in Richmond, says FROG stands for what?","options":["Fully Rely On God","Frozen, Really Oh-so Good","Fruit, Rolls, Oats & Granola","Fresh, Real, Organic, Good"],"answer":0,"answerText":"Fully Rely On God","reveal":"Founded 2009, Short Pump."},
-{"id":"7.3","category":"food","mode":"kids","region":"india","live":true,"type":"image","question":"Name the circled sweet.","media":{"src":"img/7.3-mithai-plate.jpg","alt":"Mithai plate with one diamond-shaped silver-topped sweet circled"},"options":["Barfi","Kaju katli","Peda","Mysore pak"],"answer":1,"answerText":"Kaju katli"},
-{"id":"7.4","category":"food","mode":"kids","region":"india","live":true,"type":"image","question":"What is this?","media":{"src":"img/7.4-vada-pav.jpg","alt":"Fritter in a bun with green chutney and a fried chilli"},"options":["Pav bhaji","Vada pav","Dabeli","Misal pav"],"answer":1,"answerText":"Vada pav","reveal":"Mumbai's \"Bombay burger\". Dabeli is the look-alike trap."},
-{"id":"7.5","category":"food","mode":"adult","region":"us","live":true,"type":"text","question":"By law, a whiskey must be at least 51% of which grain to be called bourbon?","options":["Rye","Barley","Wheat","Corn"],"answer":3,"answerText":"Corn"},
-{"id":"7.6","category":"food","mode":"adult","region":"us","live":true,"type":"text","question":"Which Virginia town gives its name to America's most famous country ham?","options":["Williamsburg","Smithfield","Lynchburg","Culpeper"],"answer":1,"answerText":"Smithfield","reveal":"Isle of Wight County; Virginia law once required the hogs be peanut-fed."},
-{"id":"7.7","category":"food","mode":"adult","region":"india","live":true,"type":"text","question":"Which spice is the most expensive in the world by weight?","options":["Cardamom","Vanilla","Saffron (kesar)","Cloves"],"answer":2,"answerText":"Saffron","reveal":"Hand-picked stigmas; ~150,000 flowers per kilo. India's comes from Kashmir."},
-{"id":"7.8","category":"food","mode":"adult","region":"india","live":true,"type":"text","question":"Dabeli, the Kutchi street snack, was invented in which Kutch town in the 1960s?","options":["Bhuj","Mandvi","Gandhidham","Anjar"],"answer":1,"answerText":"Mandvi","reveal":"Credited to Keshavji Gabha Chudasama, who sold it for one aana."},
-{"id":"7.9","category":"food","mode":"hard-kids","region":null,"live":true,"type":"text","question":"Chocolate is made from the beans of which tree?","options":["Coffee","Cacao","Carob","Vanilla"],"answer":1,"answerText":"Cacao","reveal":"The beans are fermented, dried and roasted; the Aztecs drank it bitter."},
-{"id":"7.10","category":"food","mode":"hard-adult","region":null,"live":true,"type":"text","question":"West Bengal fought a years-long legal battle with which neighbouring state over who invented the rasgulla?","options":["Odisha","Bihar","Jharkhand","Assam"],"answer":0,"answerText":"Odisha","story":{"title":"The rasgulla war","lines":["Odisha: born centuries ago in Puri, offered to Goddess Lakshmi at the Jagannath temple on Niladri Bije — the Pahala rasgulla.","West Bengal: Kolkata confectioner Nobin Chandra Das invented the spongy modern version in 1868.","Both won Geographical Indication tags — \"Banglar Rasogolla\" (2017) and \"Odisha Rasagola\" (2019). Officially, both are right."]}},
-{"id":"7.S1","category":"food","mode":"kids","region":"india","live":false,"type":"image","question":"What is this sweet?","media":{"src":"img/7.S1-jalebi.jpg","alt":"A plate of orange spiral sweets"},"options":["Imarti","Jalebi","Chakli","Fafda"],"answer":1,"answerText":"Jalebi","reveal":"Imarti is the thicker, flower-shaped cousin; chakli is savoury."},
-{"id":"7.S2","category":"food","mode":"adult","region":"india","live":false,"type":"text","question":"Which world-famous dish is credited to Delhi's Moti Mahal restaurant in the years after Partition?","options":["Biryani","Chole bhature","Butter chicken","Rogan josh"],"answer":2,"answerText":"Butter chicken","reveal":"Invented to use up leftover tandoori chicken."},
-
-{"id":"8.1","category":"sports","mode":"kids","region":"us","live":true,"type":"text","question":"The 2026 FIFA World Cup was hosted by the US, Canada and Mexico. Who won the final in New Jersey?","options":["Argentina","France","Spain","England"],"answer":2,"answerText":"Spain","reveal":"1–0 over Argentina in extra time; Ferran Torres."},
-{"id":"8.2","category":"sports","mode":"kids","region":"us","live":true,"type":"text","question":"How many Grand Slam tennis tournaments are played each year?","options":["3","4","5","6"],"answer":1,"answerText":"Four","reveal":"Australian Open, French Open, Wimbledon, US Open."},
-{"id":"8.3","category":"sports","mode":"kids","region":"india","live":true,"type":"text","question":"Neeraj Chopra won India's first-ever Olympic gold in athletics, at Tokyo in 2021. In which event?","options":["100 m sprint","Long jump","Javelin throw","Marathon"],"answer":2,"answerText":"Javelin"},
-{"id":"8.4","category":"sports","mode":"kids","region":"india","live":true,"type":"text","question":"P.V. Sindhu, a two-time Olympic medallist, plays which sport?","options":["Tennis","Badminton","Table tennis","Squash"],"answer":1,"answerText":"Badminton"},
-{"id":"8.5","category":"sports","mode":"adult","region":"us","live":true,"type":"text","question":"Who won this year's Super Bowl (LX, February 2026)?","options":["New England Patriots","Seattle Seahawks","Kansas City Chiefs","Philadelphia Eagles"],"answer":1,"answerText":"Seattle Seahawks","story":{"title":"Super Bowl LX","lines":["Seahawks 29–13 over the Patriots at Levi's Stadium.","Kenneth Walker III was MVP. Bad Bunny did halftime."]}},
-{"id":"8.6","category":"sports","mode":"adult","region":"us","live":true,"type":"text","question":"How long is a marathon?","options":["20 miles","24.5 miles","26.2 miles","30 miles"],"answer":2,"answerText":"26.2 miles","reveal":"42.195 km — the odd distance dates to the 1908 London Olympics."},
-{"id":"8.7","category":"sports","mode":"adult","region":"india","live":true,"type":"text","question":"India won the 2026 T20 World Cup at home in Ahmedabad — its third title. Who did India beat in the final?","options":["Australia","South Africa","New Zealand","England"],"answer":2,"answerText":"New Zealand","reveal":"By 96 runs; Bumrah 4 for 15."},
-{"id":"8.8","category":"sports","mode":"adult","region":"india","live":true,"type":"text","question":"Who won India's first-ever individual Olympic gold medal, in shooting at Beijing 2008?","options":["Leander Paes","Abhinav Bindra","Rajyavardhan Rathore","Sushil Kumar"],"answer":1,"answerText":"Abhinav Bindra","reveal":"10 m air rifle."},
-{"id":"8.9","category":"sports","mode":"hard-kids","region":null,"live":true,"type":"text","question":"Which country has hosted the Summer Olympics the most times?","options":["United Kingdom","France","United States","Japan"],"answer":2,"answerText":"United States","reveal":"1904 St. Louis, 1932 and 1984 Los Angeles, 1996 Atlanta — and Los Angeles again in 2028."},
-{"id":"8.10","category":"sports","mode":"hard-adult","region":null,"live":true,"type":"chart","question":"These are the five highest run-scorers in all international cricket combined. Which bar is Sachin Tendulkar?","chart":{"unit":"runs","bars":[{"label":"Ricky Ponting","value":27483},{"label":"Sachin Tendulkar","value":34357},{"label":"Jacques Kallis","value":25534},{"label":"Virat Kohli","value":28215},{"label":"Kumar Sangakkara","value":28016}]},"answer":"The tallest bar","answerText":"The tallest — 34,357 runs","reveal":"Kohli's total is as of mid-2026 and still moving.","story":{"title":"Most international runs, all formats","graphic":"run-chart","lines":["Tendulkar 34,357 · Kohli 28,215 (still playing) · Sangakkara 28,016 · Ponting 27,483 · Kallis 25,534."]}},
-{"id":"8.S1","category":"sports","mode":"kids","region":"us","live":false,"type":"text","question":"How many players from one team are on a basketball court at the same time?","options":["5","6","7","11"],"answer":0,"answerText":"Five","reveal":"Ten on court in all; up to 13 on the bench."},
-{"id":"8.S2","category":"sports","mode":"adult","region":"india","live":false,"type":"text","question":"Which team won the IPL in 2026, defending its 2025 title?","options":["Mumbai Indians","Chennai Super Kings","Royal Challengers Bengaluru","Gujarat Titans"],"answer":2,"answerText":"Royal Challengers Bengaluru","reveal":"Beat Gujarat Titans in the final."},
-{"id":"8.S3","category":"sports","mode":"adult","region":"us","live":false,"type":"text","question":"In American football, how many points is a touchdown worth — before the extra point?","options":["3","6","7","10"],"answer":1,"answerText":"Six"},
-
-{"id":"9.1","category":"growing-up","mode":"kids","region":"us","live":true,"type":"text","question":"In Minecraft, which green creature sneaks up on you and explodes?","options":["Zombie","Enderman","Creeper","Skeleton"],"answer":2,"answerText":"Creeper"},
-{"id":"9.2","category":"growing-up","mode":"kids","region":"us","live":true,"type":"video","question":"Name this song.","video":{"youtubeId":"XqZsoesa55w","start":0},"options":["Baby Shark","Wheels on the Bus","Johny Johny Yes Papa","Cocomelon theme"],"answer":0,"answerText":"Baby Shark","reveal":"One of the most-viewed videos in YouTube history."},
-{"id":"9.3","category":"growing-up","mode":"kids","region":"india","live":true,"type":"text","question":"Which actor played the Indian TV superhero Shaktimaan in the 1990s?","options":["Mukesh Khanna","Shekhar Suman","Jackie Shroff","Arun Govil"],"answer":0,"answerText":"Mukesh Khanna"},
-{"id":"9.4","category":"growing-up","mode":"kids","region":"india","live":true,"type":"text","question":"What does the \"G\" in Parle-G biscuits originally stand for?","options":["Glucose","Gold","Great","Gujarat"],"answer":0,"answerText":"Glucose","reveal":"Launched as Parle Gluco in 1938; the girl on the packet has been there since the 1960s."},
-{"id":"9.5","category":"growing-up","mode":"adult","region":"us","live":true,"type":"text","question":"In what year did Apple release the first iPhone?","options":["2005","2007","2009","2010"],"answer":1,"answerText":"2007"},
-{"id":"9.6","category":"growing-up","mode":"adult","region":"us","live":true,"type":"text","question":"Which sitcom about six friends in New York ran from 1994 to 2004?","options":["Seinfeld","Frasier","Friends","How I Met Your Mother"],"answer":2,"answerText":"Friends"},
-{"id":"9.7","category":"growing-up","mode":"adult","region":"india","live":true,"type":"text","question":"Who played Lord Rama in Ramanand Sagar's Ramayan on Doordarshan in 1987?","options":["Nitish Bharadwaj","Arun Govil","Sunil Lahri","Dara Singh"],"answer":1,"answerText":"Arun Govil","reveal":"Streets emptied every Sunday morning."},
-{"id":"9.8","category":"growing-up","mode":"adult","region":"india","live":true,"type":"text","question":"Which little hatchback, launched in 1983, became India's first \"people's car\"?","options":["Hindustan Ambassador","Premier Padmini","Maruti 800","Tata Indica"],"answer":2,"answerText":"Maruti 800"},
-{"id":"9.9","category":"growing-up","mode":"hard-kids","region":null,"live":true,"type":"text","question":"The very first video ever uploaded to YouTube, in 2005, was 19 seconds long and shot at a zoo. What was its title?","options":["\"Hello World\"","\"Me at the zoo\"","\"First upload\"","\"Charlie bit my finger\""],"answer":1,"answerText":"\"Me at the zoo\"","reveal":"Co-founder Jawed Karim in front of the elephants at the San Diego Zoo."},
-{"id":"9.10","category":"growing-up","mode":"hard-adult","region":null,"live":true,"type":"text","question":"Shah Rukh Khan's acting debut was as Abhimanyu Rai in which 1989 Doordarshan series?","options":["Circus","Fauji","Wagle Ki Duniya","Nukkad"],"answer":1,"answerText":"Fauji"},
-{"id":"9.S1","category":"growing-up","mode":"kids","region":"us","live":false,"type":"text","question":"Which app's logo is a white ghost on a yellow background?","options":["Snapchat","TikTok","Discord","BeReal"],"answer":0,"answerText":"Snapchat"},
-{"id":"9.S2","category":"growing-up","mode":"adult","region":"india","live":false,"type":"text","question":"Which 1990s TV quiz show, hosted by Derek O'Brien, was sponsored by a malt drink?","options":["Kaun Banega Crorepati","Bournvita Quiz Contest","Mastermind India","Quiz Time"],"answer":1,"answerText":"Bournvita Quiz Contest"}
+  {
+    "id": "1.1",
+    "category": "geography",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "Which US state is the second-largest by area, after Alaska?",
+    "options": [
+      "Texas",
+      "California",
+      "Montana",
+      "New Mexico"
+    ],
+    "answer": 0,
+    "answerText": "Texas",
+    "reveal": "Alaska 665,000 sq mi · Texas 269,000 · California 164,000 · Montana 147,000 · New Mexico 122,000"
+  },
+  {
+    "id": "1.2",
+    "category": "geography",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "Which river forms most of the border between Texas and Mexico?",
+    "options": [
+      "Colorado",
+      "Rio Grande",
+      "Mississippi",
+      "Brazos"
+    ],
+    "answer": 1,
+    "answerText": "Rio Grande"
+  },
+  {
+    "id": "1.3",
+    "category": "geography",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "What is the capital city of India?",
+    "options": [
+      "Mumbai",
+      "Kolkata",
+      "New Delhi",
+      "Bengaluru"
+    ],
+    "answer": 2,
+    "answerText": "New Delhi"
+  },
+  {
+    "id": "1.4",
+    "category": "geography",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Which mountain range runs along India's northern border?",
+    "media": {
+      "src": "img/1.4-himalayas.jpg",
+      "alt": "Snow-covered mountain range seen from the air"
+    },
+    "options": [
+      "Western Ghats",
+      "Himalayas",
+      "Andes",
+      "Alps"
+    ],
+    "answer": 1,
+    "answerText": "Himalayas"
+  },
+  {
+    "id": "1.5",
+    "category": "geography",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "Which is the only US state that borders exactly one other state?",
+    "options": [
+      "Maine",
+      "Florida",
+      "Alaska",
+      "Washington"
+    ],
+    "answer": 0,
+    "answerText": "Maine",
+    "reveal": "Its only neighbour is New Hampshire."
+  },
+  {
+    "id": "1.6",
+    "category": "geography",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "Which US state has the largest population?",
+    "options": [
+      "Texas",
+      "Florida",
+      "New York",
+      "California"
+    ],
+    "answer": 3,
+    "answerText": "California",
+    "reveal": "2024 est.: California ~39.4M · Texas ~31.3M · Florida ~23.4M · New York ~19.9M"
+  },
+  {
+    "id": "1.7",
+    "category": "geography",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Which Indian state has the longest coastline?",
+    "options": [
+      "Tamil Nadu",
+      "Maharashtra",
+      "Gujarat",
+      "Andhra Pradesh"
+    ],
+    "answer": 2,
+    "answerText": "Gujarat",
+    "reveal": "Gujarat ~1,600 km · Tamil Nadu ~1,075 · Andhra Pradesh ~975 · Maharashtra ~720"
+  },
+  {
+    "id": "1.8",
+    "category": "geography",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Which Indian state has the smallest population?",
+    "options": [
+      "Goa",
+      "Sikkim",
+      "Mizoram",
+      "Arunachal Pradesh"
+    ],
+    "answer": 1,
+    "answerText": "Sikkim",
+    "reveal": "2024 proj.: Sikkim ~0.7M · Mizoram ~1.3M · Goa ~1.6M · Arunachal Pradesh ~1.7M"
+  },
+  {
+    "id": "1.9",
+    "category": "geography",
+    "mode": "hard-kids",
+    "region": null,
+    "live": true,
+    "type": "text",
+    "question": "How many states does India have?",
+    "options": [
+      "22",
+      "25",
+      "28",
+      "32"
+    ],
+    "answer": 2,
+    "answerText": "28",
+    "reveal": "Plus 8 union territories. It was 29 until Jammu & Kashmir became a union territory in 2019."
+  },
+  {
+    "id": "1.10",
+    "category": "geography",
+    "mode": "hard-adult",
+    "region": null,
+    "live": true,
+    "type": "text",
+    "question": "India shares its longest land border with which country?",
+    "options": [
+      "China",
+      "Pakistan",
+      "Bangladesh",
+      "Nepal"
+    ],
+    "answer": 2,
+    "answerText": "Bangladesh",
+    "reveal": "Bangladesh 4,097 km · China 3,488 · Pakistan 3,323 · Nepal 1,751"
+  },
+  {
+    "id": "1.S1",
+    "category": "geography",
+    "mode": "kids",
+    "region": "india",
+    "live": false,
+    "type": "map",
+    "question": "Which Indian state is this?",
+    "options": [
+      "Rajasthan",
+      "Gujarat",
+      "Maharashtra",
+      "Kerala"
+    ],
+    "answer": 1,
+    "answerText": "Gujarat",
+    "story": {
+      "title": "Gujarat",
+      "graphic": "map-gujarat",
+      "lines": [
+        "India's westernmost state, with the country's longest coastline.",
+        "Home turf for most of this room."
+      ]
+    }
+  },
+  {
+    "id": "1.S2",
+    "category": "geography",
+    "mode": "adult",
+    "region": "us",
+    "live": false,
+    "type": "text",
+    "question": "Which US state has the most coastline?",
+    "options": [
+      "Florida",
+      "California",
+      "Alaska",
+      "Hawaii"
+    ],
+    "answer": 2,
+    "answerText": "Alaska",
+    "reveal": "Tidal shoreline: Alaska ~34,000 mi · Florida ~8,400 · California ~3,400 · Hawaii ~1,050"
+  },
+  {
+    "id": "2.1",
+    "category": "movies",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "Which film was the biggest hit at the US box office in 2026?",
+    "options": [
+      "Spider-Man: Brand New Day",
+      "The Super Mario Galaxy Movie",
+      "Toy Story 5",
+      "Michael"
+    ],
+    "optionMedia": [
+      "img/2.1-opt-spiderman.jpg",
+      "img/2.1-opt-mario.jpg",
+      "img/2.1-opt-toystory5.jpg",
+      "img/2.1-opt-michael.jpg"
+    ],
+    "answer": 0,
+    "answerText": "Spider-Man: Brand New Day",
+    "reveal": "Domestic gross (Box Office Mojo, 29 Oct 2026): Spider-Man $958.8M · Toy Story 5 $480.3M · Super Mario Galaxy $429.8M · Michael $372.3M"
+  },
+  {
+    "id": "2.2",
+    "category": "movies",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "emoji",
+    "question": "🦁👑🌅",
+    "options": [
+      "The Lion King",
+      "Madagascar",
+      "Zootopia",
+      "The Jungle Book"
+    ],
+    "optionMedia": [
+      "img/2.2-opt-lionking.jpg",
+      "img/2.2-opt-madagascar.jpg",
+      "img/2.2-opt-zootopia.jpg",
+      "img/2.2-opt-junglebook.jpg"
+    ],
+    "answer": 0,
+    "answerText": "The Lion King",
+    "reveal": "Guess the movie from emojis."
+  },
+  {
+    "id": "2.3",
+    "category": "movies",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Which 2026 Ranveer Singh sequel became the second-highest-grossing Bollywood film ever worldwide, behind only Dangal?",
+    "options": [
+      "Border 2",
+      "Don 3",
+      "Dhurandhar: The Revenge",
+      "Pathaan 2"
+    ],
+    "optionMedia": [
+      "img/2.3-opt-border2.jpg",
+      "img/2.3-opt-don3.jpg",
+      "img/2.3-opt-dhurandhar2.jpg",
+      "img/2.3-opt-pathaan2.jpg"
+    ],
+    "answer": 2,
+    "answerText": "Dhurandhar: The Revenge"
+  },
+  {
+    "id": "2.4",
+    "category": "movies",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "The song \"Naatu Naatu\" won an Oscar in 2023. Which film is it from?",
+    "options": [
+      "RRR",
+      "Baahubali",
+      "Pushpa",
+      "KGF"
+    ],
+    "optionMedia": [
+      "img/2.4-opt-rrr.jpg",
+      "img/2.4-opt-baahubali.jpg",
+      "img/2.4-opt-pushpa.jpg",
+      "img/2.4-opt-kgf.jpg"
+    ],
+    "answer": 0,
+    "answerText": "RRR"
+  },
+  {
+    "id": "2.5",
+    "category": "movies",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "Which 2026 biopic became the highest-grossing musician biopic ever, passing Bohemian Rhapsody?",
+    "options": [
+      "Elvis",
+      "Michael",
+      "Bob Marley: One Love",
+      "A Complete Unknown"
+    ],
+    "optionMedia": [
+      "img/2.5-opt-elvis.jpg",
+      "img/2.5-opt-michael.jpg",
+      "img/2.5-opt-onelove.jpg",
+      "img/2.5-opt-completeunknown.jpg"
+    ],
+    "answer": 1,
+    "answerText": "Michael"
+  },
+  {
+    "id": "2.6",
+    "category": "movies",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "The Devil Wears Prada 2 came out in 2026. Which real-life magazine editor is Miranda Priestly widely believed to be modelled on?",
+    "options": [
+      "Anna Wintour",
+      "Tina Brown",
+      "Diana Vreeland",
+      "Grace Coddington"
+    ],
+    "optionMedia": [
+      "img/2.6-opt-wintour.jpg",
+      "img/2.6-opt-brown.jpg",
+      "img/2.6-opt-vreeland.jpg",
+      "img/2.6-opt-coddington.jpg"
+    ],
+    "answer": 0,
+    "answerText": "Anna Wintour",
+    "reveal": "Editor-in-chief of Vogue."
+  },
+  {
+    "id": "2.7",
+    "category": "movies",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Which was the first Indian film nominated for the Academy Award for Best Foreign Language Film?",
+    "options": [
+      "Pather Panchali",
+      "Mother India",
+      "Mughal-e-Azam",
+      "Lagaan"
+    ],
+    "optionMedia": [
+      "img/2.7-opt-patherpanchali.jpg",
+      "img/2.7-opt-motherindia.jpg",
+      "img/2.7-opt-mughaleazam.jpg",
+      "img/2.7-opt-lagaan.jpg"
+    ],
+    "answer": 1,
+    "answerText": "Mother India",
+    "reveal": "1957 — it lost by a single vote."
+  },
+  {
+    "id": "2.8",
+    "category": "movies",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Dilip Kumar holds the record for most Filmfare Best Actor awards with eight. Which actor shares that record?",
+    "options": [
+      "Amitabh Bachchan",
+      "Shah Rukh Khan",
+      "Aamir Khan",
+      "Dharmendra"
+    ],
+    "optionMedia": [
+      "img/2.8-opt-bachchan.jpg",
+      "img/2.8-opt-srk.jpg",
+      "img/2.8-opt-aamir.jpg",
+      "img/2.8-opt-dharmendra.jpg"
+    ],
+    "answer": 1,
+    "answerText": "Shah Rukh Khan"
+  },
+  {
+    "id": "2.9",
+    "category": "movies",
+    "mode": "hard-kids",
+    "region": null,
+    "live": true,
+    "type": "text",
+    "question": "What was the first full-length movie made entirely with computer animation, released in 1995?",
+    "options": [
+      "Shrek",
+      "Toy Story",
+      "Finding Nemo",
+      "The Incredibles"
+    ],
+    "optionMedia": [
+      "img/2.9-opt-shrek.jpg",
+      "img/2.9-opt-toystory.jpg",
+      "img/2.9-opt-nemo.jpg",
+      "img/2.9-opt-incredibles.jpg"
+    ],
+    "answer": 1,
+    "answerText": "Toy Story",
+    "reveal": "Pixar's first feature."
+  },
+  {
+    "id": "2.10",
+    "category": "movies",
+    "mode": "hard-adult",
+    "region": null,
+    "live": true,
+    "type": "text",
+    "question": "What was India's first full-length talkie film, released in 1931?",
+    "options": [
+      "Raja Harishchandra",
+      "Alam Ara",
+      "Achhut Kanya",
+      "Devdas"
+    ],
+    "optionMedia": [
+      "img/2.10-opt-rajaharishchandra.jpg",
+      "img/2.10-opt-alamara.jpg",
+      "img/2.10-opt-achhutkanya.jpg",
+      "img/2.10-opt-devdas.jpg"
+    ],
+    "answer": 1,
+    "answerText": "Alam Ara",
+    "reveal": "Raja Harishchandra (1913) was the first silent feature."
+  },
+  {
+    "id": "2.S1",
+    "category": "movies",
+    "mode": "kids",
+    "region": "india",
+    "live": false,
+    "type": "emoji",
+    "question": "3️⃣🤪🎓",
+    "options": [
+      "3 Idiots",
+      "Taare Zameen Par",
+      "Munna Bhai M.B.B.S.",
+      "PK"
+    ],
+    "optionMedia": [
+      "img/2.S1-opt-3idiots.jpg",
+      "img/2.S1-opt-tzp.jpg",
+      "img/2.S1-opt-munnabhai.jpg",
+      "img/2.S1-opt-pk.jpg"
+    ],
+    "answer": 0,
+    "answerText": "3 Idiots",
+    "reveal": "Guess the movie from emojis."
+  },
+  {
+    "id": "2.S2",
+    "category": "movies",
+    "mode": "adult",
+    "region": "us",
+    "live": false,
+    "type": "text",
+    "question": "Which film won the very first Academy Award for Best Picture, in 1929?",
+    "options": [
+      "Wings",
+      "Sunrise",
+      "The Jazz Singer",
+      "Metropolis"
+    ],
+    "optionMedia": [
+      "img/2.S2-opt-wings.jpg",
+      "img/2.S2-opt-sunrise.jpg",
+      "img/2.S2-opt-jazzsinger.jpg",
+      "img/2.S2-opt-metropolis.jpg"
+    ],
+    "answer": 0,
+    "answerText": "Wings"
+  },
+  {
+    "id": "3.1",
+    "category": "local",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "During the American Civil War, Richmond was the capital of which side?",
+    "options": [
+      "The Union",
+      "The Confederacy",
+      "Neither",
+      "Both at different times"
+    ],
+    "answer": 1,
+    "answerText": "The Confederacy",
+    "reveal": "1861–65"
+  },
+  {
+    "id": "3.2",
+    "category": "local",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "Patrick Henry's famous 1775 speech, delivered in Richmond, is known by which line?",
+    "options": [
+      "\"I have a dream\"",
+      "\"Give me liberty or give me death\"",
+      "\"Don't tread on me\"",
+      "\"We the people\""
+    ],
+    "answer": 1,
+    "answerText": "\"Give me liberty or give me death!\"",
+    "reveal": "St. John's Church, Church Hill."
+  },
+  {
+    "id": "3.3",
+    "category": "local",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "mustPlay": true,
+    "question": "The world's tallest statue, the Statue of Unity in Gujarat, honours which leader?",
+    "media": {
+      "src": "img/3.3-statue-of-unity.jpg",
+      "alt": "A towering bronze statue of a man in a shawl, seen from the approach"
+    },
+    "options": [
+      "Mahatma Gandhi",
+      "Sardar Vallabhbhai Patel",
+      "Jawaharlal Nehru",
+      "B.R. Ambedkar"
+    ],
+    "answer": 1,
+    "answerText": "Sardar Patel",
+    "reveal": "Statue of Unity 182 m (Kevadia, Gujarat, 2018)",
+    "story": {
+      "title": "How tall is 182 metres?",
+      "graphic": "statue",
+      "lines": [
+        "Statue of Unity 182 m · Spring Temple Buddha 128 m · Statue of Liberty 93 m with pedestal · Christ the Redeemer 38 m with pedestal.",
+        "Kevadia, Gujarat — unveiled 2018."
+      ]
+    }
+  },
+  {
+    "id": "3.4",
+    "category": "local",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Gir National Park in Gujarat is the only place in the world where which animal still lives in the wild?",
+    "options": [
+      "Bengal tiger",
+      "Asiatic lion",
+      "Snow leopard",
+      "One-horned rhino"
+    ],
+    "answer": 1,
+    "answerText": "Asiatic lion",
+    "story": {
+      "title": "The last Asiatic lions",
+      "image": "img/3.4-asiatic-lion.jpg",
+      "lines": [
+        "Asiatic lions once ranged from Greece to Bengal. By the early 1900s only a few dozen were left, all in Gir.",
+        "The 2025 census counted 891 lions in and around Gir, Gujarat."
+      ]
+    }
+  },
+  {
+    "id": "3.5",
+    "category": "local",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "Richmond International Airport (RIC) is actually in which county?",
+    "options": [
+      "City of Richmond",
+      "Henrico",
+      "Chesterfield",
+      "Hanover"
+    ],
+    "answer": 1,
+    "answerText": "Henrico",
+    "reveal": "Sandston, Henrico County."
+  },
+  {
+    "id": "3.6",
+    "category": "local",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "Capital One was created in 1994 as a spin-off from which Richmond bank?",
+    "options": [
+      "Crestar",
+      "Signet Bank",
+      "Wachovia",
+      "Central Fidelity"
+    ],
+    "answer": 1,
+    "answerText": "Signet Bank",
+    "reveal": "Richard Fairbank and Nigel Morris's credit-card division."
+  },
+  {
+    "id": "3.7",
+    "category": "local",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Mumbai's curved seaside promenade, famous for its necklace of lights at night, is nicknamed what?",
+    "media": {
+      "src": "img/3.7-marine-drive-night.jpg",
+      "alt": "A curved seafront lit by a string of streetlights at night"
+    },
+    "options": [
+      "The Golden Mile",
+      "The Queen's Necklace",
+      "The Pearl Strand",
+      "The Diamond Curve"
+    ],
+    "answer": 1,
+    "answerText": "The Queen's Necklace",
+    "reveal": "Marine Drive."
+  },
+  {
+    "id": "3.8",
+    "category": "local",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Lothal, in Gujarat, was a dockyard city of which ancient civilisation?",
+    "media": {
+      "src": "img/3.8-lothal-dockyard.jpg",
+      "alt": "A rectangular ancient brick basin in a dry landscape"
+    },
+    "options": [
+      "Mauryan",
+      "Indus Valley (Harappan)",
+      "Gupta",
+      "Chola"
+    ],
+    "answer": 1,
+    "answerText": "Indus Valley",
+    "reveal": "One of the world's oldest known docks, ~2400 BCE."
+  },
+  {
+    "id": "3.9",
+    "category": "local",
+    "mode": "hard-kids",
+    "region": null,
+    "live": true,
+    "type": "text",
+    "question": "How many US presidents were born in Virginia — more than any other state?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "answer": 2,
+    "answerText": "Eight",
+    "reveal": "Washington, Jefferson, Madison, Monroe, W.H. Harrison, Tyler, Taylor, Wilson — \"the Mother of Presidents\"."
+  },
+  {
+    "id": "3.10",
+    "category": "local",
+    "mode": "hard-adult",
+    "region": null,
+    "live": true,
+    "type": "text",
+    "question": "Who became the first Indian American elected to statewide office in Virginia, sworn in as Lieutenant Governor in January 2026?",
+    "options": [
+      "Suhas Subramanyam",
+      "Ghazala Hashmi",
+      "Kiran Ahuja",
+      "Nikki Haley"
+    ],
+    "answer": 1,
+    "answerText": "Ghazala Hashmi"
+  },
+  {
+    "id": "3.S1",
+    "category": "local",
+    "mode": "kids",
+    "region": "us",
+    "live": false,
+    "type": "text",
+    "question": "Richmond's minor-league baseball team is named after which animal?",
+    "options": [
+      "Squirrels",
+      "Otters",
+      "Crabs",
+      "Hens"
+    ],
+    "answer": 0,
+    "answerText": "Squirrels",
+    "reveal": "The Flying Squirrels."
+  },
+  {
+    "id": "3.S2",
+    "category": "local",
+    "mode": "kids",
+    "region": "us",
+    "live": false,
+    "type": "text",
+    "question": "True or false: the James River flows out of Virginia into another state.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "answerText": "False",
+    "reveal": "~340 miles from the Alleghenies to Chesapeake Bay, entirely inside Virginia."
+  },
+  {
+    "id": "3.S3",
+    "category": "local",
+    "mode": "adult",
+    "region": "us",
+    "live": false,
+    "type": "text",
+    "question": "Which Founding Father designed the Virginia State Capitol building in Richmond?",
+    "options": [
+      "George Washington",
+      "James Madison",
+      "Thomas Jefferson",
+      "Patrick Henry"
+    ],
+    "answer": 2,
+    "answerText": "Thomas Jefferson",
+    "reveal": "Modelled on a Roman temple in Nîmes."
+  },
+  {
+    "id": "3.S4",
+    "category": "local",
+    "mode": "adult",
+    "region": "india",
+    "live": false,
+    "type": "text",
+    "question": "Mumbai was originally how many separate islands?",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    "answer": 2,
+    "answerText": "Seven"
+  },
+  {
+    "id": "4.1",
+    "category": "diwali",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Diwali celebrates the return of which prince to Ayodhya after 14 years of exile?",
+    "options": [
+      "Krishna",
+      "Rama",
+      "Arjuna",
+      "Hanuman"
+    ],
+    "answer": 1,
+    "answerText": "Rama",
+    "reveal": "With Sita and Lakshmana.",
+    "optionMedia": [
+      "img/4.1-opt-krishna.jpg",
+      "img/4.1-opt-rama.jpg",
+      "img/4.1-opt-arjuna.jpg",
+      "img/4.1-opt-hanuman.jpg"
+    ],
+    "story": {
+      "title": "Home to Ayodhya",
+      "image": "img/4.1-rama-return-ayodhya.jpg",
+      "lines": [
+        "Bharata welcomes Rama, Sita, Lakshmana and Hanuman back to Ayodhya. Raja Ravi Varma, c. 1900.",
+        "The city lit rows of lamps for their return. That is the row of lamps Deepavali is named for."
+      ]
+    }
+  },
+  {
+    "id": "4.2",
+    "category": "diwali",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "The word Deepavali literally means what?",
+    "options": [
+      "Festival of sweets",
+      "Row of lamps",
+      "Night of fireworks",
+      "Victory of good"
+    ],
+    "answer": 1,
+    "answerText": "Row of lamps",
+    "reveal": "deepa = lamp, avali = row"
+  },
+  {
+    "id": "4.3",
+    "category": "diwali",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "The morning after Diwali, Gujarati families greet each other \"Saal Mubarak!\" What are they wishing?",
+    "options": [
+      "Happy birthday",
+      "Happy New Year",
+      "Good harvest",
+      "Safe travels"
+    ],
+    "answer": 1,
+    "answerText": "Happy New Year",
+    "reveal": "Gujarati New Year (Bestu Varas) is the day after Diwali."
+  },
+  {
+    "id": "4.4",
+    "category": "diwali",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "How many days does the full Diwali festival run, from Dhanteras to Bhai Bij?",
+    "options": [
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    "answer": 1,
+    "answerText": "Five"
+  },
+  {
+    "id": "4.5",
+    "category": "diwali",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "In the Gujarati calendar, Diwali falls on the last day of which month — the one just before Kartik begins?",
+    "options": [
+      "Shravan",
+      "Bhadarvo",
+      "Aaso (Ashwin)",
+      "Magshar"
+    ],
+    "answer": 2,
+    "answerText": "Aaso",
+    "reveal": "Aaso vad amas; Kartik Sud 1 is New Year."
+  },
+  {
+    "id": "4.6",
+    "category": "diwali",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Kali Chaudas, the night before Diwali, is also called Narak Chaturdashi. Which demon did Krishna defeat that day?",
+    "options": [
+      "Ravana",
+      "Hiranyakashipu",
+      "Narakasura",
+      "Mahishasura"
+    ],
+    "answer": 2,
+    "answerText": "Narakasura",
+    "optionMedia": [
+      "img/4.6-opt-ravana.jpg",
+      "img/4.6-opt-hiranyakashipu.jpg",
+      "img/4.6-opt-narakasura.jpg",
+      "img/4.6-opt-mahishasura.jpg"
+    ]
+  },
+  {
+    "id": "4.7",
+    "category": "diwali",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "In West Bengal, Diwali night is not mainly a Lakshmi puja. Which goddess is worshipped instead?",
+    "options": [
+      "Saraswati",
+      "Durga",
+      "Kali",
+      "Parvati"
+    ],
+    "answer": 2,
+    "answerText": "Kali",
+    "reveal": "Kali Puja.",
+    "optionMedia": [
+      "img/4.7-opt-saraswati.jpg",
+      "img/4.7-opt-durga.jpg",
+      "img/4.7-opt-kali.jpg",
+      "img/4.7-opt-parvati.jpg"
+    ]
+  },
+  {
+    "id": "4.8",
+    "category": "diwali",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Jains also celebrate Diwali. What does the day mark for them?",
+    "media": {
+      "src": "img/4.8-mahavira.jpg",
+      "alt": "A seated sandstone sculpture of a meditating figure"
+    },
+    "options": [
+      "Birth of Mahavira",
+      "Mahavira attaining nirvana (moksha)",
+      "Mahavira's first sermon",
+      "The founding of Jainism"
+    ],
+    "answer": 1,
+    "answerText": "Mahavira's nirvana",
+    "reveal": "527 BCE by tradition."
+  },
+  {
+    "id": "4.9",
+    "category": "diwali",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "In 2016 the US Postal Service issued a Diwali \"Forever\" stamp. What did it show?",
+    "options": [
+      "Lord Ganesha",
+      "A lit diya on a gold background",
+      "A rangoli",
+      "Fireworks over the Taj Mahal"
+    ],
+    "answer": 1,
+    "answerText": "A lit diya",
+    "story": {
+      "title": "The 2016 Diwali Forever stamp",
+      "image": "img/4.9-usps-diwali-stamp.jpg",
+      "lines": [
+        "Issued 5 October 2016 — the first US stamp for Diwali, after a decade-long campaign."
+      ]
+    }
+  },
+  {
+    "id": "4.10",
+    "category": "diwali",
+    "mode": "hard-kids",
+    "region": null,
+    "live": true,
+    "type": "text",
+    "question": "Why does the date of Diwali change every year on the Western calendar?",
+    "options": [
+      "It follows the monsoon",
+      "It's the new-moon night of a lunar month, so it drifts against the solar calendar",
+      "The government picks it",
+      "It follows the autumn equinox"
+    ],
+    "answer": 1,
+    "answerText": "New-moon night of a lunar month",
+    "reveal": "Aaso amas."
+  },
+  {
+    "id": "4.11",
+    "category": "diwali",
+    "mode": "hard-adult",
+    "region": null,
+    "live": true,
+    "type": "text",
+    "question": "Which US president was the first to personally light a diya at a White House Diwali celebration, in 2009?",
+    "options": [
+      "George W. Bush",
+      "Barack Obama",
+      "Bill Clinton",
+      "Joe Biden"
+    ],
+    "answer": 1,
+    "answerText": "Barack Obama",
+    "reveal": "The White House had hosted Diwali since 2003, but Obama was the first president to attend and light the lamp himself."
+  },
+  {
+    "id": "5.1",
+    "category": "celebrity",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "image",
+    "question": "Who is this?",
+    "media": {
+      "src": "img/5.1-rock-then.jpg",
+      "alt": "1990s photo: fanny pack and black turtleneck"
+    },
+    "options": [
+      "John Cena",
+      "Vin Diesel",
+      "Dwayne \"The Rock\" Johnson",
+      "Jason Momoa"
+    ],
+    "optionMedia": [
+      "img/5.1-opt-cena.jpg",
+      "img/5.1-opt-diesel.jpg",
+      "img/5.1-opt-rock.jpg",
+      "img/5.1-opt-momoa.jpg"
+    ],
+    "answer": 2,
+    "answerText": "The Rock"
+  },
+  {
+    "id": "5.2",
+    "category": "celebrity",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "She grew up on a Christmas-tree farm in Pennsylvania, moved to Nashville at 14, and her Eras Tour was the first to pass a billion dollars.",
+    "options": [
+      "Taylor Swift",
+      "Sabrina Carpenter",
+      "Billie Eilish",
+      "Olivia Rodrigo"
+    ],
+    "optionMedia": [
+      "img/5.2-opt-swift.jpg",
+      "img/5.2-opt-carpenter.jpg",
+      "img/5.2-opt-eilish.jpg",
+      "img/5.2-opt-rodrigo.jpg"
+    ],
+    "answer": 0,
+    "answerText": "Taylor Swift"
+  },
+  {
+    "id": "5.3",
+    "category": "celebrity",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "image",
+    "question": "Who is this? Clue: once rejected by All India Radio for his voice.",
+    "media": {
+      "src": "img/5.3-bachchan-then.jpg",
+      "alt": "Lean early-1970s photo, before Zanjeer"
+    },
+    "options": [
+      "Dharmendra",
+      "Amitabh Bachchan",
+      "Rajesh Khanna",
+      "Shashi Kapoor"
+    ],
+    "optionMedia": [
+      "img/5.3-opt-dharmendra.jpg",
+      "img/5.3-opt-bachchan.jpg",
+      "img/5.3-opt-khanna.jpg",
+      "img/5.3-opt-kapoor.jpg"
+    ],
+    "answer": 1,
+    "answerText": "Amitabh Bachchan"
+  },
+  {
+    "id": "5.4",
+    "category": "celebrity",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "image",
+    "question": "Who is this Delhi schoolboy in cricket whites?",
+    "media": {
+      "src": "img/5.4-kohli-then.jpg",
+      "alt": "Chubby-cheeked schoolboy in cricket whites"
+    },
+    "options": [
+      "Rohit Sharma",
+      "Virat Kohli",
+      "MS Dhoni",
+      "Hardik Pandya"
+    ],
+    "optionMedia": [
+      "img/5.4-opt-rohit.jpg",
+      "img/5.4-opt-kohli.jpg",
+      "img/5.4-opt-dhoni.jpg",
+      "img/5.4-opt-pandya.jpg"
+    ],
+    "answer": 1,
+    "answerText": "Virat Kohli"
+  },
+  {
+    "id": "5.5",
+    "category": "celebrity",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "image",
+    "question": "Who is this young Nashville TV news anchor from the 1970s?",
+    "media": {
+      "src": "img/5.5-oprah-then.jpg",
+      "alt": "Young TV news anchor, 1970s"
+    },
+    "options": [
+      "Whoopi Goldberg",
+      "Oprah Winfrey",
+      "Michelle Obama",
+      "Tyra Banks"
+    ],
+    "optionMedia": [
+      "img/5.5-opt-goldberg.jpg",
+      "img/5.5-opt-oprah.jpg",
+      "img/5.5-opt-obama.jpg",
+      "img/5.5-opt-banks.jpg"
+    ],
+    "answer": 1,
+    "answerText": "Oprah Winfrey"
+  },
+  {
+    "id": "5.6",
+    "category": "celebrity",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "image",
+    "question": "Who is this, in a cramped office in 1999?",
+    "media": {
+      "src": "img/5.6-bezos-then.jpg",
+      "alt": "1999 office with a spray-painted amazon.com sign"
+    },
+    "options": [
+      "Bill Gates",
+      "Steve Jobs",
+      "Jeff Bezos",
+      "Larry Page"
+    ],
+    "optionMedia": [
+      "img/5.6-opt-gates.jpg",
+      "img/5.6-opt-jobs.jpg",
+      "img/5.6-opt-bezos.jpg",
+      "img/5.6-opt-page.jpg"
+    ],
+    "answer": 2,
+    "answerText": "Jeff Bezos"
+  },
+  {
+    "id": "5.7",
+    "category": "celebrity",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "image",
+    "question": "Who is this curly-haired 14-year-old at Shivaji Park, Mumbai?",
+    "media": {
+      "src": "img/5.7-tendulkar-then.jpg",
+      "alt": "Curly-haired teenager at Shivaji Park"
+    },
+    "options": [
+      "Sunil Gavaskar",
+      "Sourav Ganguly",
+      "Sachin Tendulkar",
+      "Rahul Dravid"
+    ],
+    "optionMedia": [
+      "img/5.7-opt-gavaskar.jpg",
+      "img/5.7-opt-ganguly.jpg",
+      "img/5.7-opt-tendulkar.jpg",
+      "img/5.7-opt-dravid.jpg"
+    ],
+    "answer": 2,
+    "answerText": "Sachin Tendulkar"
+  },
+  {
+    "id": "5.8",
+    "category": "celebrity",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "image",
+    "question": "Who is this Chennai college student from the 1970s? Clue: played guitar in an all-girl rock band, later ran PepsiCo for 12 years.",
+    "media": {
+      "src": "img/5.8-nooyi-then.jpg",
+      "alt": "Chennai college student, 1970s"
+    },
+    "options": [
+      "Indra Nooyi",
+      "Kiran Mazumdar-Shaw",
+      "Chanda Kochhar",
+      "Padmasree Warrior"
+    ],
+    "optionMedia": [
+      "img/5.8-opt-nooyi.jpg",
+      "img/5.8-opt-mazumdarshaw.jpg",
+      "img/5.8-opt-kochhar.jpg",
+      "img/5.8-opt-warrior.jpg"
+    ],
+    "answer": 0,
+    "answerText": "Indra Nooyi"
+  },
+  {
+    "id": "5.9",
+    "category": "celebrity",
+    "mode": "hard-kids",
+    "region": null,
+    "live": true,
+    "type": "image",
+    "question": "Who is this teenager in Pretoria, South Africa, in the 1980s? Clue: sold his first video game at 12, now runs Tesla and SpaceX.",
+    "media": {
+      "src": "img/5.9-musk-then.jpg",
+      "alt": "Teenager in Pretoria, 1980s"
+    },
+    "options": [
+      "Mark Zuckerberg",
+      "Elon Musk",
+      "Sam Altman",
+      "Jeff Bezos"
+    ],
+    "optionMedia": [
+      "img/5.9-opt-zuckerberg.jpg",
+      "img/5.9-opt-musk.jpg",
+      "img/5.9-opt-altman.jpg",
+      "img/5.9-opt-bezos.jpg"
+    ],
+    "answer": 1,
+    "answerText": "Elon Musk"
+  },
+  {
+    "id": "5.10",
+    "category": "celebrity",
+    "mode": "hard-adult",
+    "region": null,
+    "live": true,
+    "type": "image",
+    "question": "Who is this young man from the early 1980s? Clue: left Stanford's MBA program in 1981 to join his father's polyester business.",
+    "media": {
+      "src": "img/5.10-ambani-then.jpg",
+      "alt": "Young man, early 1980s"
+    },
+    "options": [
+      "Anand Mahindra",
+      "Mukesh Ambani",
+      "Gautam Adani",
+      "Ratan Tata"
+    ],
+    "optionMedia": [
+      "img/5.10-opt-mahindra.jpg",
+      "img/5.10-opt-ambani.jpg",
+      "img/5.10-opt-adani.jpg",
+      "img/5.10-opt-tata.jpg"
+    ],
+    "answer": 1,
+    "answerText": "Mukesh Ambani"
+  },
+  {
+    "id": "5.S1",
+    "category": "celebrity",
+    "mode": "kids",
+    "region": "india",
+    "live": false,
+    "type": "text",
+    "question": "He grew up in Chennai in a two-room flat with no telephone until he was 12, studied at IIT Kharagpur, and now runs Google.",
+    "options": [
+      "Satya Nadella",
+      "Sundar Pichai",
+      "Arvind Krishna",
+      "Shantanu Narayen"
+    ],
+    "optionMedia": [
+      "img/5.S1-opt-nadella.jpg",
+      "img/5.S1-opt-pichai.jpg",
+      "img/5.S1-opt-krishna.jpg",
+      "img/5.S1-opt-narayen.jpg"
+    ],
+    "answer": 1,
+    "answerText": "Sundar Pichai"
+  },
+  {
+    "id": "5.S2",
+    "category": "celebrity",
+    "mode": "adult",
+    "region": "india",
+    "live": false,
+    "type": "image",
+    "question": "Who is this teenager from Bareilly, before Miss World 2000?",
+    "media": {
+      "src": "img/5.S2-priyanka-then.jpg",
+      "alt": "Teenager in Bareilly, late 1990s"
+    },
+    "options": [
+      "Deepika Padukone",
+      "Aishwarya Rai",
+      "Priyanka Chopra",
+      "Alia Bhatt"
+    ],
+    "optionMedia": [
+      "img/5.S2-opt-padukone.jpg",
+      "img/5.S2-opt-rai.jpg",
+      "img/5.S2-opt-chopra.jpg",
+      "img/5.S2-opt-bhatt.jpg"
+    ],
+    "answer": 2,
+    "answerText": "Priyanka Chopra"
+  },
+  {
+    "id": "6.1",
+    "category": "riddles",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "riddle",
+    "question": "What has keys but can't open a single lock?",
+    "hint": "It's related to music.",
+    "answer": "A piano",
+    "answerText": "A piano"
+  },
+  {
+    "id": "6.2",
+    "category": "riddles",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "riddle",
+    "question": "I have cities but no houses, forests but no trees, and water but no fish. What am I?",
+    "hint": "You unfold me, or open me on your phone.",
+    "answer": "A map",
+    "answerText": "A map"
+  },
+  {
+    "id": "6.3",
+    "category": "riddles",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "riddle",
+    "question": "Five diyas are burning on the windowsill on Diwali night. A gust blows out two. How many diyas are left in the morning?",
+    "hint": "What happens to a diya that keeps burning all night?",
+    "answer": "Two",
+    "answerText": "Two",
+    "reveal": "The two that blew out — the other three burned down to nothing."
+  },
+  {
+    "id": "6.4",
+    "category": "riddles",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "riddle",
+    "question": "I go up when the rain comes down. What am I?",
+    "hint": "You carry me in the monsoon.",
+    "answer": "An umbrella",
+    "answerText": "An umbrella (chhatri)"
+  },
+  {
+    "id": "6.5",
+    "category": "riddles",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "riddle",
+    "question": "What can travel all the way around the world while staying in a corner?",
+    "hint": "It's on an envelope.",
+    "answer": "A postage stamp",
+    "answerText": "A postage stamp"
+  },
+  {
+    "id": "6.6",
+    "category": "riddles",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "riddle",
+    "question": "I have a neck but no head, and two arms but no hands. What am I?",
+    "hint": "You're probably wearing one.",
+    "answer": "A shirt",
+    "answerText": "A shirt"
+  },
+  {
+    "id": "6.7",
+    "category": "riddles",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "riddle",
+    "question": "Ukhana: \"Ek raja ni anokhi rani, puchhdi thi pive paani.\" — A king's unusual queen, who drinks water through her tail.",
+    "hint": "She's lit tonight.",
+    "answer": "A diya (divo)",
+    "answerText": "A diya / divo",
+    "reveal": "It drinks oil through its wick."
+  },
+  {
+    "id": "6.8",
+    "category": "riddles",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "riddle",
+    "question": "\"Ek thaal moti se bhara, sabke sir par aundha dhara.\" — A plate full of pearls, turned upside down over everyone's head.",
+    "hint": "Look up after dark.",
+    "answer": "The night sky with stars",
+    "answerText": "The night sky with stars"
+  },
+  {
+    "id": "6.9",
+    "category": "riddles",
+    "mode": "hard-kids",
+    "region": null,
+    "live": true,
+    "type": "riddle",
+    "question": "What can fill a whole room but takes up no space at all?",
+    "hint": "Think about what this festival celebrates.",
+    "answer": "Light",
+    "answerText": "Light"
+  },
+  {
+    "id": "6.10",
+    "category": "riddles",
+    "mode": "hard-adult",
+    "region": null,
+    "live": true,
+    "type": "riddle",
+    "question": "I am taken from a mine and shut up in a wooden case, from which I am never released, and yet almost everyone uses me. What am I?",
+    "hint": "You sharpen me.",
+    "answer": "Pencil lead",
+    "answerText": "Pencil lead (graphite)"
+  },
+  {
+    "id": "6.S1",
+    "category": "riddles",
+    "mode": "kids",
+    "region": "us",
+    "live": false,
+    "type": "riddle",
+    "question": "What has hands but cannot clap?",
+    "hint": "It's on the wall.",
+    "answer": "A clock",
+    "answerText": "A clock"
+  },
+  {
+    "id": "6.S2",
+    "category": "riddles",
+    "mode": "adult",
+    "region": "us",
+    "live": false,
+    "type": "riddle",
+    "question": "The more of me there is, the less you can see. What am I?",
+    "hint": "The opposite of tonight.",
+    "answer": "Darkness",
+    "answerText": "Darkness"
+  },
+  {
+    "id": "7.1",
+    "category": "food",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "Which fast-food chain is famously closed every Sunday?",
+    "options": [
+      "Chick-fil-A",
+      "Popeyes",
+      "Chipotle",
+      "Panera"
+    ],
+    "answer": 0,
+    "answerText": "Chick-fil-A"
+  },
+  {
+    "id": "7.2",
+    "category": "food",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "Sweet Frog, the frozen-yogurt chain founded in Richmond, says FROG stands for what?",
+    "options": [
+      "Fully Rely On God",
+      "Frozen, Really Oh-so Good",
+      "Fruit, Rolls, Oats & Granola",
+      "Fresh, Real, Organic, Good"
+    ],
+    "answer": 0,
+    "answerText": "Fully Rely On God",
+    "reveal": "Founded 2009, Short Pump."
+  },
+  {
+    "id": "7.3",
+    "category": "food",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "image",
+    "question": "Name the circled sweet.",
+    "media": {
+      "src": "img/7.3-mithai-plate.jpg",
+      "alt": "Mithai plate with one diamond-shaped silver-topped sweet circled"
+    },
+    "options": [
+      "Barfi",
+      "Kaju katli",
+      "Peda",
+      "Mysore pak"
+    ],
+    "answer": 1,
+    "answerText": "Kaju katli"
+  },
+  {
+    "id": "7.4",
+    "category": "food",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "image",
+    "question": "What is this?",
+    "media": {
+      "src": "img/7.4-vada-pav.jpg",
+      "alt": "Fritter in a bun with green chutney and a fried chilli"
+    },
+    "options": [
+      "Pav bhaji",
+      "Vada pav",
+      "Dabeli",
+      "Misal pav"
+    ],
+    "answer": 1,
+    "answerText": "Vada pav",
+    "reveal": "Mumbai's \"Bombay burger\". Dabeli is the look-alike trap."
+  },
+  {
+    "id": "7.5",
+    "category": "food",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "By law, a whiskey must be at least 51% of which grain to be called bourbon?",
+    "options": [
+      "Rye",
+      "Barley",
+      "Wheat",
+      "Corn"
+    ],
+    "answer": 3,
+    "answerText": "Corn"
+  },
+  {
+    "id": "7.6",
+    "category": "food",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "Which Virginia town gives its name to America's most famous country ham?",
+    "options": [
+      "Williamsburg",
+      "Smithfield",
+      "Lynchburg",
+      "Culpeper"
+    ],
+    "answer": 1,
+    "answerText": "Smithfield",
+    "reveal": "Isle of Wight County; Virginia law once required the hogs be peanut-fed."
+  },
+  {
+    "id": "7.7",
+    "category": "food",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Which spice is the most expensive in the world by weight?",
+    "options": [
+      "Cardamom",
+      "Vanilla",
+      "Saffron (kesar)",
+      "Cloves"
+    ],
+    "answer": 2,
+    "answerText": "Saffron",
+    "reveal": "Hand-picked stigmas; ~150,000 flowers per kilo. India's comes from Kashmir."
+  },
+  {
+    "id": "7.8",
+    "category": "food",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Dabeli, the Kutchi street snack, was invented in which Kutch town in the 1960s?",
+    "options": [
+      "Bhuj",
+      "Mandvi",
+      "Gandhidham",
+      "Anjar"
+    ],
+    "answer": 1,
+    "answerText": "Mandvi",
+    "reveal": "Credited to Keshavji Gabha Chudasama, who sold it for one aana."
+  },
+  {
+    "id": "7.9",
+    "category": "food",
+    "mode": "hard-kids",
+    "region": null,
+    "live": true,
+    "type": "text",
+    "question": "Chocolate is made from the beans of which tree?",
+    "options": [
+      "Coffee",
+      "Cacao",
+      "Carob",
+      "Vanilla"
+    ],
+    "answer": 1,
+    "answerText": "Cacao",
+    "reveal": "The beans are fermented, dried and roasted; the Aztecs drank it bitter."
+  },
+  {
+    "id": "7.10",
+    "category": "food",
+    "mode": "hard-adult",
+    "region": null,
+    "live": true,
+    "type": "text",
+    "question": "West Bengal fought a years-long legal battle with which neighbouring state over who invented the rasgulla?",
+    "options": [
+      "Odisha",
+      "Bihar",
+      "Jharkhand",
+      "Assam"
+    ],
+    "answer": 0,
+    "answerText": "Odisha",
+    "story": {
+      "title": "The rasgulla war",
+      "lines": [
+        "Odisha: born centuries ago in Puri, offered to Goddess Lakshmi at the Jagannath temple on Niladri Bije — the Pahala rasgulla.",
+        "West Bengal: Kolkata confectioner Nobin Chandra Das invented the spongy modern version in 1868.",
+        "Both won Geographical Indication tags — \"Banglar Rasogolla\" (2017) and \"Odisha Rasagola\" (2019). Officially, both are right."
+      ]
+    }
+  },
+  {
+    "id": "7.S1",
+    "category": "food",
+    "mode": "kids",
+    "region": "india",
+    "live": false,
+    "type": "image",
+    "question": "What is this sweet?",
+    "media": {
+      "src": "img/7.S1-jalebi.jpg",
+      "alt": "A plate of orange spiral sweets"
+    },
+    "options": [
+      "Imarti",
+      "Jalebi",
+      "Chakli",
+      "Fafda"
+    ],
+    "answer": 1,
+    "answerText": "Jalebi",
+    "reveal": "Imarti is the thicker, flower-shaped cousin; chakli is savoury."
+  },
+  {
+    "id": "7.S2",
+    "category": "food",
+    "mode": "adult",
+    "region": "india",
+    "live": false,
+    "type": "text",
+    "question": "Which world-famous dish is credited to Delhi's Moti Mahal restaurant in the years after Partition?",
+    "options": [
+      "Biryani",
+      "Chole bhature",
+      "Butter chicken",
+      "Rogan josh"
+    ],
+    "answer": 2,
+    "answerText": "Butter chicken",
+    "reveal": "Invented to use up leftover tandoori chicken."
+  },
+  {
+    "id": "8.1",
+    "category": "sports",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "The 2026 FIFA World Cup was hosted by the US, Canada and Mexico. Who won the final in New Jersey?",
+    "options": [
+      "Argentina",
+      "France",
+      "Spain",
+      "England"
+    ],
+    "answer": 2,
+    "answerText": "Spain",
+    "reveal": "1–0 over Argentina in extra time; Ferran Torres."
+  },
+  {
+    "id": "8.2",
+    "category": "sports",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "How many Grand Slam tennis tournaments are played each year?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": 1,
+    "answerText": "Four",
+    "reveal": "Australian Open, French Open, Wimbledon, US Open."
+  },
+  {
+    "id": "8.3",
+    "category": "sports",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Neeraj Chopra won India's first-ever Olympic gold in athletics, at Tokyo in 2021. In which event?",
+    "options": [
+      "100 m sprint",
+      "Long jump",
+      "Javelin throw",
+      "Marathon"
+    ],
+    "answer": 2,
+    "answerText": "Javelin"
+  },
+  {
+    "id": "8.4",
+    "category": "sports",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "P.V. Sindhu, a two-time Olympic medallist, plays which sport?",
+    "options": [
+      "Tennis",
+      "Badminton",
+      "Table tennis",
+      "Squash"
+    ],
+    "answer": 1,
+    "answerText": "Badminton"
+  },
+  {
+    "id": "8.5",
+    "category": "sports",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "Who won this year's Super Bowl (LX, February 2026)?",
+    "options": [
+      "New England Patriots",
+      "Seattle Seahawks",
+      "Kansas City Chiefs",
+      "Philadelphia Eagles"
+    ],
+    "answer": 1,
+    "answerText": "Seattle Seahawks",
+    "story": {
+      "title": "Super Bowl LX",
+      "lines": [
+        "Seahawks 29–13 over the Patriots at Levi's Stadium.",
+        "Kenneth Walker III was MVP. Bad Bunny did halftime."
+      ]
+    }
+  },
+  {
+    "id": "8.6",
+    "category": "sports",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "How long is a marathon?",
+    "options": [
+      "20 miles",
+      "24.5 miles",
+      "26.2 miles",
+      "30 miles"
+    ],
+    "answer": 2,
+    "answerText": "26.2 miles",
+    "reveal": "42.195 km — the odd distance dates to the 1908 London Olympics."
+  },
+  {
+    "id": "8.7",
+    "category": "sports",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "India won the 2026 T20 World Cup at home in Ahmedabad — its third title. Who did India beat in the final?",
+    "options": [
+      "Australia",
+      "South Africa",
+      "New Zealand",
+      "England"
+    ],
+    "answer": 2,
+    "answerText": "New Zealand",
+    "reveal": "By 96 runs; Bumrah 4 for 15."
+  },
+  {
+    "id": "8.8",
+    "category": "sports",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Who won India's first-ever individual Olympic gold medal, in shooting at Beijing 2008?",
+    "options": [
+      "Leander Paes",
+      "Abhinav Bindra",
+      "Rajyavardhan Rathore",
+      "Sushil Kumar"
+    ],
+    "answer": 1,
+    "answerText": "Abhinav Bindra",
+    "reveal": "10 m air rifle."
+  },
+  {
+    "id": "8.9",
+    "category": "sports",
+    "mode": "hard-kids",
+    "region": null,
+    "live": true,
+    "type": "text",
+    "question": "Which country has hosted the Summer Olympics the most times?",
+    "options": [
+      "United Kingdom",
+      "France",
+      "United States",
+      "Japan"
+    ],
+    "answer": 2,
+    "answerText": "United States",
+    "reveal": "1904 St. Louis, 1932 and 1984 Los Angeles, 1996 Atlanta — and Los Angeles again in 2028."
+  },
+  {
+    "id": "8.10",
+    "category": "sports",
+    "mode": "hard-adult",
+    "region": null,
+    "live": true,
+    "type": "chart",
+    "question": "These are the five highest run-scorers in all international cricket combined. Which bar is Sachin Tendulkar?",
+    "chart": {
+      "unit": "runs",
+      "bars": [
+        {
+          "label": "Ricky Ponting",
+          "value": 27483
+        },
+        {
+          "label": "Sachin Tendulkar",
+          "value": 34357
+        },
+        {
+          "label": "Jacques Kallis",
+          "value": 25534
+        },
+        {
+          "label": "Virat Kohli",
+          "value": 28215
+        },
+        {
+          "label": "Kumar Sangakkara",
+          "value": 28016
+        }
+      ]
+    },
+    "answer": "The tallest bar",
+    "answerText": "The tallest — 34,357 runs",
+    "reveal": "Kohli's total is as of mid-2026 and still moving.",
+    "story": {
+      "title": "Most international runs, all formats",
+      "graphic": "run-chart",
+      "lines": [
+        "Tendulkar 34,357 · Kohli 28,215 (still playing) · Sangakkara 28,016 · Ponting 27,483 · Kallis 25,534."
+      ]
+    }
+  },
+  {
+    "id": "8.S1",
+    "category": "sports",
+    "mode": "kids",
+    "region": "us",
+    "live": false,
+    "type": "text",
+    "question": "How many players from one team are on a basketball court at the same time?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "11"
+    ],
+    "answer": 0,
+    "answerText": "Five",
+    "reveal": "Ten on court in all; up to 13 on the bench."
+  },
+  {
+    "id": "8.S2",
+    "category": "sports",
+    "mode": "adult",
+    "region": "india",
+    "live": false,
+    "type": "text",
+    "question": "Which team won the IPL in 2026, defending its 2025 title?",
+    "options": [
+      "Mumbai Indians",
+      "Chennai Super Kings",
+      "Royal Challengers Bengaluru",
+      "Gujarat Titans"
+    ],
+    "answer": 2,
+    "answerText": "Royal Challengers Bengaluru",
+    "reveal": "Beat Gujarat Titans in the final."
+  },
+  {
+    "id": "8.S3",
+    "category": "sports",
+    "mode": "adult",
+    "region": "us",
+    "live": false,
+    "type": "text",
+    "question": "In American football, how many points is a touchdown worth — before the extra point?",
+    "options": [
+      "3",
+      "6",
+      "7",
+      "10"
+    ],
+    "answer": 1,
+    "answerText": "Six"
+  },
+  {
+    "id": "9.1",
+    "category": "growing-up",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "In Minecraft, which green creature sneaks up on you and explodes?",
+    "options": [
+      "Zombie",
+      "Enderman",
+      "Creeper",
+      "Skeleton"
+    ],
+    "answer": 2,
+    "answerText": "Creeper"
+  },
+  {
+    "id": "9.2",
+    "category": "growing-up",
+    "mode": "kids",
+    "region": "us",
+    "live": true,
+    "type": "video",
+    "question": "Name this song.",
+    "video": {
+      "youtubeId": "XqZsoesa55w",
+      "start": 0
+    },
+    "options": [
+      "Baby Shark",
+      "Wheels on the Bus",
+      "Johny Johny Yes Papa",
+      "Cocomelon theme"
+    ],
+    "answer": 0,
+    "answerText": "Baby Shark",
+    "reveal": "One of the most-viewed videos in YouTube history."
+  },
+  {
+    "id": "9.3",
+    "category": "growing-up",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Which actor played the Indian TV superhero Shaktimaan in the 1990s?",
+    "options": [
+      "Mukesh Khanna",
+      "Shekhar Suman",
+      "Jackie Shroff",
+      "Arun Govil"
+    ],
+    "answer": 0,
+    "answerText": "Mukesh Khanna"
+  },
+  {
+    "id": "9.4",
+    "category": "growing-up",
+    "mode": "kids",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "What does the \"G\" in Parle-G biscuits originally stand for?",
+    "options": [
+      "Glucose",
+      "Gold",
+      "Great",
+      "Gujarat"
+    ],
+    "answer": 0,
+    "answerText": "Glucose",
+    "reveal": "Launched as Parle Gluco in 1938; the girl on the packet has been there since the 1960s."
+  },
+  {
+    "id": "9.5",
+    "category": "growing-up",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "In what year did Apple release the first iPhone?",
+    "options": [
+      "2005",
+      "2007",
+      "2009",
+      "2010"
+    ],
+    "answer": 1,
+    "answerText": "2007"
+  },
+  {
+    "id": "9.6",
+    "category": "growing-up",
+    "mode": "adult",
+    "region": "us",
+    "live": true,
+    "type": "text",
+    "question": "Which sitcom about six friends in New York ran from 1994 to 2004?",
+    "options": [
+      "Seinfeld",
+      "Frasier",
+      "Friends",
+      "How I Met Your Mother"
+    ],
+    "answer": 2,
+    "answerText": "Friends"
+  },
+  {
+    "id": "9.7",
+    "category": "growing-up",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Who played Lord Rama in Ramanand Sagar's Ramayan on Doordarshan in 1987?",
+    "options": [
+      "Nitish Bharadwaj",
+      "Arun Govil",
+      "Sunil Lahri",
+      "Dara Singh"
+    ],
+    "answer": 1,
+    "answerText": "Arun Govil",
+    "reveal": "Streets emptied every Sunday morning."
+  },
+  {
+    "id": "9.8",
+    "category": "growing-up",
+    "mode": "adult",
+    "region": "india",
+    "live": true,
+    "type": "text",
+    "question": "Which little hatchback, launched in 1983, became India's first \"people's car\"?",
+    "options": [
+      "Hindustan Ambassador",
+      "Premier Padmini",
+      "Maruti 800",
+      "Tata Indica"
+    ],
+    "answer": 2,
+    "answerText": "Maruti 800"
+  },
+  {
+    "id": "9.9",
+    "category": "growing-up",
+    "mode": "hard-kids",
+    "region": null,
+    "live": true,
+    "type": "text",
+    "question": "The very first video ever uploaded to YouTube, in 2005, was 19 seconds long and shot at a zoo. What was its title?",
+    "options": [
+      "\"Hello World\"",
+      "\"Me at the zoo\"",
+      "\"First upload\"",
+      "\"Charlie bit my finger\""
+    ],
+    "answer": 1,
+    "answerText": "\"Me at the zoo\"",
+    "reveal": "Co-founder Jawed Karim in front of the elephants at the San Diego Zoo."
+  },
+  {
+    "id": "9.10",
+    "category": "growing-up",
+    "mode": "hard-adult",
+    "region": null,
+    "live": true,
+    "type": "text",
+    "question": "Shah Rukh Khan's acting debut was as Abhimanyu Rai in which 1989 Doordarshan series?",
+    "options": [
+      "Circus",
+      "Fauji",
+      "Wagle Ki Duniya",
+      "Nukkad"
+    ],
+    "answer": 1,
+    "answerText": "Fauji"
+  },
+  {
+    "id": "9.S1",
+    "category": "growing-up",
+    "mode": "kids",
+    "region": "us",
+    "live": false,
+    "type": "text",
+    "question": "Which app's logo is a white ghost on a yellow background?",
+    "options": [
+      "Snapchat",
+      "TikTok",
+      "Discord",
+      "BeReal"
+    ],
+    "answer": 0,
+    "answerText": "Snapchat"
+  },
+  {
+    "id": "9.S2",
+    "category": "growing-up",
+    "mode": "adult",
+    "region": "india",
+    "live": false,
+    "type": "text",
+    "question": "Which 1990s TV quiz show, hosted by Derek O'Brien, was sponsored by a malt drink?",
+    "options": [
+      "Kaun Banega Crorepati",
+      "Bournvita Quiz Contest",
+      "Mastermind India",
+      "Quiz Time"
+    ],
+    "answer": 1,
+    "answerText": "Bournvita Quiz Contest"
+  }
 ]

@@ -237,6 +237,7 @@ test('a question with media but a text type still shows the picture', () => {
   const q = { ...QUESTION_BY_ID['1.4'], media: { src: 'img/1.4-himalayas.jpg', alt: 'Mountains' } };
   render(<Question q={q} via="board" canSwap onDone={vi.fn()} onPass={vi.fn()} onSwap={vi.fn()} onAbandon={vi.fn()} />);
   expect(screen.getByRole('img', { name: 'Mountains' })).toBeInTheDocument();
+  expect(document.querySelector('.question')).toHaveClass('has-media');
 });
 
 test('any category with option pictures renders them as art cards', () => {
