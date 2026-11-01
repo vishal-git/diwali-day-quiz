@@ -14,3 +14,13 @@ test('a loaded image stays an image', () => {
   render(<SafeImage src="img/ok.jpg" alt="ok" />);
   expect(screen.getByRole('img', { name: 'ok' })).toHaveAttribute('src', '/img/ok.jpg');
 });
+
+test('a poster that fails to load becomes a title card rather than an "image pending" note', () => {
+  const { container } = render(<SafeImage src="img/2.1-opt-toystory5.jpg" alt="Toy Story 5" className="poster" fallback="title" />);
+  fireEvent.error(container.querySelector('img')!);
+  const card = container.querySelector('.title-card');
+  expect(card).not.toBeNull();
+  expect(card).toHaveClass('poster');
+  expect(card).toHaveTextContent('Toy Story 5');
+  expect(container.textContent).not.toMatch(/pending/);
+});

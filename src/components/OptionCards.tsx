@@ -35,7 +35,7 @@ export function OptionCards({ q, showAnswer, wrong = [], onPick, celebrate = fal
             onClick={(e) => { if (onPick) { e.stopPropagation(); if (!isWrong) onPick(i); } }}
           >
             <span className="option-letter">{LETTERS[i]}</span>
-            {visual && <SafeImage className={shape} src={q.optionMedia![i]} alt={text} />}
+            {visual && <SafeImage className={shape} src={q.optionMedia![i]} alt={text} fallback={shape === 'poster' ? 'title' : 'pending'} />}
             <span className="option-text">{text}</span>
             {isWrong && (
               <span className="snuff" aria-hidden="true">

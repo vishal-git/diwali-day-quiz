@@ -48,7 +48,16 @@
 .option-text { font-weight: 700; }
 .options-visual .option-text { font-size: 2rem; line-height: 1.15; }
 /* Posters and faces are sized by height so four fit in a row under the question text. */
-.poster, .option .img-placeholder.poster { height: 36vh; width: auto; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 0.6rem; }
+.poster, .option .img-placeholder.poster, .option .title-card.poster { height: 36vh; width: auto; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 0.6rem; }
+/* A poster we never found: a cinema title card in the film's place. */
+.title-card {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8rem;
+  padding: 1rem; text-align: center; color: var(--gold);
+  background: radial-gradient(ellipse at 50% 20%, #4d2a7a, #1f1240 70%);
+  border: 3px double rgba(255, 209, 102, 0.55); box-shadow: inset 0 0 2rem rgba(0,0,0,0.5);
+}
+.title-card-mark { color: var(--marigold); opacity: 0.8; }
+.title-card-text { font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; line-height: 1.15; text-wrap: balance; }
 .has-media .face, .has-media .option .img-placeholder.face { height: 20vh; }
 .face, .option .img-placeholder.face { height: 28vh; width: auto; aspect-ratio: 1; object-fit: cover; border-radius: 50%; }
 /* Paintings and prints: portrait frames with a thin gold mat. */
