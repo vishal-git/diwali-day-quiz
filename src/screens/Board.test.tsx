@@ -7,8 +7,21 @@ const noop = () => {};
 
 test('renders ten tiles: nine categories and Lucky Diya', () => {
   render(<Board questions={QUESTIONS} state={EMPTY} onPickCategory={noop} onLucky={noop} onReset={noop} />);
-  expect(screen.getAllByRole('button', { name: /·|Lucky/ })).toHaveLength(10);
-  expect(screen.getByRole('button', { name: /Geography/ })).toHaveTextContent('Kids 4 · Adult 4');
+  expect(screen.getAllByRole('button', { name: /left|Lucky/ })).toHaveLength(10);
+  const geo = screen.getByRole('button', { name: /Geography/ });
+  expect(geo.querySelectorAll('.pip-kids')).toHaveLength(4);
+  expect(geo.querySelectorAll('.pip-adult')).toHaveLength(4);
+  expect(geo.querySelectorAll('.pip-hard')).toHaveLength(2);
+  expect(geo.querySelectorAll('.pip.used')).toHaveLength(0);
+  expect(geo).not.toHaveTextContent(/Kids 4/);
+});
+
+test('a played kids question dims one kids pip; the rest stay lit', () => {
+  render(<Board questions={QUESTIONS} state={markUsed(EMPTY, '1.1')} onPickCategory={noop} onLucky={noop} onReset={noop} />);
+  const geo = screen.getByRole('button', { name: /Geography/ });
+  expect(geo.querySelectorAll('.pip-kids.used')).toHaveLength(1);
+  expect(geo.querySelectorAll('.pip-kids:not(.used)')).toHaveLength(3);
+  expect(geo.querySelectorAll('.pip-adult.used')).toHaveLength(0);
 });
 
 test('an exhausted category tile is disabled', () => {
@@ -33,8 +46,8 @@ test('Lucky tile is disabled when nothing live remains', () => {
 test('the hard flames reflect used hard questions', () => {
   render(<Board questions={QUESTIONS} state={markUsed(EMPTY, '1.9')} onPickCategory={noop} onLucky={noop} onReset={noop} />);
   const geo = screen.getByRole('button', { name: /Geography/ });
-  expect(geo.querySelectorAll('.flame.used')).toHaveLength(1);
-  expect(geo.querySelectorAll('.flame')).toHaveLength(2);
+  expect(geo.querySelectorAll('.pip-hard.used')).toHaveLength(1);
+  expect(geo.querySelectorAll('.pip-hard')).toHaveLength(2);
 });
 
 test('must-play star shows until 3.3 is played', () => {

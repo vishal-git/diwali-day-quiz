@@ -41,7 +41,7 @@ test('spareFor skips burned spares and returns undefined when exhausted', () => 
 
 test('cellCounts derives the tile counter', () => {
   const geo = cellCounts(QUESTIONS, EMPTY, 'geography');
-  expect(geo).toEqual({ kids: 4, adult: 4, hardKids: true, hardAdult: true, total: 10, mustPlayPending: false });
+  expect(geo).toEqual({ kids: 4, adult: 4, kidsTotal: 4, adultTotal: 4, hardKids: true, hardAdult: true, total: 10, mustPlayPending: false });
   const diwali = cellCounts(QUESTIONS, EMPTY, 'diwali');
   expect(diwali.total).toBe(11);
   expect(diwali.kids).toBe(4);
@@ -87,4 +87,14 @@ test('spareFor can exclude the question currently on screen', () => {
   // 1.S1 is on screen after a swap; another Swap must not offer 1.S1 again
   expect(spareFor(QUESTIONS, EMPTY, GEO_KIDS_US, '1.S1')).toBeUndefined();
   expect(spareFor(QUESTIONS, EMPTY, { category: 'local', mode: 'kids', region: 'us' }, '3.S1')?.id).toBe('3.S2');
+});
+
+test('cellCounts reports each mode\'s live capacity so tiles can draw one pip per question', () => {
+  const geo = cellCounts(QUESTIONS, markUsed(EMPTY, '1.1'), 'geography');
+  expect(geo.kidsTotal).toBe(4);
+  expect(geo.kids).toBe(3);
+  expect(geo.adultTotal).toBe(4);
+  const diwali = cellCounts(QUESTIONS, EMPTY, 'diwali');
+  expect(diwali.kidsTotal).toBe(4);
+  expect(diwali.adultTotal).toBe(5);
 });

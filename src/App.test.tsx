@@ -30,7 +30,7 @@ test('Swap burns the live question, shows the spare with Swap disabled; Pass con
   expect(screen.getByText(/Which Indian state is this/)).toBeInTheDocument();
   expect(screen.getByRole('button', { name: /swap/i })).toBeDisabled();
   fireEvent.click(screen.getByRole('button', { name: /pass/i }));
-  expect(screen.getByRole('button', { name: /Geography/ })).toHaveTextContent('Kids 3 · Adult 4');
+  expect(screen.getByRole('button', { name: /Geography/ }).querySelectorAll('.pip-kids.used')).toHaveLength(1);
   expect(JSON.parse(localStorage.getItem('diwali-quiz-2026')!)).toEqual({ used: ['1.S1'], burned: ['1.1'] });
 });
 
@@ -43,7 +43,7 @@ test('Esc leaves a question unconsumed', () => {
   fireEvent.click(screen.getByRole('button', { name: /^Adult/ }));
   fireEvent.click(screen.getByRole('button', { name: /^India/ }));
   fireEvent.keyDown(window, { key: 'Escape' });
-  expect(screen.getByRole('button', { name: /Food/ })).toHaveTextContent('Kids 4 · Adult 4');
+  expect(screen.getByRole('button', { name: /Food/ }).querySelectorAll('.pip.used')).toHaveLength(0);
   expect(localStorage.getItem('diwali-quiz-2026')).toBeNull();
 });
 

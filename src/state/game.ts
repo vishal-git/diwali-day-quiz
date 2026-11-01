@@ -10,6 +10,9 @@ export const EMPTY: GameState = { used: [], burned: [] };
 export interface CellCounts {
   kids: number;
   adult: number;
+  /** Live questions in the cell regardless of play state: one pip per question on the tile. */
+  kidsTotal: number;
+  adultTotal: number;
   hardKids: boolean;
   hardAdult: boolean;
   total: number;
@@ -43,11 +46,15 @@ export function spareFor(qs: Question[], s: GameState, cell: Cell, excludeId?: s
 }
 
 export function cellCounts(qs: Question[], s: GameState, category: CategoryId): CellCounts {
-  const avail = qs.filter((q) => q.category === category && isAvailable(q, s));
+  const live = qs.filter((q) => q.category === category && q.live);
+  const avail = live.filter((q) => isAvailable(q, s));
   const n = (mode: Mode) => avail.filter((q) => q.mode === mode).length;
+  const cap = (mode: Mode) => live.filter((q) => q.mode === mode).length;
   return {
     kids: n('kids'),
     adult: n('adult'),
+    kidsTotal: cap('kids'),
+    adultTotal: cap('adult'),
     hardKids: n('hard-kids') > 0,
     hardAdult: n('hard-adult') > 0,
     total: avail.length,

@@ -1,5 +1,6 @@
 import type { Category } from '../data/categories';
 import type { CellCounts } from '../state/game';
+import { Pips } from './Pips';
 
 interface Props {
   category: Category;
@@ -21,9 +22,9 @@ export function Tile({ category, counts, featured, onClick }: Props) {
       <span className="tile-name">{category.name}</span>
       {featured && <span className="tile-badge">1.5×</span>}
       <span className="tile-counts">
-        Kids {counts.kids} · Adult {counts.adult} · Hard{' '}
-        <span className={`flame ${counts.hardKids ? '' : 'used'}`} aria-label={counts.hardKids ? 'hard kids available' : 'used'}>🔥</span>
-        <span className={`flame ${counts.hardAdult ? '' : 'used'}`} aria-label={counts.hardAdult ? 'hard adult available' : 'used'}>🔥</span>
+        <Pips kind="kids" left={counts.kids} total={counts.kidsTotal} />
+        <Pips kind="adult" left={counts.adult} total={counts.adultTotal} />
+        <Pips kind="hard" left={Number(counts.hardKids) + Number(counts.hardAdult)} total={2} />
       </span>
     </button>
   );
