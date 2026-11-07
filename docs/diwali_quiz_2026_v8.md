@@ -1,6 +1,6 @@
 # Diwali Party Quiz 2026 — Draft 8
 
-Changes from v7 (7 Nov 2026, after the midterms): eleven questions replaced — US state capital (1.1), Toy Story's Woody (2.2) and Nemo the clownfish (2.6) for a group that does not watch much Hollywood,, longest US river (1.2), five new Local·US questions (Fan District map, Senate term, Richmond skyline, House majority, Short Pump), a Gujarati *ukhanu* for Hard·Adult riddles (6.10) and a vegetarian-friendly Food·Adult·US (7.6). Options reworded on 13 questions so the longest option is no longer a giveaway. 35 questions now carry a **note per wrong option** that the app shows when a team picks it. Layout unchanged: 2/2/2/2/2 = 10 live per regular category, Diwali 11, 19 spares. The eleven retired questions are kept at the end of this file and in full in `diwali_quiz_2026_v7.md`.
+Changes from v7 (7 Nov 2026, after the midterms): twelve questions replaced — US state capital (1.1), Toy Story's Woody (2.2) and Nemo the clownfish (2.6) for a group that does not watch much Hollywood, a towel riddle for the five-diyas one (6.3; clay diyas do not burn away),, longest US river (1.2), five new Local·US questions (Fan District map, Senate term, Richmond skyline, House majority, Short Pump), a Gujarati *ukhanu* for Hard·Adult riddles (6.10) and a vegetarian-friendly Food·Adult·US (7.6). Options reworded on 13 questions so the longest option is no longer a giveaway. 35 questions now carry a **note per wrong option** that the app shows when a team picks it. Layout unchanged: 2/2/2/2/2 = 10 live per regular category, Diwali 11, 19 spares. The twelve retired questions are kept at the end of this file and in full in `diwali_quiz_2026_v7.md`.
 
 Changes from v6: every category has two Hard questions, Hard·Kids and Hard·Adult.
 
@@ -23,7 +23,7 @@ Diwali 2026: **Sunday, Nov 8** (Dhanteras Fri Nov 6 · Kali Chaudas Sat Nov 7 ·
 | 3 | Local | Richmond & Virginia | Gujarat & Mumbai |
 | 4 | **DIWALI (1.5×)** | Diwali in America | Diwali at home |
 | 5 | Celebrity Then & Now | US | India |
-| 6 | Riddles & Ukhana | English riddles | Gujarati/Hindi *ukhana* |
+| 6 | Riddles & Ukhana | one pool, no US/India pick (7 Nov) | English riddles and Gujarati/Hindi *ukhana* mixed |
 | 7 | Food | American | Gujarati / Mumbai / Indian |
 | 8 | Sports | NFL, tennis, soccer | cricket, athletics, badminton |
 | 9 | Growing Up | 2010s–20s America | 80s–90s India |
@@ -49,9 +49,12 @@ Random *unplayed* question from any category, **any mode including Hard**, any r
 |---|---|---|---|
 | Correct, no options/hint | 20 | 40 | ×1.5 |
 | Correct, after options/hint | 10 | 20 | ×1.5 |
-| Wrong | 0 | −10 adults, 0 kids (0 if via Lucky) | — |
+| Wrong | 0 | 0 (negative scoring dropped 7 Nov: the Hard token is cost enough) | — |
 | Away-region bonus (Kids·India / Adult·US) | +5 | — | +5 |
 | Steal | 5 flat | 5 flat | 5 flat |
+| Lucky Diya, right answer | +10 | +10 | +10 |
+
+The app now does this sum: a **points pill** in every question header shows what a right answer is worth and halves when the options or hint appear; the host taps **Steal** (flat 5) or **×2** (declared double) as they happen, and under the answer taps a team to award the pill value, or types any other number. Totals sit on the board and the opening screen; the full ledger is at `#/scores`, with a two-step **Reset scores** separate from Reset game. Teams: **Kids · Gentlemen · Ladies**.
 
 ### Final round
 Every team wagers up to half its points on one question (end of file).
@@ -67,6 +70,7 @@ Every team wagers up to half its points on one question (end of file).
 - **Media cells:** 9.2 Baby Shark 3-second clip (YouTube embed, start timestamp, autoplay off — host presses play); 8.10 bar chart; two optional song-intro embeds in Movies.
 - **Lucky Diya:** button draws a random unplayed *live* question across all categories and shows the category with it. Spares are never drawn.
 - **Wrong-pick notes:** where a question lists *Notes*, the app shows that option's line under the cards when a team picks it wrongly (the right answer stays hidden). Questions without notes just grey the card.
+- **Scoring in the app (7 Nov):** points pill, Steal and ×2 toggles, award strip under the answer, ledger in localStorage (`diwali-quiz-2026-scores`), totals on board and opening, `#/scores` page, two-step Reset scores.
 - **Longest-option rule:** the right answer may never be more than ~1.35× the length of the longest wrong option, and should be the longest in roughly a quarter of questions (chance). A test enforces this.
 
 ---
@@ -358,47 +362,45 @@ A) Deepika Padukone B) Aishwarya Rai C) Priyanka Chopra D) Alia Bhatt → **Priy
 ---
 
 ## 6. RIDDLES & UKHANA
-*No options. A team may ask for the one hint, at the "after options" value. In-laws read the Gujarati/Hindi ones aloud.*
+*No options. A team may ask for the one hint, at the "after options" value. In-laws read the Gujarati/Hindi ones aloud. No US/India pick in this category (7 Nov): Kids and Adult are single pools of four, so the away-side bonus never applies here. Hints firmed up 7 Nov.*
 
-### Kids · US
+### Kids
 **6.1** What has keys but can't open a single lock?
-Hint: *it's related to music.* → **A piano**
+Hint: *I'm black and white, but I'm not a zebra or a newspaper.* → **A piano**
 
 **6.2** I have cities but no houses, forests but no trees, and water but no fish. What am I?
-Hint: *you unfold me, or open me on your phone.* → **A map**
+Hint: *you need me most when you're lost.* → **A map**
 
-### Kids · India
-**6.3** Five diyas are burning on the windowsill on Diwali night. A gust blows out two. How many diyas are left in the morning?
-Hint: *what happens to a diya that keeps burning all night?* → **Two** — the two that blew out; the other three burned down to nothing
+**6.3** What gets wetter the more it dries?
+Hint: *I work hardest when you're dripping.* → **A towel**
 
 **6.4** I go *up* when the rain comes *down*. What am I?
-Hint: *you carry me in the monsoon.* → **An umbrella** (*chhatri*)
+Hint: *I spend most of the year folded up in a corner.* → **An umbrella** (*chhatri*)
 
-### Adult · US
+### Adult
 **6.5** What can travel all the way around the world while staying in a corner?
-Hint: *it's on an envelope.* → **A postage stamp**
+Hint: *I cost less than a dollar and I only ever travel once.* → **A postage stamp**
 
 **6.6** I have a neck but no head, and two arms but no hands. What am I?
-Hint: *you're probably wearing one.* → **A shirt**
+Hint: *I come in small, medium and large.* → **A shirt**
 
-### Adult · India
 **6.7** *Ukhana:* "**Ek raja ni anokhi rani, puchhdi thi pive paani.**" — *A king's unusual queen, who drinks water through her tail.*
-Hint: *she's lit tonight.* → **A diya / *divo*** (drinks oil through its wick)
+Hint: *count us on the windowsill tonight.* → **A diya / *divo*** (drinks oil through its wick)
 
 **6.8** "**Ek thaal moti se bhara, sabke sir par aundha dhara.**" — *A plate full of pearls, turned upside down over everyone's head.*
-Hint: *look up after dark.* → **The night sky with stars**
+Hint: *everyone on Earth is under the same one.* → **The night sky with stars**
 
 ### Hard · Kids
 **6.9** What can fill a whole room but takes up no space at all?
-Hint: *think about what this festival celebrates.* → **Light**
+Hint: *nothing in the universe moves faster than me.* → **Light**
 
 ### Hard · Adult
 **6.10** *Gujarati ukhanu:* "**Kalo ghodo, dholi asvari; ek utre ne biji chade.**" (કાળો ઘોડો, ધોળી અસવારી; એક ઊતરે ને બીજી ચડે.) — *A black horse with white riders: as one climbs off, the next climbs on.*
-Hint: *you'll find her in the kitchen every evening.* → **Tavo and rotli** (griddle and roti: the black iron tavo is the horse; each pale rotli rides it in turn)
+Hint: *she sits on the stove every evening.* → **Tavo and rotli** (griddle and roti: the black iron tavo is the horse; each pale rotli rides it in turn)
 
 ### Spares
 **6.S1 (Kids)** What has hands but cannot clap?
-Hint: *it's on the wall.* → **A clock**
+Hint: *I have a face but never smile.* → **A clock**
 
 **6.S2 (Adult)** The more of me there is, the less you can see. What am I?
 Hint: *the opposite of tonight.* → **Darkness**
@@ -437,8 +439,9 @@ A) Virginia B) Georgia C) Texas D) Alabama → **Georgia**
 **7.7** Which spice is the most expensive in the world by weight?
 A) Cardamom B) Vanilla C) Saffron D) Cloves → **Saffron (kesar)** (hand-picked stigmas; ~150,000 flowers per kilo; India's comes from Kashmir)
 
-**7.8** Dabeli, the Kutchi street snack, was invented in which Kutch town in the 1960s?
-A) Bhuj B) Mandvi C) Gandhidham D) Anjar → **Mandvi** (credited to Keshavji Gabha Chudasama, who sold it for one *aana*)
+**7.8** Dabeli, the sweet-and-spicy potato snack in a pav, was invented in the 1960s in which district of Gujarat?
+A) Kutch B) Surat C) Rajkot D) Anand → **Kutch** (in Mandvi; credited to Keshavji Gabha Chudasama, who sold it for one *aana*; Kutch is also India's largest district by area. Rephrased 7 Nov: the town was too hard)
+*Notes:* B) Surat is the diamond-polishing city and the home of locho and undhiyu · C) Rajkot is the big city of Saurashtra, famous for its peda and chikki · D) Anand is the milk capital: Amul started there in 1946
 
 ### Hard · Kids
 **7.9** Chocolate is made from the beans of which tree?
@@ -448,7 +451,8 @@ A) Coffee B) Cacao C) Carob D) Vanilla → **Cacao**
 ### Hard · Adult
 **7.10** West Bengal fought a years-long legal battle with which neighbouring state over who invented the rasgulla?
 A) Odisha B) Bihar C) Jharkhand D) Assam → **Odisha**
-*Reveal (story card):* Odisha claimed the rasgulla originated centuries ago in Puri, offered to Goddess Lakshmi at the Jagannath temple on *Niladri Bije* (the Pahala rasgulla). West Bengal credited Kolkata confectioner Nobin Chandra Das with inventing the spongy modern version in 1868. Both states filed for Geographical Indication tags; West Bengal won "Banglar Rasogolla" in 2017, Odisha won "Odisha Rasagola" in 2019 — so, officially, both are right.
+*Reveal (story card, with dates — the fight ran 2015–2019):* Odisha claimed the rasgulla originated centuries ago in Puri, offered to Goddess Lakshmi at the Jagannath temple on *Niladri Bije* (the Pahala rasgulla). West Bengal credited Kolkata confectioner Nobin Chandra Das with inventing the spongy modern version in 1868. Both states filed for Geographical Indication tags; Odisha staked its claim in 2015 and declared 30 July Rasagola Dibasa; West Bengal won "Banglar Rasogolla" on 14 Nov 2017; Odisha won "Odisha Rasagola" on 29 July 2019 — so, officially, both are right.
+*Notes:* B) Bihar's sweet claim to fame is the khaja of Silao; it never joined the rasgulla fight · C) Jharkhand was carved out of Bihar in 2000 and stayed out of it · D) Assam borders Bengal too, but its claim to fame is tea, not rasgulla
 
 ### Spares
 **7.S1 (Kids)** 📷 *[Photo of a plate of jalebi]* What is this sweet?
@@ -592,7 +596,7 @@ A) 2081 B) 2082 C) 2083 D) 2084 → **Vikram Samvat 2083**
 
 ## Retired from v7 (7 Nov 2026)
 
-These eleven came off the board in v8. They are no longer in `src/data/questions.json`; copy one back in (with a fresh id) if a slot opens up.
+These twelve came off the board in v8. They are no longer in `src/data/questions.json`; copy one back in (with a fresh id) if a slot opens up.
 
 *Geography · Kids · US* (was 1.1)
 **1.1** Which US state is the *second*-largest by area, after Alaska?
@@ -638,3 +642,7 @@ A) Williamsburg B) Smithfield C) Lynchburg D) Culpeper → **Smithfield** (Isle 
 *Movies · Adult · US* (was 2.6)
 **2.6** *The Devil Wears Prada 2* came out in 2026. Which real-life magazine editor is Miranda Priestly widely believed to be modelled on?
 A) Anna Wintour B) Tina Brown C) Diana Vreeland D) Grace Coddington → **Anna Wintour** (Vogue)
+
+*Riddles · Kids* (was 6.3)
+**6.3** Five diyas are burning on the windowsill on Diwali night. A gust blows out two. How many diyas are left in the morning?
+Hint: *what happens to a diya that keeps burning all night?* → **Two** — the two that blew out; the other three burned down to nothing

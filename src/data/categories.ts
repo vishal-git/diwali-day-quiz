@@ -1,6 +1,6 @@
 import type { CategoryId } from './types';
 
-export interface Category { id: CategoryId; name: string; icon: string; us: string; india: string }
+export interface Category { id: CategoryId; name: string; icon: string; us: string; india: string; /** false: no US/India step; kids and adult questions are one pool. */ sides?: boolean }
 
 export const CATEGORIES: Category[] = [
   { id: 'geography', name: 'Geography', icon: '🌍', us: 'states, rivers', india: 'states, cities' },
@@ -8,7 +8,7 @@ export const CATEGORIES: Category[] = [
   { id: 'local', name: 'Local', icon: '🏛️', us: 'Richmond & Virginia', india: 'Gujarat & Mumbai' },
   { id: 'diwali', name: 'Diwali', icon: '🪔', us: 'Diwali in America', india: 'Diwali at home' },
   { id: 'celebrity', name: 'Celebrity Then & Now', icon: '⭐', us: 'US', india: 'India' },
-  { id: 'riddles', name: 'Riddles & Ukhana', icon: '🧩', us: 'English riddles', india: 'Gujarati/Hindi ukhana' },
+  { id: 'riddles', name: 'Riddles & Ukhana', icon: '🧩', us: 'English riddles and Gujarati/Hindi ukhana, one pool', india: 'English riddles and Gujarati/Hindi ukhana, one pool', sides: false },
   { id: 'food', name: 'Food', icon: '🍛', us: 'American', india: 'Gujarati / Mumbai / Indian' },
   { id: 'sports', name: 'Sports', icon: '🏏', us: 'NFL, tennis, soccer', india: 'cricket, athletics, badminton' },
   { id: 'growing-up', name: 'Growing Up', icon: '📼', us: '2010s–20s America', india: '80s–90s India' },

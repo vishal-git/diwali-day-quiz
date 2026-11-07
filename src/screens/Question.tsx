@@ -12,6 +12,10 @@ import { GujaratMap } from '../components/GujaratMap';
 import { VideoEmbed } from '../components/VideoEmbed';
 import { Fireworks } from '../components/Fireworks';
 import { useKey } from '../hooks/useKey';
+import { pointsFor } from '../state/points';
+import { ScoreStrip } from '../components/ScoreStrip';
+import type { Award } from '../state/scores';
+import type { TeamId } from '../data/teams';
 
 type Stage = 'question' | 'options' | 'answer' | 'story';
 
@@ -23,9 +27,13 @@ interface Props {
   onPass: (id: string) => void;
   onSwap: (id: string) => void;
   onAbandon: () => void;
+  /** Points already given on this question, and the host's award controls. */
+  awards?: Award[];
+  onAward?: (team: TeamId, points: number) => void;
+  onRemoveAward?: (id: string) => void;
 }
 
-export function Question({ q, via, canSwap, onDone, onPass, onSwap, onAbandon }: Props) {
+export function Question({ q, via, canSwap, onDone, onPass, onSwap, onAbandon, awards = [], onAward, onRemoveAward }: Props) {
   const hasMiddle = Boolean(q.options || q.hint);
   const stages: Stage[] = [
     'question',
@@ -40,6 +48,9 @@ export function Question({ q, via, canSwap, onDone, onPass, onSwap, onAbandon }:
   // The most recent wrong pick: if the question carries a note for that option, it shows under the cards.
   const [lastWrong, setLastWrong] = useState<number | null>(null);
   const [celebrate, setCelebrate] = useState(false);
+  // Host toggles for the points pill: a steal after a blind miss, or a declared double.
+  const [steal, setSteal] = useState(false);
+  const [double, setDouble] = useState(false);
   const stage = stages[i];
   const locked = seen >= 1;
   const cat = CATEGORY_BY_ID[q.category];
@@ -69,6 +80,7 @@ export function Question({ q, via, canSwap, onDone, onPass, onSwap, onAbandon }:
     }
   }, [stage, q, wrong, stages]);
   useKey((e) => {
+    if (e.target instanceof HTMLElement && ['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
     if (stage !== 'options' || !q.options) return;
     const k = 'abcd'.indexOf(e.key.toLowerCase());
     const n = '1234'.indexOf(e.key);
@@ -80,6 +92,7 @@ export function Question({ q, via, canSwap, onDone, onPass, onSwap, onAbandon }:
 
   const showAnswer = stage === 'answer' || stage === 'story';
   const stop = (e: React.SyntheticEvent) => e.stopPropagation();
+  const points = pointsFor({ q, via, optionsShown: seen >= 1 && hasMiddle, steal, double });
 
   return (
     <section className={`question type-${q.type} stage-${stage} ${q.media ? 'has-media' : ''}`} onClick={next}>
@@ -88,7 +101,16 @@ export function Question({ q, via, canSwap, onDone, onPass, onSwap, onAbandon }:
         <span className="qcode" title="question code">{q.code}</span>
         {via === 'lucky' && <span className="chip chip-lucky">🪔 Lucky Diya — {cat.name} · {cellLabel(q.mode, q.region)}</span>}
         {via === 'swap' && <span className="chip chip-swap">🔄 Swapped</span>}
-        <span className={`chip ${q.mode.startsWith('hard') ? 'chip-hard' : ''}`}>{cellLabel(q.mode, q.region)}</span>
+        <span className="header-right">
+          <button className={`host-toggle ${steal ? 'on' : ''}`} onClick={() => setSteal((v) => !v)} aria-pressed={steal} title="first team missed before the options: the next team plays for 5">Steal</button>
+          <button className={`host-toggle ${double ? 'on' : ''}`} onClick={() => setDouble((v) => !v)} aria-pressed={double} title="Double-or-nothing was declared">×2</button>
+          <span className={`points ${steal ? 'steal' : ''}`} role="status" aria-label={`worth ${points.total}`}>
+            <span className="points-n">{points.total}</span>
+            <span className="points-parts">{points.parts.join(' · ')}</span>
+            {points.penalty > 0 && <span className="points-penalty">wrong −{points.penalty}</span>}
+          </span>
+          <span className={`chip ${q.mode.startsWith('hard') ? 'chip-hard' : ''}`}>{cellLabel(q.mode, q.region)}</span>
+        </span>
       </header>
 
       {celebrate && stage === 'answer' && <Fireworks />}
@@ -118,6 +140,9 @@ export function Question({ q, via, canSwap, onDone, onPass, onSwap, onAbandon }:
               {(q.type === 'riddle' || q.type === 'chart') && <p className="answer-text">{q.answerText}</p>}
               {q.reveal && <p className="reveal">{q.reveal}</p>}
             </div>
+          )}
+          {showAnswer && onAward && onRemoveAward && (
+            <ScoreStrip worth={points.total} awards={awards} onAward={onAward} onRemove={onRemoveAward} />
           )}
         </div>
       )}

@@ -48,10 +48,13 @@ export function Pick({ questions, state, category, onPick, onBack }: Props) {
     );
   };
 
+  // A category without sides (riddles) keeps kids and adult as single pools with region null.
+  const sides = cat.sides !== false;
   const topLeft = (t: Top) =>
-    t === 'hard' ? left('hard-kids', null) + left('hard-adult', null) : left(t, 'us') + left(t, 'india');
+    t === 'hard' ? left('hard-kids', null) + left('hard-adult', null) : sides ? left(t, 'us') + left(t, 'india') : left(t, null);
   const topTotal = (t: Top) =>
-    t === 'hard' ? total('hard-kids', null) + total('hard-adult', null) : total(t, 'us') + total(t, 'india');
+    t === 'hard' ? total('hard-kids', null) + total('hard-adult', null) : sides ? total(t, 'us') + total(t, 'india') : total(t, null);
+  const chooseTop = (t: Top) => { if (t !== 'hard' && !sides) onPick(cell(t, null)); else setTop(t); };
 
   return (
     <section className="pick">
@@ -65,7 +68,7 @@ export function Pick({ questions, state, category, onPick, onBack }: Props) {
       {!top && (
         <div className="pick-row">
           {(['kids', 'adult', 'hard'] as Top[]).map((t) => (
-            <button key={t} className={`btn-big ${t === 'hard' ? 'btn-hard' : ''}`} disabled={topLeft(t) === 0} onClick={() => setTop(t)}>
+            <button key={t} className={`btn-big ${t === 'hard' ? 'btn-hard' : ''}`} disabled={topLeft(t) === 0} onClick={() => chooseTop(t)}>
               <span>{TOP_LABEL[t]}</span>
               <Pips kind={t} left={topLeft(t)} total={topTotal(t)} />
             </button>

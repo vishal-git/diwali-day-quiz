@@ -352,7 +352,14 @@
       "img/2.4-opt-kgf.jpg"
     ],
     "answer": 0,
-    "answerText": "RRR"
+    "answerText": "RRR",
+    "reveal": "Best Original Song at the 95th Academy Awards, 12 March 2023. Music by M.M. Keeravani, sung by Rahul Sipligunj and Kaala Bhairava, who performed it live on the Oscar stage.",
+    "optionNotes": [
+      "",
+      "Baahubali (2015 and 2017) was S.S. Rajamouli's earlier epic. No Oscar.",
+      "Pushpa: The Rise (2021) is Allu Arjun's; its hit song was Srivalli.",
+      "KGF (2018 and 2022) is Yash's Kannada blockbuster."
+    ]
   },
   {
     "id": "2.5",
@@ -775,7 +782,13 @@
     ],
     "answer": 1,
     "answerText": "Indus Valley (Harappan)",
-    "reveal": "One of the world's oldest known docks, ~2400 BCE."
+    "reveal": "One of the world's oldest known docks, ~2400 BCE.",
+    "optionNotes": [
+      "The Mauryas, Ashoka's dynasty, came two thousand years later, around 320 BCE.",
+      "",
+      "The Guptas ruled around 320 to 550 CE, India's classical golden age.",
+      "The Cholas were the Tamil sea-kings of the south, around 900 to 1250 CE."
+    ]
   },
   {
     "id": "3.9",
@@ -816,7 +829,14 @@
       "Nikki Haley"
     ],
     "answer": 1,
-    "answerText": "Ghazala Hashmi"
+    "answerText": "Ghazala Hashmi",
+    "reveal": "Elected 4 Nov 2025 on the ticket with Governor Abigail Spanberger, sworn in 17 Jan 2026. Born in Hyderabad, she was a state senator from Chesterfield from 2020.",
+    "optionNotes": [
+      "Suhas Subramanyam is Virginia's first Indian American congressman, elected to the US House in 2024. Not a statewide office.",
+      "",
+      "Kiran Ahuja ran the federal Office of Personnel Management under President Biden; she never ran in Virginia.",
+      "Nikki Haley was governor of South Carolina, not Virginia."
+    ]
   },
   {
     "id": "3.S1",
@@ -976,7 +996,14 @@
       "9"
     ],
     "answer": 1,
-    "answerText": "Five"
+    "answerText": "Five",
+    "reveal": "Dhanteras, Kali Chaudas, Diwali, Bestu Varas (New Year) and Bhai Bij. This year: Friday 6 to Tuesday 10 November.",
+    "optionNotes": [
+      "Three would stop at Diwali night itself, with New Year and Bhai Bij still to come.",
+      "",
+      "Seven gets you to Labh Pancham, when Gujarati shops reopen, but the festival proper is five.",
+      ""
+    ]
   },
   {
     "id": "4.5",
@@ -994,7 +1021,13 @@
     ],
     "answer": 2,
     "answerText": "Aaso (Ashwin)",
-    "reveal": "Aaso vad amas; Kartik Sud 1 is New Year."
+    "reveal": "Aaso vad amas; Kartik Sud 1 is New Year.",
+    "optionNotes": [
+      "Shravan is the monsoon month of fasting, two months earlier.",
+      "Bhadarvo brings Ganesh Chaturthi.",
+      "",
+      "Magshar comes after Kartik, around December."
+    ]
   },
   {
     "id": "4.6",
@@ -1105,7 +1138,14 @@
       "lines": [
         "Issued 5 October 2016 — the first US stamp for Diwali, after a decade-long campaign."
       ]
-    }
+    },
+    "reveal": "Issued 5 October 2016 in New York after a decade of campaigning by Indian American groups. The diya photograph is by Sally Andersen-Bruce.",
+    "optionNotes": [
+      "Ganesha has never been on a US stamp; the 2016 design kept to a single lamp.",
+      "",
+      "A rangoli was one of the designs considered, but the lamp won.",
+      "The Taj Mahal is a Mughal tomb, not a Diwali symbol."
+    ]
   },
   {
     "id": "4.10",
@@ -1475,11 +1515,11 @@
     "id": "6.1",
     "category": "riddles",
     "mode": "kids",
-    "region": "us",
+    "region": null,
     "live": true,
     "type": "riddle",
     "question": "What has keys but can't open a single lock?",
-    "hint": "It's related to music.",
+    "hint": "I'm black and white, but I'm not a zebra or a newspaper.",
     "answer": "A piano",
     "answerText": "A piano"
   },
@@ -1487,11 +1527,11 @@
     "id": "6.2",
     "category": "riddles",
     "mode": "kids",
-    "region": "us",
+    "region": null,
     "live": true,
     "type": "riddle",
     "question": "I have cities but no houses, forests but no trees, and water but no fish. What am I?",
-    "hint": "You unfold me, or open me on your phone.",
+    "hint": "You need me most when you're lost.",
     "answer": "A map",
     "answerText": "A map"
   },
@@ -1499,24 +1539,23 @@
     "id": "6.3",
     "category": "riddles",
     "mode": "kids",
-    "region": "india",
+    "region": null,
     "live": true,
     "type": "riddle",
-    "question": "Five diyas are burning on the windowsill on Diwali night. A gust blows out two. How many diyas are left in the morning?",
-    "hint": "What happens to a diya that keeps burning all night?",
-    "answer": "Two",
-    "answerText": "Two",
-    "reveal": "The two that blew out — the other three burned down to nothing."
+    "question": "What gets wetter the more it dries?",
+    "hint": "I work hardest when you're dripping.",
+    "answer": "A towel",
+    "answerText": "A towel"
   },
   {
     "id": "6.4",
     "category": "riddles",
     "mode": "kids",
-    "region": "india",
+    "region": null,
     "live": true,
     "type": "riddle",
     "question": "I go up when the rain comes down. What am I?",
-    "hint": "You carry me in the monsoon.",
+    "hint": "I spend most of the year folded up in a corner.",
     "answer": "An umbrella",
     "answerText": "An umbrella (chhatri)"
   },
@@ -1524,11 +1563,11 @@
     "id": "6.5",
     "category": "riddles",
     "mode": "adult",
-    "region": "us",
+    "region": null,
     "live": true,
     "type": "riddle",
     "question": "What can travel all the way around the world while staying in a corner?",
-    "hint": "It's on an envelope.",
+    "hint": "I cost less than a dollar and I only ever travel once.",
     "answer": "A postage stamp",
     "answerText": "A postage stamp"
   },
@@ -1536,11 +1575,11 @@
     "id": "6.6",
     "category": "riddles",
     "mode": "adult",
-    "region": "us",
+    "region": null,
     "live": true,
     "type": "riddle",
     "question": "I have a neck but no head, and two arms but no hands. What am I?",
-    "hint": "You're probably wearing one.",
+    "hint": "I come in small, medium and large.",
     "answer": "A shirt",
     "answerText": "A shirt"
   },
@@ -1548,11 +1587,11 @@
     "id": "6.7",
     "category": "riddles",
     "mode": "adult",
-    "region": "india",
+    "region": null,
     "live": true,
     "type": "riddle",
     "question": "Ukhana: \"Ek raja ni anokhi rani, puchhdi thi pive paani.\" — A king's unusual queen, who drinks water through her tail.",
-    "hint": "She's lit tonight.",
+    "hint": "Count us on the windowsill tonight.",
     "answer": "A diya (divo)",
     "answerText": "A diya / divo",
     "reveal": "It drinks oil through its wick."
@@ -1561,11 +1600,11 @@
     "id": "6.8",
     "category": "riddles",
     "mode": "adult",
-    "region": "india",
+    "region": null,
     "live": true,
     "type": "riddle",
     "question": "\"Ek thaal moti se bhara, sabke sir par aundha dhara.\" — A plate full of pearls, turned upside down over everyone's head.",
-    "hint": "Look up after dark.",
+    "hint": "Everyone on Earth is under the same one.",
     "answer": "The night sky with stars",
     "answerText": "The night sky with stars"
   },
@@ -1577,7 +1616,7 @@
     "live": true,
     "type": "riddle",
     "question": "What can fill a whole room but takes up no space at all?",
-    "hint": "Think about what this festival celebrates.",
+    "hint": "Nothing in the universe moves faster than me.",
     "answer": "Light",
     "answerText": "Light"
   },
@@ -1589,7 +1628,7 @@
     "live": true,
     "type": "riddle",
     "question": "Gujarati ukhanu: \"Kalo ghodo, dholi asvari; ek utre ne biji chade.\" — A black horse with white riders: as one climbs off, the next climbs on.",
-    "hint": "You'll find her in the kitchen every evening.",
+    "hint": "She sits on the stove every evening.",
     "answer": "A tavo and rotli",
     "answerText": "Tavo and rotli (griddle and roti)",
     "reveal": "The black iron tavo is the horse; each pale rotli rides it in turn."
@@ -1598,11 +1637,11 @@
     "id": "6.S1",
     "category": "riddles",
     "mode": "kids",
-    "region": "us",
+    "region": null,
     "live": false,
     "type": "riddle",
     "question": "What has hands but cannot clap?",
-    "hint": "It's on the wall.",
+    "hint": "I have a face but never smile.",
     "answer": "A clock",
     "answerText": "A clock"
   },
@@ -1610,7 +1649,7 @@
     "id": "6.S2",
     "category": "riddles",
     "mode": "adult",
-    "region": "us",
+    "region": null,
     "live": false,
     "type": "riddle",
     "question": "The more of me there is, the less you can see. What am I?",
@@ -1771,7 +1810,13 @@
     ],
     "answer": 2,
     "answerText": "Saffron (kesar)",
-    "reveal": "Hand-picked stigmas; ~150,000 flowers per kilo. India's comes from Kashmir."
+    "reveal": "Hand-picked stigmas; ~150,000 flowers per kilo. India's comes from Kashmir.",
+    "optionNotes": [
+      "Cardamom is usually third, behind saffron and vanilla.",
+      "Vanilla is second: every orchid flower is pollinated by hand.",
+      "",
+      ""
+    ]
   },
   {
     "id": "7.8",
@@ -1780,16 +1825,22 @@
     "region": "india",
     "live": true,
     "type": "text",
-    "question": "Dabeli, the Kutchi street snack, was invented in which Kutch town in the 1960s?",
+    "question": "Dabeli, the sweet-and-spicy potato snack in a pav, was invented in the 1960s in which district of Gujarat?",
     "options": [
-      "Bhuj",
-      "Mandvi",
-      "Gandhidham",
-      "Anjar"
+      "Kutch",
+      "Surat",
+      "Rajkot",
+      "Anand"
     ],
-    "answer": 1,
-    "answerText": "Mandvi",
-    "reveal": "Credited to Keshavji Gabha Chudasama, who sold it for one aana."
+    "answer": 0,
+    "answerText": "Kutch",
+    "reveal": "In Mandvi, Kutch, credited to Keshavji Gabha Chudasama, who sold it for one aana. Kutch is also India’s largest district by area.",
+    "optionNotes": [
+      "",
+      "Surat is the diamond-polishing city and the home of locho and undhiyu.",
+      "Rajkot is the big city of Saurashtra, famous for its peda and chikki.",
+      "Anand is the milk capital: Amul started there in 1946."
+    ]
   },
   {
     "id": "7.9",
@@ -1832,13 +1883,21 @@
     "answer": 0,
     "answerText": "Odisha",
     "story": {
-      "title": "The rasgulla war",
+      "title": "The rasgulla war, 2015–2019",
       "lines": [
-        "Odisha: born centuries ago in Puri, offered to Goddess Lakshmi at the Jagannath temple on Niladri Bije — the Pahala rasgulla.",
+        "Odisha: born centuries ago in Puri, offered to Goddess Lakshmi at the Jagannath temple on Niladri Bije. The Pahala rasgulla.",
         "West Bengal: Kolkata confectioner Nobin Chandra Das invented the spongy modern version in 1868.",
-        "Both won Geographical Indication tags — \"Banglar Rasogolla\" (2017) and \"Odisha Rasagola\" (2019). Officially, both are right."
+        "2015: Odisha sets up committees to prove its case and declares 30 July \"Rasagola Dibasa\". 14 Nov 2017: West Bengal wins the GI tag \"Banglar Rasogolla\". 29 July 2019: Odisha wins \"Odisha Rasagola\".",
+        "Officially, both are right."
       ]
-    }
+    },
+    "reveal": "The fight ran 2015 to 2019. Odisha staked its claim in 2015; West Bengal won its GI tag on 14 Nov 2017; Odisha won its own on 29 July 2019.",
+    "optionNotes": [
+      "",
+      "Bihar's sweet claim to fame is the khaja of Silao; it never joined the rasgulla fight.",
+      "Jharkhand was carved out of Bihar in 2000 and stayed out of it.",
+      "Assam borders Bengal too, but its claim to fame is tea, not rasgulla."
+    ]
   },
   {
     "id": "7.S1",
@@ -1954,7 +2013,13 @@
       "Squash"
     ],
     "answer": 1,
-    "answerText": "Badminton"
+    "answerText": "Badminton",
+    "optionNotes": [
+      "Tennis is Sania Mirza's game.",
+      "",
+      "Table tennis is Manika Batra's.",
+      "Squash is Dipika Pallikal and Joshna Chinappa."
+    ]
   },
   {
     "id": "8.5",
@@ -1996,7 +2061,13 @@
     ],
     "answer": 2,
     "answerText": "26.2 miles",
-    "reveal": "42.195 km — the odd distance dates to the 1908 London Olympics."
+    "reveal": "42.195 km — the odd distance dates to the 1908 London Olympics.",
+    "optionNotes": [
+      "20 miles is roughly what the legend says Pheidippides ran from Marathon to Athens; the real road is nearer 25.",
+      "The first modern marathon at Athens 1896 was about 24.8 miles. 26.2 was fixed in 1921 after the 1908 London route from Windsor Castle to the royal box.",
+      "",
+      "Thirty miles is ultramarathon country; the shortest standard ultra is 50 km."
+    ]
   },
   {
     "id": "8.7",
@@ -2262,7 +2333,14 @@
       "2010"
     ],
     "answer": 1,
-    "answerText": "2007"
+    "answerText": "2007",
+    "reveal": "Steve Jobs announced it on 9 January 2007; it went on sale on 29 June 2007.",
+    "optionNotes": [
+      "2005 was the iPod nano and the Motorola ROKR, Apple's first phone partnership.",
+      "",
+      "2009 was the iPhone 3GS.",
+      "2010 brought the first iPad and the iPhone 4."
+    ]
   },
   {
     "id": "9.6",
@@ -2350,7 +2428,13 @@
     ],
     "answer": 1,
     "answerText": "\"Me at the zoo\"",
-    "reveal": "Co-founder Jawed Karim in front of the elephants at the San Diego Zoo."
+    "reveal": "Uploaded on 23 April 2005 by co-founder Jawed Karim, in front of the elephants at the San Diego Zoo.",
+    "optionNotes": [
+      "\"Hello World\" is the first program every coder writes, not the first YouTube video.",
+      "",
+      "",
+      "Charlie bit my finger came in 2007 and was for years the most-viewed video; it sold as an NFT in 2021."
+    ]
   },
   {
     "id": "9.10",
@@ -2367,7 +2451,13 @@
       "Nukkad"
     ],
     "answer": 1,
-    "answerText": "Fauji"
+    "answerText": "Fauji",
+    "optionNotes": [
+      "Circus (1989–90) came next, Shah Rukh's second TV series.",
+      "",
+      "Wagle Ki Duniya starred Anjan Srivastav, from R.K. Laxman's cartoons.",
+      "Nukkad (1986) was Saeed Mirza's street-corner serial."
+    ]
   },
   {
     "id": "9.S1",

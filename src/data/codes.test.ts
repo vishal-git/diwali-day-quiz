@@ -15,6 +15,11 @@ test('codes read CATEGORY-MODE-SCOPE-N: scope is US/IN, H for hard, S for spare'
   expect(code('8.10')).toBe('SPO-A-H-1');
   expect(code('9.S2')).toBe('GRW-A-S-1');
   expect(code('3.S3')).toBe('LOC-A-S-1');
+  // riddles have no sides, so no scope
+  expect(code('6.1')).toBe('RID-K-1');
+  expect(code('6.5')).toBe('RID-A-1');
+  expect(code('6.9')).toBe('RID-K-H-1');
+  expect(code('6.S1')).toBe('RID-K-S-1');
 });
 
 test('codes are unique and every question can be found by code as well as id', () => {

@@ -3,6 +3,9 @@ import type { CategoryId, Question } from '../data/types';
 import { cellCounts, luckyPool, playedCount, type GameState } from '../state/game';
 import { Tile } from '../components/Tile';
 import { ResetButton } from '../components/ResetButton';
+import { ScoreBar } from '../components/ScoreBar';
+import { ConfirmButton } from '../components/ConfirmButton';
+import type { TeamId } from '../data/teams';
 
 interface Props {
   questions: Question[];
@@ -10,12 +13,15 @@ interface Props {
   onPickCategory: (c: CategoryId) => void;
   onLucky: () => void;
   onReset: () => void;
+  totals?: Record<TeamId, number>;
+  onResetScores?: () => void;
 }
 
-export function Board({ questions, state, onPickCategory, onLucky, onReset }: Props) {
+export function Board({ questions, state, onPickCategory, onLucky, onReset, totals, onResetScores }: Props) {
   const luckyEmpty = luckyPool(questions, state).length === 0;
   return (
     <section className="board">
+      {totals && <div className="board-head"><ScoreBar totals={totals} size="small" /></div>}
       <div className="board-grid">
         {CATEGORIES.map((c) => (
           <Tile
@@ -37,8 +43,11 @@ export function Board({ questions, state, onPickCategory, onLucky, onReset }: Pr
         </button>
       </div>
       <footer className="board-footer">
-        <span className="muted">questions played: {playedCount(state)} · <a className="link-quiet" href="#/rules">rules</a></span>
-        <ResetButton onReset={onReset} />
+        <span className="muted">questions played: {playedCount(state)} · <a className="link-quiet" href="#/rules">rules</a> · <a className="link-quiet" href="#/scores">scores</a></span>
+        <span className="host-buttons">
+          {onResetScores && <ConfirmButton label="Reset scores" question="Reset all scores to zero?" onConfirm={onResetScores} />}
+          <ResetButton onReset={onReset} />
+        </span>
       </footer>
     </section>
   );

@@ -28,10 +28,13 @@ Live: https://diwali-day-quiz-production.up.railway.app
 | Backspace, ← | step back one stage |
 | Esc | leave the question without consuming it |
 | F | toggle fullscreen |
+| Steal / ×2 (question header) | toggles that reprice the points pill: a flat 5 after a blind miss, or a declared double (wrong costs the base) |
+| Team buttons under the answer | one tap awards what the pill says; the box beside it takes any other number, minus signs included. Awards are listed with a × to take back |
 | Swap (bottom right) | burn this question, draw a spare from the same category and mode. Only while the question alone is showing |
 | Pass (bottom right) | mark used and return to the board. Only while the question alone is showing; once options or a hint appear, both lock |
 | `#/answers` in the address bar | host cheat sheet for the paper scorer (print-friendly) |
 | `#/tokens` in the address bar | printable 38 mm token labels (3 Swap, 2 Hard, 1 Double, 1 Lucky Diya per team) to stick on poker chips; print at 100% |
+| `#/scores` in the address bar (also linked from the board footer) | every award in order with the three totals; × takes one back; two-step Reset scores |
 | `#/rules` in the address bar (also linked from the opening screen and board footer) | house rules for the TV: the three teams, a turn, tokens, Lucky Diya and the starting-hand scoring |
 | Reset game (board footer) | clears played/burned state after a confirm |
 
@@ -42,7 +45,7 @@ Board tiles show one glyph per question: a balloon for kids, a head-and-shoulder
 Every question has a host-facing code shown in the question header and on the `#/answers` sheet, derived from its cell so it never drifts from the data:
 
 ```
-CATEGORY-MODE-SCOPE-N      e.g.  GEO-K-US-1   DIW-A-H-1   LOC-A-S-2
+CATEGORY-MODE-SCOPE-N      e.g.  GEO-K-US-1   DIW-A-H-1   LOC-A-S-2   RID-K-1 (riddles have no side)
 ```
 
 | Part | Values |
@@ -54,7 +57,7 @@ CATEGORY-MODE-SCOPE-N      e.g.  GEO-K-US-1   DIW-A-H-1   LOC-A-S-2
 
 The bank's own numbers (`1.1`, `4.S2`) are still the `id` in `src/data/questions.json` and are listed beside the code on the answers sheet. `#/q/<code>` and `#/q/<id>` both open a question directly.
 
-State lives in the browser's localStorage under `diwali-quiz-2026`, so a refresh keeps the board.
+State lives in the browser's localStorage under `diwali-quiz-2026` (played/burned) and `diwali-quiz-2026-scores` (the award ledger), so a refresh keeps the board and the scores. The points pill applies the starting-hand scoring: 20 (40 hard), halved after options or hint, ×1.5 Diwali, ×2 on a declared double, +10 on a Lucky draw, +5 on the away side, 5 flat for a steal. No negative scores.
 
 ## Assets
 

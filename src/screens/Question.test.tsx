@@ -89,7 +89,7 @@ test('Swap is disabled with "no spares" when none remain', () => {
 test('riddles show a hint card instead of options, then the text answer', () => {
   const { advance } = setup('6.1');
   advance();
-  expect(screen.getByText(/related to music/)).toBeInTheDocument();
+  expect(screen.getByText(/black and white/)).toBeInTheDocument();
   expect(document.querySelectorAll('.option')).toHaveLength(0);
   advance();
   expect(screen.getByText('A piano')).toBeInTheDocument();
@@ -283,4 +283,53 @@ test('image questions show the picture with the question and keep it through the
   expect(screen.getByText('The Federal Reserve')).toBeInTheDocument();
   tick(); fireEvent.click(option('James Monroe Building'));
   expect(screen.getByText(/tallest in Richmond at 449 ft/)).toBeInTheDocument();
+});
+
+const worth = () => document.querySelector('.points-n')!.textContent;
+
+test('the points pill follows the rules: 40 on hard, 20 once options show, 5 on Steal, doubled on ×2', () => {
+  const { advance } = setup('1.10');
+  expect(worth()).toBe('40');
+  advance();
+  expect(worth()).toBe('20');
+  fireEvent.click(screen.getByRole('button', { name: /^Steal$/ }));
+  expect(worth()).toBe('5');
+  fireEvent.click(screen.getByRole('button', { name: /^Steal$/ }));
+  expect(worth()).toBe('20');
+  fireEvent.click(screen.getByRole('button', { name: /×2/ }));
+  expect(worth()).toBe('40');
+  expect(screen.getByText(/wrong −20/)).toBeInTheDocument();
+  // the host buttons never advance the stage
+  expect(document.querySelector('.option.correct')).toBeNull();
+});
+
+test('a Lucky draw on Diwali kids shows 30 + 10 lucky + 5 away before options', () => {
+  setup('4.1', { via: 'lucky' });
+  expect(worth()).toBe('45');
+  expect(screen.getByText(/Diwali ×1.5 · \+10 lucky · \+5 away side/)).toBeInTheDocument();
+});
+
+test('at the answer, one tap awards the pill value to a team; a typed number overrides it; given points can be removed', () => {
+  const onAward = vi.fn(); const onRemoveAward = vi.fn();
+  const { advance } = setup('1.5', { onAward, onRemoveAward, awards: [{ id: 'a1', qid: '1.5', team: 'gents', points: 25, at: 1 }] });
+  advance(); advance();
+  fireEvent.click(screen.getByRole('button', { name: /award 15 to Kids/ })); // 10 after options + 5 away side
+  expect(onAward).toHaveBeenCalledWith('kids', 15);
+  const box = screen.getByLabelText('other points for Ladies');
+  fireEvent.change(box, { target: { value: '-5' } });
+  fireEvent.keyDown(box, { key: 'Enter' });
+  expect(onAward).toHaveBeenCalledWith('ladies', -5);
+  expect(screen.getByText('Gentlemen +25')).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: /remove 25 from Gentlemen/ }));
+  expect(onRemoveAward).toHaveBeenCalledWith('a1');
+});
+
+test('typing in an award box never advances or picks', () => {
+  const { props, advance } = setup('1.5', { onAward: vi.fn(), onRemoveAward: vi.fn() });
+  advance(); advance();
+  const box = screen.getByLabelText('other points for Kids');
+  box.focus();
+  tick(); fireEvent.keyDown(box, { key: ' ' });
+  tick(); fireEvent.keyDown(box, { key: 'ArrowRight' });
+  expect(props.onDone).not.toHaveBeenCalled();
 });

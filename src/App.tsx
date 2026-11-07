@@ -4,6 +4,8 @@ import type { CategoryId, Cell, Question as Q } from './data/types';
 import { luckyPool, remainingIn, spareFor } from './state/game';
 import { mulberry32 } from './state/rng';
 import { useGame } from './state/useGame';
+import { useScores } from './state/useScores';
+import { awardsFor } from './state/scores';
 import { Opening } from './screens/Opening';
 import { Board } from './screens/Board';
 import { Pick } from './screens/Pick';
@@ -12,6 +14,7 @@ import { Lucky } from './screens/Lucky';
 import { Answers } from './screens/Answers';
 import { Rules } from './screens/Rules';
 import { Tokens } from './screens/Tokens';
+import { Scores } from './screens/Scores';
 import { useKey } from './hooks/useKey';
 
 const rng = mulberry32(314);
@@ -25,6 +28,7 @@ type Screen =
 
 export default function App() {
   const game = useGame();
+  const scores = useScores();
   const [screen, setScreen] = useState<Screen>(() => {
     // #/q/<id> opens a question directly — used by the layout check and handy for rehearsal.
     const m = /^#\/q\/(.+)$/.exec(window.location.hash);
@@ -46,12 +50,13 @@ export default function App() {
       if (document.fullscreenElement) void document.exitFullscreen?.();
       else void document.documentElement.requestFullscreen?.();
     }
-    if (e.key === 'Escape' && ['#/answers', '#/rules', '#/tokens'].includes(window.location.hash)) window.location.hash = '';
+    if (e.key === 'Escape' && ['#/answers', '#/rules', '#/tokens', '#/scores'].includes(window.location.hash)) window.location.hash = '';
   });
 
   if (hash === '#/answers') return <Answers questions={QUESTIONS} />;
   if (hash === '#/rules') return <Rules />;
   if (hash === '#/tokens') return <Tokens />;
+  if (hash === '#/scores') return <Scores scores={scores} />;
 
   const openCell = (cell: Cell) => {
     const q = remainingIn(QUESTIONS, game.state, cell)[0];
@@ -60,7 +65,7 @@ export default function App() {
 
   switch (screen.kind) {
     case 'opening':
-      return <Opening onBegin={toBoard} />;
+      return <Opening onBegin={toBoard} totals={scores.totals} />;
     case 'board':
       return (
         <Board
@@ -69,6 +74,8 @@ export default function App() {
           onPickCategory={(category) => setScreen({ kind: 'pick', category })}
           onLucky={() => setScreen({ kind: 'lucky' })}
           onReset={game.reset}
+          totals={scores.totals}
+          onResetScores={scores.reset}
         />
       );
     case 'pick':
@@ -98,6 +105,9 @@ export default function App() {
             else toBoard();
           }}
           onAbandon={toBoard}
+          awards={awardsFor(scores.ledger, q.id)}
+          onAward={(team, pts) => scores.award(q.id, team, pts)}
+          onRemoveAward={scores.remove}
         />
       );
     }

@@ -68,3 +68,18 @@ test('Reset asks for confirmation before resetting', () => {
   expect(onReset).toHaveBeenCalledTimes(1);
   expect(screen.getByText(/questions played: 1/i)).toBeInTheDocument();
 });
+
+test('the score bar shows the three totals and lights the leader; Reset scores is a two-step confirm', () => {
+  const onResetScores = vi.fn();
+  render(<Board questions={QUESTIONS} state={EMPTY} onPickCategory={noop} onLucky={noop} onReset={noop} totals={{ kids: 40, gents: 25, ladies: 40 }} onResetScores={onResetScores} />);
+  const items = screen.getAllByRole('listitem');
+  expect(items.map((i) => i.textContent)).toEqual(['Kids40', 'Gentlemen25', 'Ladies40']);
+  expect(items.filter((i) => i.classList.contains('leading')).map((i) => i.textContent)).toEqual(['Kids40', 'Ladies40']);
+  fireEvent.click(screen.getByRole('button', { name: /reset scores/i }));
+  expect(screen.getByText(/Reset all scores to zero\?/)).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: /^no$/i }));
+  expect(onResetScores).not.toHaveBeenCalled();
+  fireEvent.click(screen.getByRole('button', { name: /reset scores/i }));
+  fireEvent.click(screen.getByRole('button', { name: /yes, reset/i }));
+  expect(onResetScores).toHaveBeenCalledTimes(1);
+});

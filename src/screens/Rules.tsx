@@ -31,7 +31,7 @@ export function Rules() {
           <ul className="tokens">
             <li><span className="tok">🔄 ×3</span><span><strong>Swap</strong> — a fresh question, same category and mode. Only before the options show. The swapped one is gone for good.</span></li>
             <li><span className="tok">🔥 ×2</span><span><strong>Hard</strong> — unlocks a Hard question, Kids or Adult flavour, your choice. Spent even if you miss.</span></li>
-            <li><span className="tok">🎲 ×1</span><span><strong>Double-or-nothing</strong> — call it before the question is read. Right doubles it; wrong loses the base value. Not on Hard.</span></li>
+            <li><span className="tok">🎲 ×1</span><span><strong>Double-or-nothing</strong> — call it before the question is read. Right doubles it; wrong loses the base value. Kids and Adult questions only.</span></li>
           </ul>
         </article>
 
@@ -49,12 +49,13 @@ export function Rules() {
             <tbody>
               <tr><td>Right, no options or hint</td><td>20</td><td>40</td></tr>
               <tr><td>Right, after options or hint</td><td>10</td><td>20</td></tr>
-              <tr><td>Wrong</td><td>0</td><td>−10 adults · 0 kids</td></tr>
+              <tr><td>Wrong</td><td>0</td><td>0</td></tr>
               <tr><td>Away side (Kids·India, Adult·US)</td><td>+5</td><td>—</td></tr>
               <tr><td>Steal</td><td>5</td><td>5</td></tr>
+              <tr><td>Lucky Diya, right answer</td><td>+10</td><td>+10</td></tr>
             </tbody>
           </table>
-          <p className="rules-note">Diwali ×1.5 on top. Paper keeps score; the app only remembers which questions are gone.</p>
+          <p className="rules-note">Diwali ×1.5 on top. The pill on each question does this sum for you: tap <strong>Steal</strong> or <strong>×2</strong> when they happen, then tap the team under the answer to award it. Totals live on the board and at <code>#/scores</code>.</p>
         </article>
       </div>
 
@@ -62,7 +63,7 @@ export function Rules() {
         <h2>The board</h2>
         <ul className="cats">
           {CATEGORIES.map((c) => (
-            <li key={c.id}><span aria-hidden="true">{c.icon}</span> <strong>{c.name}</strong> <span className="muted">· US: {c.us} · India: {c.india}</span></li>
+            <li key={c.id}><span aria-hidden="true">{c.icon}</span> <strong>{c.name}</strong> <span className="muted">{c.sides === false ? `· ${c.us}, no US/India pick` : `· US: ${c.us} · India: ${c.india}`}</span></li>
           ))}
           <li><span aria-hidden="true">🎲</span> <strong>Lucky Diya</strong> <span className="muted">· random draw from the eight categories and Diwali</span></li>
         </ul>

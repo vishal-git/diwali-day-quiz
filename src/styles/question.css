@@ -24,6 +24,11 @@
 .stage-options.has-media .question-image, .stage-answer.has-media .question-image,
 .stage-options.has-media .question-body > .img-placeholder, .stage-answer.has-media .question-body > .img-placeholder,
 .stage-options.has-media .question-body > .mystery-card, .stage-answer.has-media .question-body > .mystery-card { max-height: 20vh; }
+/* The award strip joins the answer stage: picture and faces give up a little height for it. */
+.stage-answer.has-media .question-image, .stage-answer.has-media .question-body > .img-placeholder, .stage-answer.has-media .question-body > .mystery-card { max-height: 15vh; }
+.stage-answer.has-media .face, .stage-answer.has-media .option .img-placeholder.face { height: 16vh; }
+.stage-answer .question-body { gap: 0.9rem; }
+.stage-answer .poster, .stage-answer .option .img-placeholder.poster, .stage-answer .option .title-card.poster { height: 30vh; }
 .mystery-card {
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem;
   height: 50vh; aspect-ratio: 4 / 3; padding: 1rem; color: var(--muted);
@@ -125,6 +130,9 @@
 
 .story { flex: 1; display: grid; grid-template-columns: 3fr 2fr; gap: 3rem; align-items: center; padding: 0.5rem 0; }
 .story-visual { display: grid; place-items: center; }
+/* A story with no picture: one wide column, so four lines fit at 1080p. */
+.story-text-only { grid-template-columns: 1fr; max-width: 90rem; margin: 0 auto; }
+.story-text-only .story-line { font-size: 2rem; margin-bottom: 0.7rem; }
 .story-image, .story-visual .img-placeholder { max-height: 70vh; max-width: 100%; border-radius: var(--radius); box-shadow: 0 1rem 3rem rgba(0,0,0,0.5); }
 .story-title { font-size: 3rem; color: var(--gold); font-weight: 400; margin-bottom: 0.8rem; }
 .story-line { font-size: 2rem; margin: 0 0 0.9rem; }

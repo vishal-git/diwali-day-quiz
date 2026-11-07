@@ -67,3 +67,16 @@ test('Back returns to the board', () => {
   fireEvent.click(screen.getByRole('button', { name: /back/i }));
   expect(onBack).toHaveBeenCalled();
 });
+
+test('Riddles have no US/India step: Kids or Adult picks the cell straight away', () => {
+  const onPick = vi.fn();
+  render(<Pick questions={QUESTIONS} state={EMPTY} category="riddles" onPick={onPick} onBack={() => {}} />);
+  const kids = screen.getByRole('button', { name: /^Kids/ });
+  expect(kids.querySelectorAll('.pip-kids')).toHaveLength(4);
+  fireEvent.click(kids);
+  expect(onPick).toHaveBeenCalledWith({ category: 'riddles', mode: 'kids', region: null });
+  expect(screen.queryByRole('button', { name: /^US/ })).toBeNull();
+  fireEvent.click(screen.getByRole('button', { name: /^Hard/ }));
+  fireEvent.click(screen.getByRole('button', { name: /Hard·Kids/ }));
+  expect(onPick).toHaveBeenCalledWith({ category: 'riddles', mode: 'hard-kids', region: null });
+});

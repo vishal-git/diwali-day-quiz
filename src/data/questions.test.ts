@@ -25,7 +25,7 @@ test('nine categories in bank order', () => {
   ]);
 });
 
-const REGULAR: CategoryId[] = ['geography', 'movies', 'local', 'celebrity', 'riddles', 'food', 'sports', 'growing-up'];
+const REGULAR: CategoryId[] = ['geography', 'movies', 'local', 'celebrity', 'food', 'sports', 'growing-up'];
 
 test.each(REGULAR)('%s has the 2/2/2/2/1/1 live layout', (cat) => {
   expect(count(cat, 'kids', 'us')).toBe(2);
@@ -34,6 +34,14 @@ test.each(REGULAR)('%s has the 2/2/2/2/1/1 live layout', (cat) => {
   expect(count(cat, 'adult', 'india')).toBe(2);
   expect(count(cat, 'hard-kids', null)).toBe(1);
   expect(count(cat, 'hard-adult', null)).toBe(1);
+});
+
+test('riddles have no US/India split: 4 kids, 4 adult, one hard each', () => {
+  expect(count('riddles', 'kids', null)).toBe(4);
+  expect(count('riddles', 'adult', null)).toBe(4);
+  expect(count('riddles', 'kids', 'us') + count('riddles', 'kids', 'india') + count('riddles', 'adult', 'us') + count('riddles', 'adult', 'india')).toBe(0);
+  expect(count('riddles', 'hard-kids', null)).toBe(1);
+  expect(count('riddles', 'hard-adult', null)).toBe(1);
 });
 
 test('diwali has 11 live and no spares', () => {
@@ -45,9 +53,9 @@ test('diwali has 11 live and no spares', () => {
   expect(spares.filter((q) => q.category === 'diwali')).toHaveLength(0);
 });
 
-test('hard questions have no region; kids/adult always do', () => {
+test('hard questions and riddles have no region; other kids/adult questions always do', () => {
   for (const q of QUESTIONS) {
-    if (q.mode.startsWith('hard')) expect(q.region, q.id).toBeNull();
+    if (q.mode.startsWith('hard') || q.category === 'riddles') expect(q.region, q.id).toBeNull();
     else expect(q.region, q.id).not.toBeNull();
   }
 });
@@ -113,6 +121,8 @@ test('the special records are wired', () => {
   expect(byId['3.3'].story?.graphic).toBe('statue');
   expect(byId['4.9'].story?.image).toBe('img/4.9-usps-diwali-stamp.jpg');
   expect(byId['7.10'].story?.lines.length).toBeGreaterThan(0);
+  expect(byId['7.10'].reveal).toMatch(/2015 to 2019/);
+  expect(byId['6.3'].answer).toBe('A towel');
   expect(byId['8.10'].type).toBe('chart');
   expect(byId['8.10'].chart?.bars).toHaveLength(5);
   expect(byId['8.10'].story?.graphic).toBe('run-chart');

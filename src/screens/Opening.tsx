@@ -1,9 +1,11 @@
 import { useKey } from '../hooks/useKey';
 import { Diya } from '../components/Diya';
+import { ScoreBar } from '../components/ScoreBar';
+import type { TeamId } from '../data/teams';
 
 const SPARKS = Array.from({ length: 18 }, (_, i) => i);
 
-export function Opening({ onBegin }: { onBegin: () => void }) {
+export function Opening({ onBegin, totals }: { onBegin: () => void; totals?: Record<TeamId, number> }) {
   useKey((e) => {
     if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onBegin(); }
   }, [onBegin]);
@@ -20,6 +22,7 @@ export function Opening({ onBegin }: { onBegin: () => void }) {
       <p className="opening-sub">Diwali Quiz · 2026</p>
       <button className="btn-primary" onClick={onBegin}>Begin</button>
       <a className="link-quiet" href="#/rules">House rules</a>
+      {totals && <ScoreBar totals={totals} size="small" />}
     </section>
   );
 }

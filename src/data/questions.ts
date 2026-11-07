@@ -3,13 +3,14 @@ import { CATEGORY_CODE, type Question } from './types';
 
 type Raw = Omit<Question, 'code'>;
 
-/** CATEGORY-MODE-SCOPE-N: mode is K or A; scope is US/IN, H for a hard question, S for a spare. N counts within that group in bank order. */
+/** CATEGORY-MODE-SCOPE-N: mode is K or A; scope is US/IN, H for a hard question, S for a spare, omitted for a category with no sides. N counts within that group in bank order. */
 export function assignCodes(raw: Raw[]): Question[] {
   const seen = new Map<string, number>();
   return raw.map((q) => {
     const mode = q.mode.endsWith('kids') ? 'K' : 'A';
-    const scope = !q.live ? 'S' : q.mode.startsWith('hard') ? 'H' : q.region === 'us' ? 'US' : 'IN';
-    const prefix = `${CATEGORY_CODE[q.category]}-${mode}-${scope}`;
+    // Riddles have no US/India side, so their live kids/adult codes carry no scope: RID-K-1.
+    const scope = !q.live ? 'S' : q.mode.startsWith('hard') ? 'H' : q.region === 'us' ? 'US' : q.region === 'india' ? 'IN' : null;
+    const prefix = [CATEGORY_CODE[q.category], mode, scope].filter(Boolean).join('-');
     const n = (seen.get(prefix) ?? 0) + 1;
     seen.set(prefix, n);
     return { ...q, code: `${prefix}-${n}` };
