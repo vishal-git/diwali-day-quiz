@@ -1,4 +1,5 @@
 import { CATEGORIES } from '../data/categories';
+import { Glyph } from '../components/Pips';
 
 /** House rules at #/rules, readable from the sofa. The host may bend any of it on the night. */
 export function Rules() {
@@ -10,9 +11,9 @@ export function Rules() {
       </header>
 
       <div className="teams" aria-label="teams">
-        <div className="team team-kids"><span className="team-glyph" aria-hidden="true">🌼</span><span className="team-name">Kids</span></div>
-        <div className="team team-gents"><span className="team-glyph" aria-hidden="true">🪔</span><span className="team-name">Gentlemen</span></div>
-        <div className="team team-ladies"><span className="team-glyph" aria-hidden="true">✨</span><span className="team-name">Ladies</span></div>
+        <div className="team team-kids"><span className="team-glyph" aria-hidden="true"><Glyph kind="kids" /></span><span className="team-name">Kids</span></div>
+        <div className="team team-gents"><span className="team-glyph" aria-hidden="true"><Glyph kind="adult" /></span><span className="team-name">Gentlemen</span></div>
+        <div className="team team-ladies"><span className="team-glyph" aria-hidden="true"><Glyph kind="adult" /></span><span className="team-name">Ladies</span></div>
       </div>
 
       <div className="rules-grid">
@@ -68,7 +69,7 @@ export function Rules() {
         <p className="rules-note"><strong>Final round:</strong> every team wagers up to half its points on one last question.</p>
       </article>
 
-      <footer className="rules-foot muted">Press Esc or remove <code>#/rules</code> from the address to go back.</footer>
+      <footer className="rules-foot muted">Token labels to print and stick on poker chips: <a className="link-quiet" href="#/tokens">#/tokens</a> · Press Esc or remove <code>#/rules</code> from the address to go back.</footer>
     </section>
   );
 }

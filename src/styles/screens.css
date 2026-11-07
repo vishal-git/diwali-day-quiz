@@ -1,7 +1,7 @@
 /* ---------- shared ---------- */
 .screen-pad { padding: 2rem 3rem; }
 .muted { color: var(--muted); }
-.chip {
+.tchip {
   display: inline-flex; align-items: center; gap: 0.5rem;
   padding: 0.35rem 1rem; border-radius: 999px;
   background: var(--bg-raised); color: var(--gold);
@@ -85,9 +85,9 @@
 .pips-row { display: inline-flex; gap: 0.2rem; }
 .pips-caption { font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
 .pip { --size: 1.4rem; width: var(--size); height: var(--size); display: block; transition: opacity 200ms ease, filter 200ms ease; }
-.pips-kids  { --pip-a: var(--marigold); --pip-b: var(--gold); --pip-c: #7a3e00; }
-.pips-adult { --pip-a: #b8651a; --pip-b: var(--gold); --pip-c: #fff6c8; }
-.pips-hard  { --pip-a: var(--magenta); --pip-b: var(--gold); --pip-c: var(--cream); }
+.pips-kids, .pip-kids  { --pip-a: #ff5c8a; --pip-b: #fff; --pip-c: var(--cream); }
+.pips-adult, .pip-adult { --pip-a: var(--gold); --pip-b: #c98a1b; --pip-c: var(--cream); }
+.pips-hard, .pip-hard  { --pip-a: var(--flame); --pip-b: var(--gold); --pip-c: #fff6c8; }
 .pip.used { opacity: 0.28; filter: grayscale(1) brightness(0.7); }
 .pip.used .pip-flame { opacity: 0; }
 .tile-featured .pip { --size: 2rem; }
@@ -167,7 +167,7 @@
 .rules-sub { color: var(--magenta); margin: 0.3rem 0 0; letter-spacing: 0.08em; text-transform: uppercase; font-size: 1.1rem; }
 .teams { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin: 0 0 1.4rem; }
 .team { display: flex; align-items: center; justify-content: center; gap: 0.8rem; padding: 0.9rem; border-radius: var(--radius); background: var(--bg-raised); border: 3px solid rgba(255, 209, 102, 0.25); font-family: var(--font-display); font-size: 2.2rem; }
-.team-glyph { font-size: 2.4rem; }
+.team-glyph { display: inline-flex; } .team-glyph .pip { --size: 2.6rem; }
 .team-kids { border-color: var(--marigold); } .team-gents { border-color: var(--gold); } .team-ladies { border-color: var(--magenta); }
 .rules-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
 .rule-card { background: var(--bg-raised); border-radius: var(--radius); padding: 1.1rem 1.5rem; border: 2px solid rgba(154, 143, 184, 0.2); }
@@ -186,6 +186,27 @@
 .rules-note { color: var(--muted); font-size: 1.2rem; margin-top: 0.6rem; }
 .cats { columns: 2; column-gap: 2rem; }
 .cats li { break-inside: avoid; font-size: 1.3rem; }
+/* printable token labels, #/tokens: 38 mm discs that fit a standard 39 mm poker chip face */
+.tokens-page { padding: 2rem 3rem; overflow: auto; height: 100vh; }
+.tokens-page h1 { color: var(--gold); font-family: var(--font-display); font-weight: 400; font-size: 2.4rem; margin: 0 0 0.3rem; }
+.tokens-page .lede { color: var(--muted); margin: 0 0 1.2rem; max-width: 70ch; }
+.tchip-group { margin: 0 0 1.2rem; }
+.tchip-group h2 { color: var(--marigold); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.1em; margin: 0 0 0.5rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 6mm; }
+.tchip { width: 38mm; height: 38mm; border-radius: 50%; border: 1.2mm solid var(--chip); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1mm; background: #fff; color: #111; box-sizing: border-box; }
+.tchip .pip, .tchip svg { width: 13mm; height: 13mm; display: block; }
+.tchip-label { font-weight: 800; font-size: 11pt; text-transform: uppercase; letter-spacing: 0.06em; color: var(--chip); line-height: 1; }
+.tchip-sub { font-size: 7.5pt; color: #444; line-height: 1.1; text-align: center; max-width: 30mm; }
+.tchip-team-name { font-size: 7pt; color: #777; text-transform: uppercase; letter-spacing: 0.12em; }
+.tchip-swap { --chip: #1e6fd9; } .tchip-hard { --chip: #e0481a; } .tchip-double { --chip: #6b2fb3; } .tchip-lucky { --chip: #c98a1b; }
+@media print {
+  html, body, #root, .tokens-page { background: #fff !important; color: #000; height: auto; overflow: visible; }
+  .tokens-page { padding: 0; }
+  .tokens-page h1, .tokens-page .lede, .no-print { display: none; }
+  .tchip-group h2 { color: #000; }
+  .chips { gap: 4mm; }
+  .tchip-group { break-inside: avoid; }
+}
 .rules-foot { margin-top: 1.4rem; text-align: center; font-size: 1rem; }
 .link-quiet { color: var(--muted); text-decoration: underline dotted; font-size: inherit; }
 .opening .link-quiet { margin-top: 1.4rem; font-size: 1.1rem; }
