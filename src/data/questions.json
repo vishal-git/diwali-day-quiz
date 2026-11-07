@@ -769,25 +769,25 @@
     "region": "india",
     "live": true,
     "type": "text",
-    "question": "Lothal, in Gujarat, was a dockyard city of which ancient civilisation?",
+    "question": "Lothal in Gujarat, a dockyard city of the Indus Valley civilisation, is roughly how old?",
     "media": {
       "src": "img/3.8-lothal-dockyard.jpg",
       "alt": "A rectangular ancient brick basin in a dry landscape"
     },
     "options": [
-      "Mauryan Empire",
-      "Indus Valley",
-      "Gupta Empire",
-      "Chola Kingdom"
+      "1,500 years",
+      "2,500 years",
+      "4,500 years",
+      "6,500 years"
     ],
-    "answer": 1,
-    "answerText": "Indus Valley (Harappan)",
-    "reveal": "One of the world's oldest known docks, ~2400 BCE.",
+    "answer": 2,
+    "answerText": "About 4,500 years (c. 2400 BCE)",
+    "reveal": "Built around 2400 BCE, about the time of the Great Pyramid, and one of the world’s oldest known docks. Excavated 1955–60 by S.R. Rao.",
     "optionNotes": [
-      "The Mauryas, Ashoka's dynasty, came two thousand years later, around 320 BCE.",
+      "1,500 years ago is the Gupta age, long after Lothal was abandoned.",
+      "2,500 years ago is the time of the Buddha and the Mauryas to come.",
       "",
-      "The Guptas ruled around 320 to 550 CE, India's classical golden age.",
-      "The Cholas were the Tamil sea-kings of the south, around 900 to 1250 CE."
+      "6,500 years ago there were no cities anywhere in the world yet."
     ]
   },
   {
@@ -1056,7 +1056,8 @@
       "Mahishasura was slain by Durga. That is Navratri and Durga Puja."
     ],
     "answer": 2,
-    "answerText": "Narakasura"
+    "answerText": "Narakasura",
+    "reveal": "Krishna, with Satyabhama at the reins, killed Narakasura of Pragjyotisha (Assam) at dawn and freed 16,000 captive princesses. The oil bath before sunrise on Kali Chaudas remembers it."
   },
   {
     "id": "4.7",
@@ -1193,7 +1194,13 @@
     ],
     "answer": 1,
     "answerText": "Barack Obama",
-    "reveal": "The White House had hosted Diwali since 2003, but Obama was the first president to attend and light the lamp himself."
+    "reveal": "The White House had hosted Diwali since 2003, but Obama was the first president to attend and light the lamp himself.",
+    "optionMedia": [
+      "img/4.11-opt-bush.jpg",
+      "img/4.11-opt-obama.jpg",
+      "img/4.11-opt-clinton.jpg",
+      "img/4.11-opt-biden.jpg"
+    ]
   },
   {
     "id": "5.1",
@@ -1306,7 +1313,7 @@
     "region": "us",
     "live": true,
     "type": "image",
-    "question": "Who is the young TV news anchor in the middle of this 1976 Baltimore snapshot?",
+    "question": "Who is the young woman in the middle of this 1976 Baltimore snapshot?",
     "media": {
       "src": "img/5.5-oprah-then.jpg",
       "alt": "Three young women in a 1976 newsroom snapshot"
@@ -1336,7 +1343,7 @@
     "question": "Who is this, in a cramped office in 1999?",
     "media": {
       "src": "img/5.6-bezos-then.jpg",
-      "alt": "1999 office with a spray-painted amazon.com sign"
+      "alt": "Two people at a cluttered desk in a 1999 office"
     },
     "options": [
       "Bill Gates",
@@ -1359,32 +1366,35 @@
     "mode": "adult",
     "region": "india",
     "live": true,
-    "type": "image",
-    "question": "Who is the curly-haired teenager on the right, on a Mumbai maidan in 1988?",
-    "media": {
-      "src": "img/5.7-tendulkar-then.jpg",
-      "alt": "Two teenage cricketers in whites on a maidan"
-    },
+    "type": "text",
+    "question": "Her father came from Mehsana, Gujarat. She has carried a Ganesha idol and samosas to space, and spent nine unplanned months on the Space Station in 2024–25.",
     "options": [
-      "Sunil Gavaskar",
-      "Sourav Ganguly",
-      "Sachin Tendulkar",
-      "Rahul Dravid"
+      "Sunita Williams",
+      "Kalpana Chawla",
+      "Sirisha Bandla",
+      "Anousheh Ansari"
     ],
+    "answer": 0,
+    "answerText": "Sunita Williams",
     "optionMedia": [
-      "img/5.7-opt-gavaskar.jpg",
-      "img/5.7-opt-ganguly.jpg",
-      "img/5.7-opt-tendulkar.jpg",
-      "img/5.7-opt-dravid.jpg"
+      "img/5.7-opt-williams.jpg",
+      "img/5.7-opt-chawla.jpg",
+      "img/5.7-opt-bandla.jpg",
+      "img/5.7-opt-ansari.jpg"
     ],
-    "answer": 2,
-    "answerText": "Sachin Tendulkar"
+    "reveal": "An eight-day Boeing Starliner test flight in June 2024 became 286 days; she came home on a SpaceX Dragon on 18 March 2025.",
+    "optionNotes": [
+      "",
+      "Kalpana Chawla, from Karnal, was the first Indian-born woman in space (1997) and died on Columbia in 2003.",
+      "Sirisha Bandla, born in Guntur, flew to the edge of space with Virgin Galactic in 2021.",
+      "Anousheh Ansari, Iranian-American, was the first woman space tourist, in 2006."
+    ]
   },
   {
     "id": "5.8",
     "category": "celebrity",
-    "mode": "adult",
-    "region": "india",
+    "mode": "hard-adult",
+    "region": null,
     "live": true,
     "type": "image",
     "question": "Who is this Chennai college student from the 1970s? Clue: played guitar in an all-girl rock band, later ran PepsiCo for 12 years.",
@@ -1414,7 +1424,7 @@
     "region": null,
     "live": true,
     "type": "image",
-    "question": "Who is this teenager in Pretoria, South Africa, in the 1980s? Clue: sold his first video game at 12, now runs Tesla and SpaceX.",
+    "question": "Who is this teenager in Pretoria, South Africa, in the 1980s? Clue: sold his first video game at 12.",
     "media": {
       "src": "img/5.9-musk-then.jpg",
       "alt": "Teenager in Pretoria, 1980s"
@@ -1437,8 +1447,8 @@
   {
     "id": "5.10",
     "category": "celebrity",
-    "mode": "hard-adult",
-    "region": null,
+    "mode": "adult",
+    "region": "india",
     "live": true,
     "type": "image",
     "question": "Who is the garlanded schoolboy on the left, with his younger brother? Clue: left Stanford's MBA program in 1981 to join his father's polyester business.",
@@ -1777,22 +1787,22 @@
     "region": "us",
     "live": true,
     "type": "text",
-    "question": "Which US state grows about half of all the peanuts in America?",
+    "question": "Which US state grows the most potatoes?",
     "options": [
-      "Virginia",
-      "Georgia",
-      "Texas",
-      "Alabama"
-    ],
-    "optionNotes": [
-      "Nice try. The big 'Virginia peanut' is a variety grown mostly in Virginia and North Carolina, but the state grows only a few percent of the crop.",
-      "",
-      "Texas is in the top three, but at around a tenth of the crop.",
-      "Alabama is in the top three too, at around a tenth of the crop."
+      "Maine",
+      "Idaho",
+      "Wisconsin",
+      "Washington"
     ],
     "answer": 1,
-    "answerText": "Georgia",
-    "reveal": "Georgia grows roughly half the US crop; Alabama, Florida and Texas around a tenth each. Virginia lends its name to the big 'Virginia-type' peanut but grows only a few percent."
+    "answerText": "Idaho",
+    "reveal": "Idaho grows about a third of America's potatoes; Washington is second. The famous Idaho russet was bred by Luther Burbank in Massachusetts in 1872.",
+    "optionNotes": [
+      "Maine led the country until the 1950s; now it is lobster and blueberries.",
+      "",
+      "Wisconsin is the cheese state, and third for potatoes.",
+      "Washington is second for potatoes and first for apples."
+    ]
   },
   {
     "id": "7.7",
@@ -1885,11 +1895,19 @@
     "story": {
       "title": "The rasgulla war, 2015–2019",
       "lines": [
-        "Odisha: born centuries ago in Puri, offered to Goddess Lakshmi at the Jagannath temple on Niladri Bije. The Pahala rasgulla.",
+        "Odisha: born centuries ago in Puri, offered to Lakshmi at the Jagannath temple on Niladri Bije. The Pahala rasgulla.",
         "West Bengal: Kolkata confectioner Nobin Chandra Das invented the spongy modern version in 1868.",
-        "2015: Odisha sets up committees to prove its case and declares 30 July \"Rasagola Dibasa\". 14 Nov 2017: West Bengal wins the GI tag \"Banglar Rasogolla\". 29 July 2019: Odisha wins \"Odisha Rasagola\".",
-        "Officially, both are right."
-      ]
+        "2015: Odisha stakes its claim and declares 30 July Rasagola Dibasa. 14 Nov 2017: Bengal wins the GI tag. 29 July 2019: Odisha wins its own. Officially, both are right."
+      ],
+      "graphic": "map-states",
+      "highlight": [
+        "West Bengal",
+        "Orissa"
+      ],
+      "labels": {
+        "West Bengal": "West Bengal",
+        "Orissa": "Odisha"
+      }
     },
     "reveal": "The fight ran 2015 to 2019. Odisha staked its claim in 2015; West Bengal won its GI tag on 14 Nov 2017; Odisha won its own on 29 July 2019.",
     "optionNotes": [
@@ -1897,7 +1915,11 @@
       "Bihar's sweet claim to fame is the khaja of Silao; it never joined the rasgulla fight.",
       "Jharkhand was carved out of Bihar in 2000 and stayed out of it.",
       "Assam borders Bengal too, but its claim to fame is tea, not rasgulla."
-    ]
+    ],
+    "media": {
+      "src": "img/7.10-rasgulla.jpg",
+      "alt": "A bowl of white rasgullas in syrup"
+    }
   },
   {
     "id": "7.S1",
@@ -1982,21 +2004,22 @@
     "region": "india",
     "live": true,
     "type": "text",
-    "question": "Neeraj Chopra won India's first-ever Olympic gold in athletics, at Tokyo in 2021. In which event?",
+    "question": "How many players does a cricket team have on the field?",
     "options": [
-      "100 m sprint",
-      "Long jump",
-      "Javelin throw",
-      "Marathon"
-    ],
-    "optionNotes": [
-      "No Indian sprinter has ever reached an Olympic 100 m final.",
-      "Long jump is Anju Bobby George's event: World Championship bronze in 2003.",
-      "",
-      ""
+      "9",
+      "10",
+      "11",
+      "12"
     ],
     "answer": 2,
-    "answerText": "Javelin"
+    "answerText": "Eleven",
+    "reveal": "Eleven a side, like football and field hockey. Baseball fields nine. The twelfth man is the substitute who carries the drinks.",
+    "optionNotes": [
+      "Nine is baseball.",
+      "Ten is the number of wickets a bowling side needs; the eleventh batter is left not out.",
+      "",
+      "The twelfth man is the substitute fielder who carries the drinks."
+    ]
   },
   {
     "id": "8.4",
@@ -2005,20 +2028,21 @@
     "region": "india",
     "live": true,
     "type": "text",
-    "question": "P.V. Sindhu, a two-time Olympic medallist, plays which sport?",
+    "question": "What is India's national sport?",
     "options": [
-      "Tennis",
-      "Badminton",
-      "Table tennis",
-      "Squash"
+      "Cricket",
+      "Field hockey",
+      "Kabaddi",
+      "None officially"
     ],
-    "answer": 1,
-    "answerText": "Badminton",
+    "answer": 3,
+    "answerText": "None, officially",
+    "reveal": "In 2012 a ten-year-old’s Right-to-Information request made the sports ministry admit India has never declared a national sport. Hockey is the folk answer: eight Olympic golds between 1928 and 1980.",
     "optionNotes": [
-      "Tennis is Sania Mirza's game.",
-      "",
-      "Table tennis is Manika Batra's.",
-      "Squash is Dipika Pallikal and Joshna Chinappa."
+      "Cricket is the most popular by far, but it has never been declared the national sport.",
+      "Everyone says hockey, and India won eight Olympic golds in it, but in 2012 the government confirmed nothing was ever declared.",
+      "Kabaddi is India's own game, with a Pro Kabaddi League since 2014, but not official either.",
+      ""
     ]
   },
   {
@@ -2042,7 +2066,8 @@
       "lines": [
         "Seahawks 29–13 over the Patriots at Levi's Stadium.",
         "Kenneth Walker III was MVP. Bad Bunny did halftime."
-      ]
+      ],
+      "image": "img/8.5-levis-stadium.jpg"
     }
   },
   {
@@ -2236,7 +2261,7 @@
     "id": "9.1",
     "category": "growing-up",
     "mode": "kids",
-    "region": "us",
+    "region": null,
     "live": true,
     "type": "text",
     "question": "In Minecraft, which green creature sneaks up on you and explodes?",
@@ -2253,7 +2278,7 @@
     "id": "9.2",
     "category": "growing-up",
     "mode": "kids",
-    "region": "us",
+    "region": null,
     "live": true,
     "type": "video",
     "question": "Name this song.",
@@ -2275,48 +2300,49 @@
     "id": "9.3",
     "category": "growing-up",
     "mode": "kids",
-    "region": "india",
+    "region": null,
     "live": true,
     "type": "text",
-    "question": "Which actor played the Indian TV superhero Shaktimaan in the 1990s?",
+    "question": "What is the money called inside Roblox?",
     "options": [
-      "Mukesh Khanna",
-      "Shekhar Suman",
-      "Jackie Shroff",
-      "Arun Govil"
-    ],
-    "optionNotes": [
-      "",
-      "Shekhar Suman hosted Movers & Shakers. No cape.",
-      "",
-      "Arun Govil was Rama in Ramayan. That is the adult question."
+      "Robux",
+      "V-Bucks",
+      "Minecoins",
+      "Gems"
     ],
     "answer": 0,
-    "answerText": "Mukesh Khanna"
+    "answerText": "Robux",
+    "reveal": "Robux. V-Bucks are Fortnite's, Minecoins are Minecraft's.",
+    "optionNotes": [
+      "",
+      "V-Bucks buy skins in Fortnite.",
+      "Minecoins are Minecraft's marketplace money.",
+      "Gems are Clash of Clans, and half the app store."
+    ]
   },
   {
     "id": "9.4",
     "category": "growing-up",
     "mode": "kids",
-    "region": "india",
+    "region": null,
     "live": true,
     "type": "text",
-    "question": "What does the \"G\" in Parle-G biscuits originally stand for?",
+    "question": "Which 2016 phone game sent everyone outdoors to catch Pikachu and friends?",
     "options": [
-      "Glucose",
-      "Gold",
-      "Great",
-      "Gujarat"
-    ],
-    "optionNotes": [
-      "",
-      "It was Parle Gluco until the 1980s, when it became Parle-G.",
-      "",
-      "Parle is a Mumbai suburb, Vile Parle, where the factory opened in 1929."
+      "Pokémon Go",
+      "Clash of Clans",
+      "Candy Crush",
+      "Among Us"
     ],
     "answer": 0,
-    "answerText": "Glucose",
-    "reveal": "Launched as Parle Gluco in 1938; the girl on the packet has been there since the 1960s."
+    "answerText": "Pokémon Go",
+    "reveal": "Launched July 2016; 500 million downloads in its first two months.",
+    "optionNotes": [
+      "",
+      "Clash of Clans (2012) is the village-building one.",
+      "Candy Crush (2012) is the sweets-matching one.",
+      "Among Us (2018) took off in the 2020 lockdown: find the impostor."
+    ]
   },
   {
     "id": "9.5",
@@ -2349,21 +2375,22 @@
     "region": "us",
     "live": true,
     "type": "text",
-    "question": "Which sitcom about six friends in New York ran from 1994 to 2004?",
+    "question": "The last Blockbuster video store in the world is still open. Which state is it in?",
     "options": [
-      "Seinfeld",
-      "Frasier",
-      "Friends",
-      "How I Met Your Mother"
-    ],
-    "optionNotes": [
-      "Seinfeld ran 1989–98, four friends in New York.",
-      "Frasier was Seattle, 1993–2004.",
-      "",
-      "How I Met Your Mother was 2005–14, five friends in New York."
+      "Texas",
+      "Alaska",
+      "Oregon",
+      "Ohio"
     ],
     "answer": 2,
-    "answerText": "Friends"
+    "answerText": "Oregon",
+    "reveal": "Bend, Oregon: the last one anywhere since the final Alaska stores closed in 2018. In 2000 Blockbuster turned down buying Netflix for $50 million.",
+    "optionNotes": [
+      "Blockbuster was born in Dallas in 1985, but Texas lost its last store years ago.",
+      "Alaska had the last few until 2018; John Oliver sent one a Russell Crowe jockstrap to drum up custom.",
+      "",
+      "Ohio’s went with the 2013–14 closures of the corporate stores."
+    ]
   },
   {
     "id": "9.7",
@@ -2492,5 +2519,52 @@
     ],
     "answer": 1,
     "answerText": "Bournvita Quiz Contest"
+  },
+  {
+    "id": "9.S3",
+    "category": "growing-up",
+    "mode": "adult",
+    "region": "india",
+    "live": false,
+    "type": "text",
+    "question": "Which actor played the Indian TV superhero Shaktimaan in the 1990s?",
+    "options": [
+      "Mukesh Khanna",
+      "Shekhar Suman",
+      "Jackie Shroff",
+      "Arun Govil"
+    ],
+    "optionNotes": [
+      "",
+      "Shekhar Suman hosted Movers & Shakers. No cape.",
+      "",
+      "Arun Govil was Rama in Ramayan. That is the adult question."
+    ],
+    "answer": 0,
+    "answerText": "Mukesh Khanna"
+  },
+  {
+    "id": "9.S4",
+    "category": "growing-up",
+    "mode": "adult",
+    "region": "india",
+    "live": false,
+    "type": "text",
+    "question": "What does the \"G\" in Parle-G biscuits originally stand for?",
+    "options": [
+      "Glucose",
+      "Gold",
+      "Great",
+      "Gujarat"
+    ],
+    "optionNotes": [
+      "",
+      "It was Parle Gluco until the 1980s, when it became Parle-G.",
+      "",
+      "Parle is a Mumbai suburb, Vile Parle, where the factory opened in 1929."
+    ],
+    "answer": 0,
+    "answerText": "Glucose",
+    "reveal": "Launched as Parle Gluco in 1938; the girl on the packet has been there since the 1960s."
   }
 ]

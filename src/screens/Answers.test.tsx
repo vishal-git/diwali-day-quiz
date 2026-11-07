@@ -13,7 +13,7 @@ test('lists every question with its answer, grouped by category, plus the final 
 
 test('spares are marked', () => {
   render(<Answers questions={QUESTIONS} />);
-  expect(screen.getAllByText('spare').length).toBe(19);
+  expect(screen.getAllByText('spare').length).toBe(21);
 });
 
 test('the sheet lists the code next to the bank number', () => {

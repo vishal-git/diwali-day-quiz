@@ -10,7 +10,10 @@ export interface Media { src: string; alt: string }
 export interface Story {
   title: string;
   image?: string;
-  graphic?: 'statue' | 'map-gujarat' | 'run-chart';
+  graphic?: 'statue' | 'map-gujarat' | 'run-chart' | 'map-states';
+  /** For map-states: state names as in india-paths.json, and the label to print for each. */
+  highlight?: string[];
+  labels?: Record<string, string>;
   lines: string[];
 }
 

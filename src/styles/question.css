@@ -29,6 +29,8 @@
 .stage-answer.has-media .face, .stage-answer.has-media .option .img-placeholder.face { height: 16vh; }
 .stage-answer .question-body { gap: 0.9rem; }
 .stage-answer .poster, .stage-answer .option .img-placeholder.poster, .stage-answer .option .title-card.poster { height: 30vh; }
+.stage-answer .face, .stage-answer .option .img-placeholder.face { height: 18vh; }
+.story-visual .map-india { max-height: 62vh; width: auto; }
 .mystery-card {
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem;
   height: 50vh; aspect-ratio: 4 / 3; padding: 1rem; color: var(--muted);

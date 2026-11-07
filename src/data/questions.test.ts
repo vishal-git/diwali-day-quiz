@@ -9,10 +9,10 @@ function count(category: CategoryId, mode: Mode, region: Region) {
   return live.filter((q) => q.category === category && q.mode === mode && q.region === region).length;
 }
 
-test('bank totals match the v8 bank: 110 questions, 91 live, 19 spares', () => {
-  expect(QUESTIONS).toHaveLength(110);
+test('bank totals match the v8 bank: 112 questions, 91 live, 21 spares', () => {
+  expect(QUESTIONS).toHaveLength(112);
   expect(live).toHaveLength(91);
-  expect(spares).toHaveLength(19);
+  expect(spares).toHaveLength(21);
 });
 
 test('ids are unique', () => {
@@ -25,7 +25,7 @@ test('nine categories in bank order', () => {
   ]);
 });
 
-const REGULAR: CategoryId[] = ['geography', 'movies', 'local', 'celebrity', 'food', 'sports', 'growing-up'];
+const REGULAR: CategoryId[] = ['geography', 'movies', 'local', 'celebrity', 'food', 'sports'];
 
 test.each(REGULAR)('%s has the 2/2/2/2/1/1 live layout', (cat) => {
   expect(count(cat, 'kids', 'us')).toBe(2);
@@ -44,6 +44,16 @@ test('riddles have no US/India split: 4 kids, 4 adult, one hard each', () => {
   expect(count('riddles', 'hard-adult', null)).toBe(1);
 });
 
+test('growing up: kids are one pool of four (no side), adults keep US/India', () => {
+  expect(count('growing-up', 'kids', null)).toBe(4);
+  expect(count('growing-up', 'kids', 'us') + count('growing-up', 'kids', 'india')).toBe(0);
+  expect(count('growing-up', 'adult', 'us')).toBe(2);
+  expect(count('growing-up', 'adult', 'india')).toBe(2);
+  expect(count('growing-up', 'hard-kids', null)).toBe(1);
+  expect(count('growing-up', 'hard-adult', null)).toBe(1);
+  expect(spares.filter((q) => q.category === 'growing-up').map((q) => q.id)).toEqual(['9.S1', '9.S2', '9.S3', '9.S4']);
+});
+
 test('diwali has 11 live and no spares', () => {
   expect(count('diwali', 'kids', 'india')).toBe(4);
   expect(count('diwali', 'adult', 'india')).toBe(4);
@@ -55,7 +65,7 @@ test('diwali has 11 live and no spares', () => {
 
 test('hard questions and riddles have no region; other kids/adult questions always do', () => {
   for (const q of QUESTIONS) {
-    if (q.mode.startsWith('hard') || q.category === 'riddles') expect(q.region, q.id).toBeNull();
+    if (q.mode.startsWith('hard') || q.category === 'riddles' || (q.category === 'growing-up' && q.mode === 'kids' && q.live)) expect(q.region, q.id).toBeNull();
     else expect(q.region, q.id).not.toBeNull();
   }
 });
@@ -123,12 +133,21 @@ test('the special records are wired', () => {
   expect(byId['7.10'].story?.lines.length).toBeGreaterThan(0);
   expect(byId['7.10'].reveal).toMatch(/2015 to 2019/);
   expect(byId['6.3'].answer).toBe('A towel');
+  expect(byId['7.10'].story?.graphic).toBe('map-states');
+  expect(byId['7.10'].story?.highlight).toEqual(['West Bengal', 'Orissa']);
+  expect(byId['8.5'].story?.image).toBe('img/8.5-levis-stadium.jpg');
+  expect(byId['5.8'].mode).toBe('hard-adult');
+  expect(byId['5.10'].mode).toBe('adult');
+  expect(byId['5.9'].question).not.toMatch(/Tesla/);
+  expect(byId['4.11'].optionMedia).toHaveLength(4);
   expect(byId['8.10'].type).toBe('chart');
   expect(byId['8.10'].chart?.bars).toHaveLength(5);
   expect(byId['8.10'].story?.graphic).toBe('run-chart');
   expect(byId['1.S1'].story?.graphic).toBe('map-gujarat');
   expect(byId['8.5'].story?.lines.length).toBeGreaterThan(0);
   expect(byId['3.1'].media?.src).toBe('img/3.1-richmond-fan-map.jpg');
+  expect(byId['9.6'].answerText).toBe('Oregon');
+  expect(byId['8.4'].answerText).toBe('None, officially');
   expect(byId['3.5'].media?.src).toBe('img/3.5-richmond-skyline-fed.jpg');
   expect(byId['6.10'].type).toBe('riddle');
   expect(byId['6.10'].question).toMatch(/ukhanu/i);

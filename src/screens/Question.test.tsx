@@ -122,11 +122,15 @@ test('lucky draws show the lucky chip', () => {
   expect(screen.getByText(/Lucky Diya — Sports · Hard·Adult/)).toBeInTheDocument();
 });
 
-test('video question embeds YouTube with autoplay off', () => {
-  setup('9.2');
+test('video question hides the clip behind a play button, then embeds YouTube with autoplay on', () => {
+  const { props } = setup('9.2');
+  expect(document.querySelector('iframe')).toBeNull();
+  fireEvent.click(screen.getByRole('button', { name: /play the clip/i }));
   const frame = document.querySelector('iframe')!;
   expect(frame.getAttribute('src')).toContain('XqZsoesa55w');
-  expect(frame.getAttribute('src')).toContain('autoplay=0');
+  expect(frame.getAttribute('src')).toContain('autoplay=1');
+  expect(props.onDone).not.toHaveBeenCalled();
+  expect(screen.queryByText('Baby Shark')).toBeNull(); // still on the question stage
 });
 
 test('a double-click advances only one stage', () => {

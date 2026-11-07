@@ -20,6 +20,9 @@ test('codes read CATEGORY-MODE-SCOPE-N: scope is US/IN, H for hard, S for spare'
   expect(code('6.5')).toBe('RID-A-1');
   expect(code('6.9')).toBe('RID-K-H-1');
   expect(code('6.S1')).toBe('RID-K-S-1');
+  expect(code('9.1')).toBe('GRW-K-1');
+  expect(code('9.5')).toBe('GRW-A-US-1');
+  expect(code('9.S3')).toBe('GRW-A-S-2');
 });
 
 test('codes are unique and every question can be found by code as well as id', () => {

@@ -1,6 +1,6 @@
 # Diwali Party Quiz 2026 — Draft 8
 
-Changes from v7 (7 Nov 2026, after the midterms): twelve questions replaced — US state capital (1.1), Toy Story's Woody (2.2) and Nemo the clownfish (2.6) for a group that does not watch much Hollywood, a towel riddle for the five-diyas one (6.3; clay diyas do not burn away),, longest US river (1.2), five new Local·US questions (Fan District map, Senate term, Richmond skyline, House majority, Short Pump), a Gujarati *ukhanu* for Hard·Adult riddles (6.10) and a vegetarian-friendly Food·Adult·US (7.6). Options reworded on 13 questions so the longest option is no longer a giveaway. 35 questions now carry a **note per wrong option** that the app shows when a team picks it. Layout unchanged: 2/2/2/2/2 = 10 live per regular category, Diwali 11, 19 spares. The twelve retired questions are kept at the end of this file and in full in `diwali_quiz_2026_v7.md`.
+Changes from v7 (7 Nov 2026, after the midterms): seventeen questions replaced — US state capital (1.1), Toy Story's Woody (2.2) and Nemo the clownfish (2.6) for a group that does not watch much Hollywood, a towel riddle for the five-diyas one (6.3; clay diyas do not burn away), Idaho potatoes for peanuts (7.6), Sunita Williams for Sachin (5.7), cricket's eleven and the national-sport trap for Neeraj Chopra and P.V. Sindhu (8.3, 8.4), the last Blockbuster for Friends (9.6), Roblox and Pokémon Go for the Growing Up kids who grew up here (9.3, 9.4),, longest US river (1.2), five new Local·US questions (Fan District map, Senate term, Richmond skyline, House majority, Short Pump), a Gujarati *ukhanu* for Hard·Adult riddles (6.10) and a vegetarian-friendly Food·Adult·US (7.6). Options reworded on 13 questions so the longest option is no longer a giveaway. 35 questions now carry a **note per wrong option** that the app shows when a team picks it. Layout unchanged: 2/2/2/2/2 = 10 live per regular category, Diwali 11, 19 spares. The seventeen retired questions are kept at the end of this file and in full in `diwali_quiz_2026_v7.md`.
 
 Changes from v6: every category has two Hard questions, Hard·Kids and Hard·Adult.
 
@@ -26,7 +26,7 @@ Diwali 2026: **Sunday, Nov 8** (Dhanteras Fri Nov 6 · Kali Chaudas Sat Nov 7 ·
 | 6 | Riddles & Ukhana | one pool, no US/India pick (7 Nov) | English riddles and Gujarati/Hindi *ukhana* mixed |
 | 7 | Food | American | Gujarati / Mumbai / Indian |
 | 8 | Sports | NFL, tennis, soccer | cricket, athletics, badminton |
-| 9 | Growing Up | 2010s–20s America | 80s–90s India |
+| 9 | Growing Up | Kids: 2010s–20s, one pool (7 Nov) · Adults: America | Adults: 80s–90s India |
 | 10 | Lucky Diya 🪔 | random draw from 1–9 | |
 
 ### A turn
@@ -234,8 +234,9 @@ A) 200 B) 218 C) 235 D) 270 → **218**
 **3.7** Mumbai's curved seaside promenade, famous for its necklace of lights at night, is nicknamed what?
 A) The Golden Mile B) The Queen's Necklace C) The Pearl Strand D) The Diamond Crescent → **The Queen's Necklace**
 
-**3.8** Lothal, in Gujarat, was a dockyard city of which ancient civilisation?
-A) Mauryan Empire B) Indus Valley C) Gupta Empire D) Chola Kingdom → **Indus Valley (Harappan)** (one of the world's oldest known docks, ~2400 BCE)
+**3.8** 📷 Lothal in Gujarat, a dockyard city of the Indus Valley civilisation, is roughly how old?
+A) 1,500 years B) 2,500 years C) 4,500 years D) 6,500 years → **About 4,500 years** (built c. 2400 BCE, about the time of the Great Pyramid; one of the world's oldest known docks; excavated 1955–60 by S.R. Rao. Reworded 7 Nov: naming the civilisation was too easy)
+*Notes:* A) 1,500 years ago is the Gupta age, long after Lothal was abandoned · B) 2,500 years ago is the time of the Buddha · D) 6,500 years ago there were no cities anywhere in the world yet
 
 ### Hard · Kids
 **3.9** Our corner of Henrico is called Short Pump. Where did the name come from?
@@ -283,7 +284,7 @@ A) 3 B) 5 C) 7 D) 9 → **Five**
 A) Shravan B) Bhadarvo C) Aaso D) Magshar → **Aaso (Ashwin)** (Aaso *vad amas*; Kartik Sud 1 is New Year)
 
 **4.6** *Kali Chaudas*, the night before Diwali, is also called Narak Chaturdashi. Which demon did Krishna defeat that day?
-A) Ravana B) Hiranyakashipu C) Narakasura D) Mahishasura → **Narakasura**
+A) Ravana B) Hiranyakashipu C) Narakasura D) Mahishasura → **Narakasura** (Krishna, with Satyabhama at the reins, killed Narakasura of Pragjyotisha at dawn and freed 16,000 captive princesses; the pre-dawn oil bath on Kali Chaudas remembers it)
 *Notes:* A) Ravana was defeated by Rama. That is Dussehra, twenty days before Diwali · B) Hiranyakashipu was slain by Narasimha, Vishnu's lion avatar. That is the Holika story · D) Mahishasura was slain by Durga. That is Navratri and Durga Puja
 
 **4.7** In West Bengal, Diwali night is not mainly a Lakshmi puja. Which goddess is worshipped instead?
@@ -305,7 +306,7 @@ A) It moves with the monsoon's last rains B) It is the new moon of a lunar month
 
 ### Hard · Adult
 **4.11** Which US president was the first to personally light a diya at a White House Diwali celebration, in 2009?
-A) George W. Bush B) Barack Obama C) Bill Clinton D) Joe Biden → **Barack Obama**
+A) George W. Bush B) Barack Obama C) Bill Clinton D) Joe Biden *(official portraits on the cards)* → **Barack Obama**
 *Notes:* A) George W. Bush's White House hosted the first Diwali in 2003, but he did not attend the ceremony himself · C) Clinton left office in 2001, before the White House ever hosted Diwali · D) Biden hosted the biggest White House Diwali in 2023, but Obama lit the first diya in 2009 (the White House had hosted Diwali since 2003, but Obama was the first president to attend and light the lamp himself — the famous photo)
 
 ### Spares
@@ -338,14 +339,17 @@ A) Whoopi Goldberg B) Oprah Winfrey C) Michelle Obama D) Tyra Banks → **Oprah 
 A) Bill Gates B) Steve Jobs C) Jeff Bezos D) Larry Page → **Jeff Bezos**
 
 ### Adult · India
-**5.7** 📷 *Sachin Tendulkar as a curly-haired 14-year-old at Shivaji Park, Mumbai.*
-A) Sunil Gavaskar B) Sourav Ganguly C) Sachin Tendulkar D) Rahul Dravid → **Sachin Tendulkar**
+*(7 Nov: 5.8 Nooyi and 5.10 Ambani swapped cells; 5.8 is now Hard·Adult and 5.10 Adult·India. The ids keep their bank numbers; the app's codes follow the cells.)*
+
+**5.7** *(text)* Her father came from Jhulasan in Mehsana, Gujarat. She has carried a Ganesha idol, the Bhagavad Gita and samosas to space, and spent nine unplanned months on the Space Station in 2024–25.
+A) Sunita Williams B) Kalpana Chawla C) Sirisha Bandla D) Anousheh Ansari → **Sunita Williams** (Boeing Starliner's eight-day test flight in June 2024 became 286 days; home on a SpaceX Dragon on 18 March 2025; her father Deepak Pandya was a neuroanatomist from Mehsana)
+*Notes:* B) Kalpana Chawla, from Karnal, was the first Indian-born woman in space (1997) and died on Columbia in 2003 · C) Sirisha Bandla, born in Guntur, flew to the edge of space with Virgin Galactic in 2021 · D) Anousheh Ansari, Iranian-American, was the first woman space tourist, in 2006
 
 **5.8** 📷 *Indra Nooyi as a Chennai college student in the 1970s.* Clue: played guitar in an all-girl rock band, later ran PepsiCo for 12 years.
 A) Indra Nooyi B) Kiran Mazumdar-Shaw C) Chanda Kochhar D) Padmasree Warrior → **Indra Nooyi**
 
 ### Hard · Kids
-**5.9** 📷 *Elon Musk as a teenager in Pretoria, South Africa, 1980s.* Clue: sold his first video game at 12, now runs Tesla and SpaceX.
+**5.9** 📷 *(clue no longer names Tesla and SpaceX)* *Elon Musk as a teenager in Pretoria, South Africa, 1980s.* Clue: sold his first video game at 12, now runs Tesla and SpaceX.
 A) Mark Zuckerberg B) Elon Musk C) Sam Altman D) Jeff Bezos → **Elon Musk**
 
 ### Hard · Adult
@@ -430,10 +434,9 @@ A) Pav bhaji B) Vada pav C) Dabeli D) Misal pav → **Vada pav** (Mumbai's "Bomb
 A) Rye B) Barley C) Wheat D) Corn → **Corn**
 *Notes:* A) Rye whiskey must be 51% rye. That is the other American classic · B) Malted barley is Scotch's grain · C) Wheated bourbons use wheat as the second grain, but corn still leads
 
-**7.6** Which US state grows about half of all the peanuts in America?
-A) Virginia B) Georgia C) Texas D) Alabama → **Georgia**
-*Reveal:* Georgia grows roughly half the US crop; Alabama, Florida and Texas around a tenth each. Virginia lends its name to the big "Virginia-type" peanut but grows only a few percent.
-*Notes:* A) Nice try. The big "Virginia peanut" is a variety grown mostly in Virginia and North Carolina, but the state grows only a few percent of the crop · C) Texas is in the top three, but at around a tenth of the crop · D) Alabama is in the top three too, at around a tenth of the crop
+**7.6** Which US state grows the most potatoes?
+A) Maine B) Idaho C) Wisconsin D) Washington → **Idaho** (about a third of the US crop; Washington second; the Idaho russet was bred by Luther Burbank in Massachusetts in 1872)
+*Notes:* A) Maine led the country until the 1950s; now it is lobster and blueberries · C) Wisconsin is the cheese state, and third for potatoes · D) Washington is second for potatoes and first for apples
 
 ### Adult · India
 **7.7** Which spice is the most expensive in the world by weight?
@@ -451,6 +454,7 @@ A) Coffee B) Cacao C) Carob D) Vanilla → **Cacao**
 ### Hard · Adult
 **7.10** West Bengal fought a years-long legal battle with which neighbouring state over who invented the rasgulla?
 A) Odisha B) Bihar C) Jharkhand D) Assam → **Odisha**
+*Question shows a photo of Odisha and Bengal rasgullas; story page shows an India map with West Bengal and Odisha lit, so the kids see where they are.*
 *Reveal (story card, with dates — the fight ran 2015–2019):* Odisha claimed the rasgulla originated centuries ago in Puri, offered to Goddess Lakshmi at the Jagannath temple on *Niladri Bije* (the Pahala rasgulla). West Bengal credited Kolkata confectioner Nobin Chandra Das with inventing the spongy modern version in 1868. Both states filed for Geographical Indication tags; Odisha staked its claim in 2015 and declared 30 July Rasagola Dibasa; West Bengal won "Banglar Rasogolla" on 14 Nov 2017; Odisha won "Odisha Rasagola" on 29 July 2019 — so, officially, both are right.
 *Notes:* B) Bihar's sweet claim to fame is the khaja of Silao; it never joined the rasgulla fight · C) Jharkhand was carved out of Bihar in 2000 and stayed out of it · D) Assam borders Bengal too, but its claim to fame is tea, not rasgulla
 
@@ -473,16 +477,17 @@ A) Argentina B) France C) Spain D) England → **Spain** (1–0 over Argentina i
 A) 3 B) 4 C) 5 D) 6 → **Four** (Australian Open, French Open, Wimbledon, US Open)
 
 ### Kids · India
-**8.3** Neeraj Chopra won India's first-ever Olympic gold in athletics, at Tokyo in 2021. In which event?
-A) 100 m sprint B) Long jump C) Javelin throw D) Marathon → **Javelin**
-*Notes:* A) No Indian sprinter has ever reached an Olympic 100 m final · B) Long jump is Anju Bobby George's event: World Championship bronze in 2003
+**8.3** How many players does a cricket team have on the field?
+A) 9 B) 10 C) 11 D) 12 → **Eleven** (like football and field hockey; baseball fields nine; the twelfth man carries the drinks)
+*Notes:* A) Nine is baseball · B) Ten is the number of wickets a bowling side needs · D) The twelfth man is the substitute fielder who carries the drinks
 
-**8.4** P.V. Sindhu, a two-time Olympic medallist, plays which sport?
-A) Tennis B) Badminton C) Table tennis D) Squash → **Badminton**
+**8.4** What is India's national sport?
+A) Cricket B) Field hockey C) Kabaddi D) None officially → **None, officially** (in 2012 a ten-year-old's RTI request made the sports ministry admit no national sport was ever declared; hockey is the folk answer, eight Olympic golds 1928–1980)
+*Notes:* A) Cricket is the most popular by far, but it has never been declared the national sport · B) Everyone says hockey, and India won eight Olympic golds in it, but in 2012 the government confirmed nothing was ever declared · C) Kabaddi is India's own game, with a Pro Kabaddi League since 2014, but not official either
 
 ### Adult · US
 **8.5** Who won this year's Super Bowl (LX, February 2026)?
-A) New England Patriots B) Seattle Seahawks C) Kansas City Chiefs D) Philadelphia Eagles → **Seattle Seahawks** (29–13 over the Patriots at Levi's Stadium; Kenneth Walker III was MVP; Bad Bunny did halftime)
+A) New England Patriots B) Seattle Seahawks C) Kansas City Chiefs D) Philadelphia Eagles → **Seattle Seahawks** (story page with a Levi's Stadium photo; 29–13 over the Patriots at Levi's Stadium; Kenneth Walker III was MVP; Bad Bunny did halftime)
 
 **8.6** How long is a marathon?
 A) 20 miles B) 24.5 miles C) 26.2 miles D) 30 miles → **26.2 miles** (42.195 km — the odd distance dates to the 1908 London Olympics)
@@ -518,29 +523,28 @@ A) 3 B) 6 C) 7 D) 10 → **Six**
 
 ## 9. GROWING UP — Nostalgia
 
-### Kids · US
+### Kids (one pool, no US/India pick: the kids grew up here)
 **9.1** In Minecraft, which green creature sneaks up on you and explodes?
 A) Zombie B) Enderman C) Creeper D) Skeleton → **Creeper**
 
-**9.2** 🎵 *[Play 3 seconds of the intro]* Name this song.
+**9.2** 🎵 *[Clip sits behind a Play button so YouTube's title never shows first; play 3 seconds]* Name this song.
 A) Baby Shark B) Wheels on the Bus C) Johny Johny Yes Papa D) Cocomelon theme → **Baby Shark** (one of the most-viewed videos in YouTube history)
 
-### Kids · India
-**9.3** Which actor played the Indian TV superhero Shaktimaan in the 1990s?
-A) Mukesh Khanna B) Shekhar Suman C) Jackie Shroff D) Arun Govil → **Mukesh Khanna**
-*Notes:* B) Shekhar Suman hosted Movers & Shakers. No cape · D) Arun Govil was Rama in Ramayan. That is the adult question
+**9.3** What is the money called inside Roblox?
+A) Robux B) V-Bucks C) Minecoins D) Gems → **Robux**
+*Notes:* B) V-Bucks buy skins in Fortnite · C) Minecoins are Minecraft's marketplace money · D) Gems are Clash of Clans, and half the app store
 
-**9.4** What does the "G" in Parle-G biscuits originally stand for?
-A) Glucose B) Gold C) Great D) Gujarat → **Glucose** (launched as Parle Gluco in 1938; the girl on the packet has been there since the 1960s)
-*Notes:* B) It was Parle Gluco until the 1980s, when it became Parle-G · D) Parle is a Mumbai suburb, Vile Parle, where the factory opened in 1929
+**9.4** Which 2016 phone game sent everyone outdoors to catch Pikachu and friends?
+A) Pokémon Go B) Clash of Clans C) Candy Crush D) Among Us → **Pokémon Go** (July 2016; 500 million downloads in two months)
+*Notes:* B) Clash of Clans (2012) is the village-building one · C) Candy Crush (2012) is the sweets-matching one · D) Among Us (2018) took off in the 2020 lockdown: find the impostor
 
 ### Adult · US
 **9.5** In what year did Apple release the first iPhone?
 A) 2005 B) 2007 C) 2009 D) 2010 → **2007**
 
-**9.6** Which sitcom about six friends in New York ran from 1994 to 2004?
-A) Seinfeld B) Frasier C) Friends D) How I Met Your Mother → **Friends**
-*Notes:* A) Seinfeld ran 1989–98, four friends in New York · B) Frasier was Seattle, 1993–2004 · D) How I Met Your Mother was 2005–14, five friends in New York
+**9.6** The last Blockbuster video store in the world is still open. Which state is it in?
+A) Texas B) Alaska C) Oregon D) Ohio → **Oregon** (Bend, the last one anywhere since the final Alaska stores closed in 2018; in 2000 Blockbuster turned down buying Netflix for $50 million)
+*Notes:* A) Blockbuster was born in Dallas in 1985, but Texas lost its last store years ago · B) Alaska had the last few until 2018; John Oliver sent one a Russell Crowe jockstrap to drum up custom · D) Ohio's went with the 2013–14 closures of the corporate stores
 
 ### Adult · India
 **9.7** Who played Lord Rama in Ramanand Sagar's *Ramayan* on Doordarshan in 1987?
@@ -565,6 +569,16 @@ A) Snapchat B) TikTok C) Discord D) BeReal → **Snapchat**
 
 **9.S2 (Adult)** Which 1990s TV quiz show, hosted by Derek O'Brien, was sponsored by a malt drink?
 A) Kaun Banega Crorepati B) Bournvita Quiz Contest C) Mastermind India D) Quiz Time → **Bournvita Quiz Contest**
+
+---
+
+**9.S3 (Adult)** Which actor played the Indian TV superhero Shaktimaan in the 1990s?
+A) Mukesh Khanna B) Shekhar Suman C) Jackie Shroff D) Arun Govil → **Mukesh Khanna**
+*Notes:* B) Shekhar Suman hosted Movers & Shakers. No cape · D) Arun Govil was Rama in Ramayan. That is the adult question
+
+**9.S4 (Adult)** What does the "G" in Parle-G biscuits originally stand for?
+A) Glucose B) Gold C) Great D) Gujarat → **Glucose** (launched as Parle Gluco in 1938; the girl on the packet has been there since the 1960s)
+*Notes:* B) It was Parle Gluco until the 1980s, when it became Parle-G · D) Parle is a Mumbai suburb, Vile Parle, where the factory opened in 1929
 
 ---
 
@@ -596,7 +610,7 @@ A) 2081 B) 2082 C) 2083 D) 2084 → **Vikram Samvat 2083**
 
 ## Retired from v7 (7 Nov 2026)
 
-These twelve came off the board in v8. They are no longer in `src/data/questions.json`; copy one back in (with a fresh id) if a slot opens up.
+These seventeen came off the board in v8 (plus 9.3 Shaktimaan and 9.4 Parle-G, which moved to the adult spares). They are no longer in `src/data/questions.json`; copy one back in (with a fresh id) if a slot opens up.
 
 *Geography · Kids · US* (was 1.1)
 **1.1** Which US state is the *second*-largest by area, after Alaska?
@@ -646,3 +660,27 @@ A) Anna Wintour B) Tina Brown C) Diana Vreeland D) Grace Coddington → **Anna W
 *Riddles · Kids* (was 6.3)
 **6.3** Five diyas are burning on the windowsill on Diwali night. A gust blows out two. How many diyas are left in the morning?
 Hint: *what happens to a diya that keeps burning all night?* → **Two** — the two that blew out; the other three burned down to nothing
+
+*Food · Adult · US* (was 7.6)
+**7.6** Which US state grows about half of all the peanuts in America?
+A) Virginia B) Georgia C) Texas D) Alabama → **Georgia**
+*Reveal:* Georgia grows roughly half the US crop; Alabama, Florida and Texas around a tenth each. Virginia lends its name to the big "Virginia-type" peanut but grows only a few percent.
+*Notes:* A) Nice try. The big "Virginia peanut" is a variety grown mostly in Virginia and North Carolina, but the state grows only a few percent of the crop · C) Texas is in the top three, but at around a tenth of the crop · D) Alabama is in the top three too, at around a tenth of the crop
+
+*Celebrity · Adult · India* (was 5.7)
+**5.7** 📷 *Sachin Tendulkar as a curly-haired 14-year-old at Shivaji Park, Mumbai.*
+A) Sunil Gavaskar B) Sourav Ganguly C) Sachin Tendulkar D) Rahul Dravid → **Sachin Tendulkar**
+
+*Sports · Kids · India* (was 8.3)
+**8.3** Neeraj Chopra won India's first-ever Olympic gold in athletics, at Tokyo in 2021. In which event?
+A) 100 m sprint B) Long jump C) Javelin throw D) Marathon → **Javelin**
+*Notes:* A) No Indian sprinter has ever reached an Olympic 100 m final · B) Long jump is Anju Bobby George's event: World Championship bronze in 2003
+
+*Sports · Kids · India* (was 8.4)
+**8.4** P.V. Sindhu, a two-time Olympic medallist, plays which sport?
+A) Tennis B) Badminton C) Table tennis D) Squash → **Badminton**
+
+*Growing Up · Adult · US* (was 9.6)
+**9.6** Which sitcom about six friends in New York ran from 1994 to 2004?
+A) Seinfeld B) Frasier C) Friends D) How I Met Your Mother → **Friends**
+*Notes:* A) Seinfeld ran 1989–98, four friends in New York · B) Frasier was Seattle, 1993–2004 · D) How I Met Your Mother was 2005–14, five friends in New York

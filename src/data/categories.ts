@@ -11,7 +11,7 @@ export const CATEGORIES: Category[] = [
   { id: 'riddles', name: 'Riddles & Ukhana', icon: '🧩', us: 'English riddles and Gujarati/Hindi ukhana, one pool', india: 'English riddles and Gujarati/Hindi ukhana, one pool', sides: false },
   { id: 'food', name: 'Food', icon: '🍛', us: 'American', india: 'Gujarati / Mumbai / Indian' },
   { id: 'sports', name: 'Sports', icon: '🏏', us: 'NFL, tennis, soccer', india: 'cricket, athletics, badminton' },
-  { id: 'growing-up', name: 'Growing Up', icon: '📼', us: '2010s–20s America', india: '80s–90s India' },
+  { id: 'growing-up', name: 'Growing Up', icon: '📼', us: 'Kids: 2010s–20s, one pool · Adults: America', india: 'Adults: 80s–90s India' },
 ];
 
 export const CATEGORY_BY_ID = Object.fromEntries(CATEGORIES.map((c) => [c.id, c])) as Record<CategoryId, Category>;

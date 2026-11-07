@@ -24,6 +24,21 @@ Deity art, places, food and faces are from Wikimedia Commons under free licences
 - 3.1-richmond-fan-map.jpg — stitched from OpenStreetMap standard tiles (zoom 15), with the Fan District outlined in red and the map's "The Fan" label covered — © OpenStreetMap contributors — ODbL 1.0 / tiles CC BY-SA 2.0 — https://www.openstreetmap.org/copyright
 - 3.5-richmond-skyline-fed.jpg — File:Skyline of Richmond, Virginia.jpg (red arrow added on the Federal Reserve tower) — Jim, originally on Flickr as "Skyline" (2008) — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Skyline_of_Richmond,_Virginia.jpg
 
+- 5.5-oprah-then.jpg — cropped 7 Nov to the photo print inside the scan
+- 5.6-bezos-then.jpg — the spray-painted amazon.com sign is blurred out (7 Nov) so it does not give the answer away
+
+## Added 7 Nov 2026 (presidents, astronauts, rasgulla, Levi's Stadium)
+- 4.11-opt-bush.jpg — File:George-W-Bush.jpeg — Eric Draper — Public domain — https://commons.wikimedia.org/wiki/File%3AGeorge-W-Bush.jpeg
+- 4.11-opt-obama.jpg — File:President Barack Obama.jpg — Official White House Photo by Pete Souza — Public domain — https://commons.wikimedia.org/wiki/File%3APresident_Barack_Obama.jpg
+- 4.11-opt-clinton.jpg — File:Bill Clinton official.jpg — USAID, Historical Archive — Public domain — https://commons.wikimedia.org/wiki/File%3ABill_Clinton_official.jpg
+- 4.11-opt-biden.jpg — File:Joe Biden presidential portrait.jpg — Adam Schultz — Public domain — https://commons.wikimedia.org/wiki/File%3AJoe_Biden_presidential_portrait.jpg
+- 5.7-opt-williams.jpg — File:Sunita Williams.jpg — NASA — Public domain — https://commons.wikimedia.org/wiki/File%3ASunita_Williams.jpg
+- 5.7-opt-chawla.jpg — File:Kalpana Chawla, official portrait.jpg — NASA — Public domain — https://commons.wikimedia.org/wiki/File%3AKalpana_Chawla%2C_official_portrait.jpg
+- 5.7-opt-bandla.jpg — File:Sirisha Bandla in 2023 01.jpg — Purdue Engineering — CC BY 3.0 — https://commons.wikimedia.org/wiki/File%3ASirisha_Bandla_in_2023_01.jpg
+- 5.7-opt-ansari.jpg — File:AnoushehAnsari.jpg — NASA — Public domain — https://commons.wikimedia.org/wiki/File%3AAnoushehAnsari.jpg
+- 7.10-rasgulla.jpg — File:Rasgullas from Odisha and Bengal.jpg — User:Utcursch, based on images from User:Psubhashish (Subhashish Panigrahi) and User:Pamri — CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File%3ARasgullas_from_Odisha_and_Bengal.jpg
+- 8.5-levis-stadium.jpg — File:Levi's Stadium view during Super Bowl 50 preparations Santa Clara California (23779974514).jpg — Richard Masoner / Cyclelicious from Santa Cruz, California , USA — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File%3ALevi%27s_Stadium_view_during_Super_Bowl_50_preparations_Santa_Clara_California_%2823779974514%29.jpg
+
 ## Celebrity and editor faces (option cards)
 
 All photos from Wikimedia Commons, resized to max 1000px (some cropped to head-and-shoulders). Format: filename — person — Commons file — author — licence.

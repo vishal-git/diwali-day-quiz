@@ -48,13 +48,13 @@ export function Pick({ questions, state, category, onPick, onBack }: Props) {
     );
   };
 
-  // A category without sides (riddles) keeps kids and adult as single pools with region null.
-  const sides = cat.sides !== false;
+  // A mode whose live questions carry no region (riddles; Growing Up kids) is one pool: no Which-side step.
+  const sides = (t: 'kids' | 'adult') => questions.some((q) => q.live && q.category === category && q.mode === t && q.region !== null);
   const topLeft = (t: Top) =>
-    t === 'hard' ? left('hard-kids', null) + left('hard-adult', null) : sides ? left(t, 'us') + left(t, 'india') : left(t, null);
+    t === 'hard' ? left('hard-kids', null) + left('hard-adult', null) : sides(t) ? left(t, 'us') + left(t, 'india') : left(t, null);
   const topTotal = (t: Top) =>
-    t === 'hard' ? total('hard-kids', null) + total('hard-adult', null) : sides ? total(t, 'us') + total(t, 'india') : total(t, null);
-  const chooseTop = (t: Top) => { if (t !== 'hard' && !sides) onPick(cell(t, null)); else setTop(t); };
+    t === 'hard' ? total('hard-kids', null) + total('hard-adult', null) : sides(t) ? total(t, 'us') + total(t, 'india') : total(t, null);
+  const chooseTop = (t: Top) => { if (t !== 'hard' && !sides(t)) onPick(cell(t, null)); else setTop(t); };
 
   return (
     <section className="pick">

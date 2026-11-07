@@ -80,3 +80,13 @@ test('Riddles have no US/India step: Kids or Adult picks the cell straight away'
   fireEvent.click(screen.getByRole('button', { name: /Hard·Kids/ }));
   expect(onPick).toHaveBeenCalledWith({ category: 'riddles', mode: 'hard-kids', region: null });
 });
+
+test('Growing Up: Kids is one pool (no side step) while Adult still asks US or India', () => {
+  const onPick = vi.fn();
+  render(<Pick questions={QUESTIONS} state={EMPTY} category="growing-up" onPick={onPick} onBack={() => {}} />);
+  fireEvent.click(screen.getByRole('button', { name: /^Kids/ }));
+  expect(onPick).toHaveBeenCalledWith({ category: 'growing-up', mode: 'kids', region: null });
+  fireEvent.click(screen.getByRole('button', { name: /^Adult/ }));
+  expect(screen.getByRole('button', { name: /^US/ })).toBeEnabled();
+  expect(screen.getByRole('button', { name: /^India/ })).toBeEnabled();
+});
