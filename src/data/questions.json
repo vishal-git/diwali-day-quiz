@@ -2375,21 +2375,21 @@
     "region": "us",
     "live": true,
     "type": "text",
-    "question": "The last Blockbuster video store in the world is still open. Which state is it in?",
+    "question": "Facebook was started in a dorm room in 2004 at which university?",
     "options": [
-      "Texas",
-      "Alaska",
-      "Oregon",
-      "Ohio"
+      "Harvard",
+      "Stanford",
+      "MIT",
+      "Yale"
     ],
-    "answer": 2,
-    "answerText": "Oregon",
-    "reveal": "Bend, Oregon: the last one anywhere since the final Alaska stores closed in 2018. In 2000 Blockbuster turned down buying Netflix for $50 million.",
+    "answer": 0,
+    "answerText": "Harvard",
+    "reveal": "Mark Zuckerberg launched \"Thefacebook\" from his Kirkland House dorm in February 2004, for Harvard students only. He dropped out that year; Harvard gave him an honorary degree in 2017.",
     "optionNotes": [
-      "Blockbuster was born in Dallas in 1985, but Texas lost its last store years ago.",
-      "Alaska had the last few until 2018; John Oliver sent one a Russell Crowe jockstrap to drum up custom.",
       "",
-      "Ohio’s went with the 2013–14 closures of the corporate stores."
+      "Stanford is Google’s campus: Larry Page and Sergey Brin started it there in 1998.",
+      "MIT’s famous dorm-room startup is Dropbox, which Drew Houston began in 2007.",
+      ""
     ]
   },
   {

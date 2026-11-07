@@ -1,6 +1,6 @@
 # Diwali Party Quiz 2026 — Draft 8
 
-Changes from v7 (7 Nov 2026, after the midterms): seventeen questions replaced — US state capital (1.1), Toy Story's Woody (2.2) and Nemo the clownfish (2.6) for a group that does not watch much Hollywood, a towel riddle for the five-diyas one (6.3; clay diyas do not burn away), Idaho potatoes for peanuts (7.6), Sunita Williams for Sachin (5.7), cricket's eleven and the national-sport trap for Neeraj Chopra and P.V. Sindhu (8.3, 8.4), the last Blockbuster for Friends (9.6), Roblox and Pokémon Go for the Growing Up kids who grew up here (9.3, 9.4),, longest US river (1.2), five new Local·US questions (Fan District map, Senate term, Richmond skyline, House majority, Short Pump), a Gujarati *ukhanu* for Hard·Adult riddles (6.10) and a vegetarian-friendly Food·Adult·US (7.6). Options reworded on 13 questions so the longest option is no longer a giveaway. 35 questions now carry a **note per wrong option** that the app shows when a team picks it. Layout unchanged: 2/2/2/2/2 = 10 live per regular category, Diwali 11, 19 spares. The seventeen retired questions are kept at the end of this file and in full in `diwali_quiz_2026_v7.md`.
+Changes from v7 (7 Nov 2026, after the midterms): seventeen questions replaced — US state capital (1.1), Toy Story's Woody (2.2) and Nemo the clownfish (2.6) for a group that does not watch much Hollywood, a towel riddle for the five-diyas one (6.3; clay diyas do not burn away), Idaho potatoes for peanuts (7.6), Sunita Williams for Sachin (5.7), cricket's eleven and the national-sport trap for Neeraj Chopra and P.V. Sindhu (8.3, 8.4), Facebook's Harvard dorm for Friends (9.6; the last Blockbuster held the slot for an afternoon but was too hard), Roblox and Pokémon Go for the Growing Up kids who grew up here (9.3, 9.4),, longest US river (1.2), five new Local·US questions (Fan District map, Senate term, Richmond skyline, House majority, Short Pump), a Gujarati *ukhanu* for Hard·Adult riddles (6.10) and a vegetarian-friendly Food·Adult·US (7.6). Options reworded on 13 questions so the longest option is no longer a giveaway. 35 questions now carry a **note per wrong option** that the app shows when a team picks it. Layout unchanged: 2/2/2/2/2 = 10 live per regular category, Diwali 11, 19 spares. The seventeen retired questions are kept at the end of this file and in full in `diwali_quiz_2026_v7.md`.
 
 Changes from v6: every category has two Hard questions, Hard·Kids and Hard·Adult.
 
@@ -542,9 +542,9 @@ A) Pokémon Go B) Clash of Clans C) Candy Crush D) Among Us → **Pokémon Go** 
 **9.5** In what year did Apple release the first iPhone?
 A) 2005 B) 2007 C) 2009 D) 2010 → **2007**
 
-**9.6** The last Blockbuster video store in the world is still open. Which state is it in?
-A) Texas B) Alaska C) Oregon D) Ohio → **Oregon** (Bend, the last one anywhere since the final Alaska stores closed in 2018; in 2000 Blockbuster turned down buying Netflix for $50 million)
-*Notes:* A) Blockbuster was born in Dallas in 1985, but Texas lost its last store years ago · B) Alaska had the last few until 2018; John Oliver sent one a Russell Crowe jockstrap to drum up custom · D) Ohio's went with the 2013–14 closures of the corporate stores
+**9.6** Facebook was started in a dorm room in 2004 at which university?
+A) Harvard B) Stanford C) MIT D) Yale → **Harvard** (Mark Zuckerberg launched "Thefacebook" from his Kirkland House dorm in February 2004, for Harvard students only; he dropped out that year and Harvard gave him an honorary degree in 2017)
+*Notes:* B) Stanford is Google's campus: Larry Page and Sergey Brin started it there in 1998 · C) MIT's famous dorm-room startup is Dropbox, which Drew Houston began in 2007
 
 ### Adult · India
 **9.7** Who played Lord Rama in Ramanand Sagar's *Ramayan* on Doordarshan in 1987?
@@ -684,3 +684,8 @@ A) Tennis B) Badminton C) Table tennis D) Squash → **Badminton**
 **9.6** Which sitcom about six friends in New York ran from 1994 to 2004?
 A) Seinfeld B) Frasier C) Friends D) How I Met Your Mother → **Friends**
 *Notes:* A) Seinfeld ran 1989–98, four friends in New York · B) Frasier was Seattle, 1993–2004 · D) How I Met Your Mother was 2005–14, five friends in New York
+
+*Growing Up · Adult · US* (9.6 for an afternoon in v8, between Friends and Facebook; retired as too hard)
+**9.6** The last Blockbuster video store in the world is still open. Which state is it in?
+A) Texas B) Alaska C) Oregon D) Ohio → **Oregon** (Bend, the last one anywhere since the final Alaska stores closed in 2018; in 2000 Blockbuster turned down buying Netflix for $50 million)
+*Notes:* A) Blockbuster was born in Dallas in 1985, but Texas lost its last store years ago · B) Alaska had the last few until 2018; John Oliver sent one a Russell Crowe jockstrap to drum up custom · D) Ohio's went with the 2013–14 closures of the corporate stores
