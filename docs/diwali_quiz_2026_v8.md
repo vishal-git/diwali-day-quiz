@@ -1,6 +1,6 @@
 # Diwali Party Quiz 2026 — Draft 8
 
-Changes from v7 (7 Nov 2026, after the midterms): nine questions replaced — US state capital (1.1), longest US river (1.2), five new Local·US questions (Fan District map, Senate term, Richmond skyline, House majority, Short Pump), a Gujarati *ukhanu* for Hard·Adult riddles (6.10) and a vegetarian-friendly Food·Adult·US (7.6). Options reworded on 13 questions so the longest option is no longer a giveaway. 35 questions now carry a **note per wrong option** that the app shows when a team picks it. Layout unchanged: 2/2/2/2/2 = 10 live per regular category, Diwali 11, 19 spares. The nine retired questions are kept at the end of this file and in full in `diwali_quiz_2026_v7.md`.
+Changes from v7 (7 Nov 2026, after the midterms): eleven questions replaced — US state capital (1.1), Toy Story's Woody (2.2) and Nemo the clownfish (2.6) for a group that does not watch much Hollywood,, longest US river (1.2), five new Local·US questions (Fan District map, Senate term, Richmond skyline, House majority, Short Pump), a Gujarati *ukhanu* for Hard·Adult riddles (6.10) and a vegetarian-friendly Food·Adult·US (7.6). Options reworded on 13 questions so the longest option is no longer a giveaway. 35 questions now carry a **note per wrong option** that the app shows when a team picks it. Layout unchanged: 2/2/2/2/2 = 10 live per regular category, Diwali 11, 19 spares. The eleven retired questions are kept at the end of this file and in full in `diwali_quiz_2026_v7.md`.
 
 Changes from v6: every category has two Hard questions, Hard·Kids and Hard·Adult.
 
@@ -138,15 +138,16 @@ A) Florida B) California C) Alaska D) Hawaii → **Alaska**
 ---
 
 ## 2. MOVIES & TV
-*Options displayed as posters.*
+*Options displayed as posters, except 2.2 and 2.6, whose options are characters rather than films.*
 
 ### Kids · US
 **2.1** Which film was the biggest hit at the US box office in 2026?
 A) Spider-Man: Brand New Day B) The Super Mario Galaxy Movie C) Toy Story 5 D) Michael → **Spider-Man: Brand New Day**
 *Reveal:* domestic grosses for all four (pull at build time; Spider-Man ~$958M)
 
-**2.2** Guess the movie from emojis: 🦁👑🌅 → **The Lion King**
-(options if needed: The Lion King / Madagascar / Zootopia / The Jungle Book)
+**2.2** What is the name of the cowboy doll in *Toy Story*?
+A) Buzz Lightyear B) Woody C) Andy D) Jessie → **Woody** (Sheriff Woody, voiced by Tom Hanks)
+*Notes:* A) Buzz Lightyear is the space ranger. "To infinity and beyond!" · C) Andy is the boy who owns the toys · D) Jessie is the cowgirl doll, who arrives in Toy Story 2
 
 ### Kids · India
 **2.3** Which 2026 Ranveer Singh sequel became the second-highest-grossing Bollywood film ever worldwide, behind only *Dangal*?
@@ -159,8 +160,9 @@ A) RRR B) Baahubali C) Pushpa D) KGF → **RRR**
 **2.5** Which 2026 biopic became the highest-grossing musician biopic ever, passing *Bohemian Rhapsody*?
 A) Elvis B) Michael C) Bob Marley: One Love D) A Complete Unknown → **Michael**
 
-**2.6** *The Devil Wears Prada 2* came out in 2026. Which real-life magazine editor is Miranda Priestly widely believed to be modelled on?
-A) Anna Wintour B) Tina Brown C) Diana Vreeland D) Grace Coddington → **Anna Wintour** (Vogue)
+**2.6** What kind of fish is Nemo in *Finding Nemo*?
+A) Goldfish B) Clownfish C) Angelfish D) Blue tang → **A clownfish** (an ocellaris clownfish from the Great Barrier Reef; Dory is a blue tang)
+*Notes:* A) Goldfish live in bowls and ponds, not on the Great Barrier Reef · C) Angelfish are the tall, striped reef fish; Nemo has orange and white bands · D) Blue tang is Dory, the friend who forgets everything
 
 ### Adult · India
 **2.7** Which was the first Indian film nominated for the Academy Award for Best Foreign Language Film?
@@ -590,7 +592,7 @@ A) 2081 B) 2082 C) 2083 D) 2084 → **Vikram Samvat 2083**
 
 ## Retired from v7 (7 Nov 2026)
 
-These nine came off the board in v8. They are no longer in `src/data/questions.json`; copy one back in (with a fresh id) if a slot opens up.
+These eleven came off the board in v8. They are no longer in `src/data/questions.json`; copy one back in (with a fresh id) if a slot opens up.
 
 *Geography · Kids · US* (was 1.1)
 **1.1** Which US state is the *second*-largest by area, after Alaska?
@@ -628,3 +630,11 @@ Hint: *you sharpen me.* → **Pencil lead** (graphite)
 *Food · Adult · US* (was 7.6)
 **7.6** Which Virginia town gives its name to America's most famous country ham?
 A) Williamsburg B) Smithfield C) Lynchburg D) Culpeper → **Smithfield** (Isle of Wight County; the Virginia law once required the hogs be peanut-fed)
+
+*Movies · Kids · US* (was 2.2)
+**2.2** Guess the movie from emojis: 🦁👑🌅 → **The Lion King**
+(options if needed: The Lion King / Madagascar / Zootopia / The Jungle Book)
+
+*Movies · Adult · US* (was 2.6)
+**2.6** *The Devil Wears Prada 2* came out in 2026. Which real-life magazine editor is Miranda Priestly widely believed to be modelled on?
+A) Anna Wintour B) Tina Brown C) Diana Vreeland D) Grace Coddington → **Anna Wintour** (Vogue)

@@ -290,23 +290,23 @@
     "mode": "kids",
     "region": "us",
     "live": true,
-    "type": "emoji",
-    "question": "🦁👑🌅",
+    "type": "text",
+    "question": "What is the name of the cowboy doll in Toy Story?",
     "options": [
-      "The Lion King",
-      "Madagascar",
-      "Zootopia",
-      "The Jungle Book"
+      "Buzz Lightyear",
+      "Woody",
+      "Andy",
+      "Jessie"
     ],
-    "optionMedia": [
-      "img/2.2-opt-lionking.jpg",
-      "img/2.2-opt-madagascar.jpg",
-      "img/2.2-opt-zootopia.jpg",
-      "img/2.2-opt-junglebook.jpg"
-    ],
-    "answer": 0,
-    "answerText": "The Lion King",
-    "reveal": "Guess the movie from emojis."
+    "answer": 1,
+    "answerText": "Woody",
+    "reveal": "Sheriff Woody, voiced by Tom Hanks. Buzz Lightyear is the space ranger who thinks he can fly.",
+    "optionNotes": [
+      "Buzz Lightyear is the space ranger. \"To infinity and beyond!\"",
+      "",
+      "Andy is the boy who owns the toys.",
+      "Jessie is the cowgirl doll, who arrives in Toy Story 2."
+    ]
   },
   {
     "id": "2.3",
@@ -384,22 +384,22 @@
     "region": "us",
     "live": true,
     "type": "text",
-    "question": "The Devil Wears Prada 2 came out in 2026. Which real-life magazine editor is Miranda Priestly widely believed to be modelled on?",
+    "question": "What kind of fish is Nemo in Finding Nemo?",
     "options": [
-      "Anna Wintour",
-      "Tina Brown",
-      "Diana Vreeland",
-      "Grace Coddington"
+      "Goldfish",
+      "Clownfish",
+      "Angelfish",
+      "Blue tang"
     ],
-    "optionMedia": [
-      "img/2.6-opt-wintour.jpg",
-      "img/2.6-opt-brown.jpg",
-      "img/2.6-opt-vreeland.jpg",
-      "img/2.6-opt-coddington.jpg"
-    ],
-    "answer": 0,
-    "answerText": "Anna Wintour",
-    "reveal": "Editor-in-chief of Vogue."
+    "answer": 1,
+    "answerText": "A clownfish",
+    "reveal": "An ocellaris clownfish, from the anemones of the Great Barrier Reef. Dory, the forgetful friend, is a blue tang.",
+    "optionNotes": [
+      "Goldfish live in bowls and ponds, not on the Great Barrier Reef.",
+      "",
+      "Angelfish are the tall, striped reef fish; Nemo has orange and white bands.",
+      "Blue tang is Dory, the friend who forgets everything."
+    ]
   },
   {
     "id": "2.7",

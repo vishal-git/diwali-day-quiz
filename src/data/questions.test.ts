@@ -101,7 +101,8 @@ test('the right answer is not given away by being the longest option', () => {
 });
 
 test('movies and celebrity options carry one media path per option', () => {
-  for (const q of QUESTIONS.filter((x) => (x.category === 'movies' || x.category === 'celebrity') && x.options)) {
+  // 2.2 and 2.6 ask about characters inside a film, so their options are words, not posters.
+  for (const q of QUESTIONS.filter((x) => (x.category === 'movies' || x.category === 'celebrity') && x.options && !['2.2', '2.6'].includes(x.id))) {
     expect(q.optionMedia, q.id).toHaveLength(q.options!.length);
   }
 });
@@ -124,7 +125,9 @@ test('the special records are wired', () => {
   expect(byId['8.8'].question).toMatch(/\(in shooting\)/);
   expect(byId['9.2'].type).toBe('video');
   expect(byId['9.2'].video?.youtubeId).toBe('XqZsoesa55w');
-  expect(byId['2.2'].type).toBe('emoji');
+  expect(byId['2.S1'].type).toBe('emoji');
+  expect(byId['2.2'].answerText).toBe('Woody');
+  expect(byId['2.6'].answerText).toBe('A clownfish');
   expect(byId['3.S2'].options).toEqual(['True', 'False']);
   expect(QUESTIONS.filter((q) => q.mustPlay)).toHaveLength(1);
 });
