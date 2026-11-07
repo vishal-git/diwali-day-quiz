@@ -543,7 +543,7 @@ A) Pokémon Go B) Clash of Clans C) Candy Crush D) Among Us → **Pokémon Go** 
 A) 2005 B) 2007 C) 2009 D) 2010 → **2007**
 
 **9.6** Facebook was started in a dorm room in 2004 at which university?
-A) Harvard B) Stanford C) MIT D) Yale → **Harvard** (Mark Zuckerberg launched "Thefacebook" from his Kirkland House dorm in February 2004, for Harvard students only; he dropped out that year and Harvard gave him an honorary degree in 2017)
+A) Harvard B) Stanford C) MIT D) Yale *(shields and logos on the cards)* → **Harvard** (Mark Zuckerberg launched "Thefacebook" from his Kirkland House dorm in February 2004, for Harvard students only; he dropped out that year and Harvard gave him an honorary degree in 2017)
 *Notes:* B) Stanford is Google's campus: Larry Page and Sergey Brin started it there in 1998 · C) MIT's famous dorm-room startup is Dropbox, which Drew Houston began in 2007
 
 ### Adult · India

@@ -2384,6 +2384,12 @@
     ],
     "answer": 0,
     "answerText": "Harvard",
+    "optionMedia": [
+      "img/9.6-opt-harvard.jpg",
+      "img/9.6-opt-stanford.jpg",
+      "img/9.6-opt-mit.jpg",
+      "img/9.6-opt-yale.jpg"
+    ],
     "reveal": "Mark Zuckerberg launched \"Thefacebook\" from his Kirkland House dorm in February 2004, for Harvard students only. He dropped out that year; Harvard gave him an honorary degree in 2017.",
     "optionNotes": [
       "",

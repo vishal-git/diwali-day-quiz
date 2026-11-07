@@ -146,7 +146,8 @@ test('the special records are wired', () => {
   expect(byId['1.S1'].story?.graphic).toBe('map-gujarat');
   expect(byId['8.5'].story?.lines.length).toBeGreaterThan(0);
   expect(byId['3.1'].media?.src).toBe('img/3.1-richmond-fan-map.jpg');
-  expect(byId['9.6'].answerText).toBe('Oregon');
+  expect(byId['9.6'].answerText).toBe('Harvard');
+  expect(byId['9.6'].optionMedia).toHaveLength(4);
   expect(byId['8.4'].answerText).toBe('None, officially');
   expect(byId['3.5'].media?.src).toBe('img/3.5-richmond-skyline-fed.jpg');
   expect(byId['6.10'].type).toBe('riddle');

@@ -165,3 +165,9 @@ Private one-night family quiz use only. Press/archival photos republished widely
 - 7.4-vada-pav.jpg — File:Vada Pav - A Burger for Common Men in India.jpg — Samdhal — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Vada_Pav_-_A_Burger_for_Common_Men_in_India.jpg
 - 7.S1-jalebi.jpg — File:Jalebi - Closeup View of Jalebis.JPG — Lion.harvinder — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Jalebi_-_Closeup_View_of_Jalebis.JPG
 - 7.3-mithai-plate.jpg — File:Ahmedabad-Mithai.jpg — 新しい年に向けて — CC0 1.0 — https://commons.wikimedia.org/wiki/File:Ahmedabad-Mithai.jpg (cropped to square; marigold circle added around one kaju katli for the quiz)
+
+## Added 7 Nov 2026 (university marks for 9.6, each centred on a cream 3:4 card)
+- 9.6-opt-harvard.jpg — File:Harvard University shield.svg — Pierre la Rose — Public domain — https://commons.wikimedia.org/wiki/File:Harvard_University_shield.svg
+- 9.6-opt-stanford.jpg — File:Stanford Cardinal logo.svg — Stanford University — Public domain (simple shapes and text) — https://commons.wikimedia.org/wiki/File:Stanford_Cardinal_logo.svg
+- 9.6-opt-mit.jpg — File:MIT 2023 red logo.svg — Matthew Carter and others, owned by MIT — Public domain (simple shapes and text) — https://commons.wikimedia.org/wiki/File:MIT_2023_red_logo.svg
+- 9.6-opt-yale.jpg — File:Yale University Shield 1.svg — Yale University — Public domain — https://commons.wikimedia.org/wiki/File:Yale_University_Shield_1.svg
