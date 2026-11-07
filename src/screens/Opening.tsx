@@ -19,6 +19,7 @@ export function Opening({ onBegin }: { onBegin: () => void }) {
       <h1 className="opening-title">Happy Diwali</h1>
       <p className="opening-sub">Diwali Quiz · 2026</p>
       <button className="btn-primary" onClick={onBegin}>Begin</button>
+      <a className="link-quiet" href="#/rules">House rules</a>
     </section>
   );
 }

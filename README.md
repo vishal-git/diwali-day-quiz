@@ -31,6 +31,7 @@ Live: https://diwali-day-quiz-production.up.railway.app
 | Swap (bottom right) | burn this question, draw a spare from the same category and mode. Only while the question alone is showing |
 | Pass (bottom right) | mark used and return to the board. Only while the question alone is showing; once options or a hint appear, both lock |
 | `#/answers` in the address bar | host cheat sheet for the paper scorer (print-friendly) |
+| `#/rules` in the address bar (also linked from the opening screen and board footer) | house rules for the TV: the three teams, a turn, tokens, Lucky Diya and the starting-hand scoring |
 | Reset game (board footer) | clears played/burned state after a confirm |
 
 Board tiles show one glyph per question: a marigold for kids, a diya for adult, a firework burst for hard. A glyph goes dark when that question has been played. The Which-side step shows only the US and India flags, with the category and mode breadcrumbed in the top-left chip.

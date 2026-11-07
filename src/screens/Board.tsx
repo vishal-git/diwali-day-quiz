@@ -37,7 +37,7 @@ export function Board({ questions, state, onPickCategory, onLucky, onReset }: Pr
         </button>
       </div>
       <footer className="board-footer">
-        <span className="muted">questions played: {playedCount(state)}</span>
+        <span className="muted">questions played: {playedCount(state)} · <a className="link-quiet" href="#/rules">rules</a></span>
         <ResetButton onReset={onReset} />
       </footer>
     </section>

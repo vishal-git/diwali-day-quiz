@@ -10,6 +10,7 @@ import { Pick } from './screens/Pick';
 import { Question } from './screens/Question';
 import { Lucky } from './screens/Lucky';
 import { Answers } from './screens/Answers';
+import { Rules } from './screens/Rules';
 import { useKey } from './hooks/useKey';
 
 const rng = mulberry32(314);
@@ -44,10 +45,11 @@ export default function App() {
       if (document.fullscreenElement) void document.exitFullscreen?.();
       else void document.documentElement.requestFullscreen?.();
     }
-    if (e.key === 'Escape' && window.location.hash === '#/answers') window.location.hash = '';
+    if (e.key === 'Escape' && (window.location.hash === '#/answers' || window.location.hash === '#/rules')) window.location.hash = '';
   });
 
   if (hash === '#/answers') return <Answers questions={QUESTIONS} />;
+  if (hash === '#/rules') return <Rules />;
 
   const openCell = (cell: Cell) => {
     const q = remainingIn(QUESTIONS, game.state, cell)[0];
