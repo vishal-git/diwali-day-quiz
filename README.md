@@ -24,7 +24,7 @@ Live: https://diwali-day-quiz-production.up.railway.app
 | Key / click | Does |
 |---|---|
 | Click anywhere, Space, →, Enter | advance: question → options → answer → story (if any) → board |
-| Click an option card, or A–D / 1–4 | the answer a team called out. Wrong: the card greys out and its diya is snuffed; the right answer stays hidden so the next team can try. Right: fireworks, answer revealed |
+| Click an option card, or A–D / 1–4 | the answer a team called out. Wrong: the card greys out and its diya is snuffed; the right answer stays hidden so the next team can try. If the question carries a note for that option (35 do, e.g. "Alaska does not share a border with any other US state"), it appears under the cards. Right: fireworks, answer revealed |
 | Backspace, ← | step back one stage |
 | Esc | leave the question without consuming it |
 | F | toggle fullscreen |
@@ -56,11 +56,11 @@ State lives in the browser's localStorage under `diwali-quiz-2026`, so a refresh
 
 ## Assets
 
-Posters, celebrity photos and food photos are not in the repo. Drop them into `public/img/` using the filenames listed in `public/img/README.md`; anything missing shows a labelled "image pending" card so the game still runs.
+All but two pictures are in `public/img/` (sources and licences in `public/img/CREDITS.md`); anything missing shows a labelled "image pending" card so the game still runs. The Richmond map (3.1) is stitched from OpenStreetMap tiles with the Fan outlined; the skyline (3.5) is a Commons photo with an arrow drawn on the Federal Reserve.
 
 ## Docs
 
-- `docs/diwali_quiz_2026_v7.md` — the question bank (source of truth for content)
+- `docs/diwali_quiz_2026_v8.md` — the question bank (source of truth for content). `v7.md` is kept unchanged; v8 ends with the nine questions retired on 7 Nov 2026
 - `docs/diwali_quiz_build_brief.md` — behaviour brief
 - `docs/superpowers/plans/2026-10-31-diwali-quiz-app.md` — implementation plan
 - `src/data/questions.json` — the bank converted to data (110 records: 91 live, 19 spares)

@@ -20,8 +20,8 @@ function setup(id: string, over: Partial<React.ComponentProps<typeof Question>> 
 
 test('stage 0 shows the question text only', () => {
   setup('1.1');
-  expect(screen.getByText(/second-largest by area/)).toBeInTheDocument();
-  expect(screen.queryByText('Texas')).toBeNull();
+  expect(screen.getByText(/capital of New York/)).toBeInTheDocument();
+  expect(screen.queryByText('Albany')).toBeNull();
   expect(screen.getByText('Geography')).toBeInTheDocument();
   expect(screen.getByText('Kids · US')).toBeInTheDocument();
 });
@@ -29,12 +29,12 @@ test('stage 0 shows the question text only', () => {
 test('click → options; click → answer highlighted with reveal; click → done (no story)', () => {
   const { props, advance } = setup('1.1');
   advance();
-  expect(screen.getByText('Texas')).toBeInTheDocument();
+  expect(screen.getByText('Albany')).toBeInTheDocument();
   expect(document.querySelector('.option.correct')).toBeNull();
   advance();
-  expect(document.querySelector('.option.correct')).toHaveTextContent('Texas');
+  expect(document.querySelector('.option.correct')).toHaveTextContent('Albany');
   expect(document.querySelectorAll('.option.dim')).toHaveLength(3);
-  expect(screen.getByText(/Alaska 665,000/)).toBeInTheDocument();
+  expect(screen.getByText(/capital since 1797/)).toBeInTheDocument();
   expect(props.onDone).not.toHaveBeenCalled();
   advance();
   expect(props.onDone).toHaveBeenCalledWith('1.1');
@@ -43,12 +43,12 @@ test('click → options; click → answer highlighted with reveal; click → don
 test('Space and ArrowRight advance; Backspace and ArrowLeft step back', () => {
   setup('1.1');
   tick(); fireEvent.keyDown(window, { key: ' ' });
-  expect(screen.getByText('Texas')).toBeInTheDocument();
+  expect(screen.getByText('Albany')).toBeInTheDocument();
   tick(); fireEvent.keyDown(window, { key: 'Backspace' });
-  expect(screen.queryByText('Texas')).toBeNull();
+  expect(screen.queryByText('Albany')).toBeNull();
   tick(); fireEvent.keyDown(window, { key: 'ArrowRight' });
   tick(); fireEvent.keyDown(window, { key: 'ArrowLeft' });
-  expect(screen.queryByText('Texas')).toBeNull();
+  expect(screen.queryByText('Albany')).toBeNull();
 });
 
 test('a question with a story page needs one more click before done', () => {
@@ -73,10 +73,10 @@ test('host buttons do not advance the stage', () => {
   const { props } = setup('1.1');
   fireEvent.click(screen.getByRole('button', { name: /swap/i }));
   expect(props.onSwap).toHaveBeenCalledWith('1.1');
-  expect(screen.queryByText('Texas')).toBeNull();
+  expect(screen.queryByText('Albany')).toBeNull();
   fireEvent.click(screen.getByRole('button', { name: /pass/i }));
   expect(props.onPass).toHaveBeenCalledWith('1.1');
-  expect(screen.queryByText('Texas')).toBeNull();
+  expect(screen.queryByText('Albany')).toBeNull();
 });
 
 test('Swap is disabled with "no spares" when none remain', () => {
@@ -132,7 +132,7 @@ test('video question embeds YouTube with autoplay off', () => {
 test('a double-click advances only one stage', () => {
   const { props, advance, rawClick } = setup('1.1');
   advance(); rawClick();
-  expect(screen.getByText('Texas')).toBeInTheDocument();
+  expect(screen.getByText('Albany')).toBeInTheDocument();
   expect(document.querySelector('.option.correct')).toBeNull();
   tick(400);
   rawClick();
@@ -157,7 +157,7 @@ test('Swap and Pass lock once the options or hint have been shown, and stay lock
   expect(swap()).toBeDisabled();
   expect(pass()).toBeDisabled();
   tick(); fireEvent.keyDown(window, { key: 'Backspace' });
-  expect(screen.queryByText('Texas')).toBeNull();
+  expect(screen.queryByText('Albany')).toBeNull();
   expect(swap()).toBeDisabled();
   expect(pass()).toBeDisabled();
 });
@@ -174,13 +174,13 @@ const option = (text: string) => screen.getByText(text).closest('.option')!;
 test('picking a wrong option greys it out without revealing the right one or advancing', () => {
   const { props, advance } = setup('1.1');
   advance();
-  tick(); fireEvent.click(option('California'));
-  expect(option('California')).toHaveClass('wrong');
-  expect(option('California').querySelector('.snuff')).not.toBeNull();
+  tick(); fireEvent.click(option('New York City'));
+  expect(option('New York City')).toHaveClass('wrong');
+  expect(option('New York City').querySelector('.snuff')).not.toBeNull();
   expect(document.querySelector('.option.correct')).toBeNull();
-  expect(screen.queryByText(/Alaska 665,000/)).toBeNull();
+  expect(screen.queryByText(/capital since 1797/)).toBeNull();
   expect(props.onDone).not.toHaveBeenCalled();
-  tick(); fireEvent.click(option('Montana'));
+  tick(); fireEvent.click(option('Buffalo'));
   expect(document.querySelectorAll('.option.wrong')).toHaveLength(2);
   expect(document.querySelector('.option.correct')).toBeNull();
 });
@@ -188,13 +188,13 @@ test('picking a wrong option greys it out without revealing the right one or adv
 test('picking the right option reveals the answer with fireworks; wrong picks stay grey', () => {
   const { props, advance } = setup('1.1');
   advance();
-  tick(); fireEvent.click(option('California'));
-  tick(); fireEvent.click(option('Texas'));
-  expect(option('Texas')).toHaveClass('correct');
-  expect(option('Texas')).toHaveClass('celebrate');
-  expect(option('California')).toHaveClass('wrong');
+  tick(); fireEvent.click(option('New York City'));
+  tick(); fireEvent.click(option('Albany'));
+  expect(option('Albany')).toHaveClass('correct');
+  expect(option('Albany')).toHaveClass('celebrate');
+  expect(option('New York City')).toHaveClass('wrong');
   expect(document.querySelector('.fireworks')).not.toBeNull();
-  expect(screen.getByText(/Alaska 665,000/)).toBeInTheDocument();
+  expect(screen.getByText(/capital since 1797/)).toBeInTheDocument();
   expect(props.onDone).not.toHaveBeenCalled();
   advance();
   expect(props.onDone).toHaveBeenCalledWith('1.1');
@@ -203,7 +203,7 @@ test('picking the right option reveals the answer with fireworks; wrong picks st
 test('a correct pick cannot be finished by the same double-click', () => {
   const { props, advance, rawClick } = setup('1.1');
   advance();
-  tick(); fireEvent.click(option('Texas'));
+  tick(); fireEvent.click(option('Albany'));
   rawClick();
   expect(props.onDone).not.toHaveBeenCalled();
 });
@@ -218,11 +218,11 @@ test('revealing by clicking through (nobody answered) has no fireworks', () => {
 
 test('keys A–D and 1–4 pick an option during the options stage only', () => {
   const { advance } = setup('1.1');
-  tick(); fireEvent.keyDown(window, { key: 'b' });
+  tick(); fireEvent.keyDown(window, { key: 'a' });
   expect(document.querySelector('.option.wrong')).toBeNull();
   advance();
-  tick(); fireEvent.keyDown(window, { key: 'b' });
-  expect(document.querySelectorAll('.option')[1]).toHaveClass('wrong');
+  tick(); fireEvent.keyDown(window, { key: 'a' });
+  expect(document.querySelectorAll('.option')[0]).toHaveClass('wrong');
   tick(); fireEvent.keyDown(window, { key: '3' });
   expect(document.querySelectorAll('.option')[2]).toHaveClass('wrong');
   expect(document.querySelector('.option.correct')).toBeNull();
@@ -251,4 +251,36 @@ test('image questions use the mystery fallback when the photo is missing', () =>
   setup('5.9');
   fireEvent.error(screen.getByRole('img', { name: /Pretoria/ }));
   expect(document.querySelector('.question-body .mystery-card')).not.toBeNull();
+});
+
+test('a wrong pick shows that option\'s note when the question carries one; a right pick never does', () => {
+  const { advance } = setup('1.5');
+  advance();
+  expect(document.querySelector('.wrong-note')).toBeNull();
+  tick(); fireEvent.click(option('Alaska'));
+  expect(screen.getByText(/Alaska does not share a border/)).toBeInTheDocument();
+  tick(); fireEvent.click(option('Florida'));
+  expect(screen.queryByText(/Alaska does not share/)).toBeNull();
+  expect(screen.getByText(/Florida borders two states/)).toBeInTheDocument();
+  tick(); fireEvent.click(option('Maine'));
+  expect(document.querySelector('.wrong-note')).toBeNull();
+  expect(option('Maine')).toHaveClass('correct');
+});
+
+test('a wrong pick on a question without notes shows nothing extra', () => {
+  const { advance } = setup('8.2');
+  advance();
+  tick(); fireEvent.click(option('3'));
+  expect(option('3')).toHaveClass('wrong');
+  expect(document.querySelector('.wrong-note')).toBeNull();
+});
+
+test('image questions show the picture with the question and keep it through the options', () => {
+  const { advance } = setup('3.5');
+  expect(screen.getByRole('img', { name: /red arrow/i })).toBeInTheDocument();
+  advance();
+  expect(screen.getByRole('img', { name: /red arrow/i })).toBeInTheDocument();
+  expect(screen.getByText('The Federal Reserve')).toBeInTheDocument();
+  tick(); fireEvent.click(option('James Monroe Building'));
+  expect(screen.getByText(/tallest in Richmond at 449 ft/)).toBeInTheDocument();
 });

@@ -106,6 +106,12 @@
 .option.correct { border-color: var(--gold); box-shadow: 0 0 2rem rgba(255, 209, 102, 0.55), inset 0 0 2rem rgba(244, 163, 0, 0.2); transform: scale(1.03); }
 .option.dim { opacity: 0.35; filter: saturate(0.3); }
 
+/* Why that pick was wrong: one line under the cards, in the muted violet of a snuffed diya. */
+.wrong-note {
+  font-size: 2rem; line-height: 1.25; margin: 0; max-width: 60rem; color: var(--cream);
+  padding: 0.5rem 1.4rem; border-radius: var(--radius); background: rgba(154, 143, 184, 0.14); border: 2px solid rgba(154, 143, 184, 0.35);
+}
+.wrong-note-mark { color: var(--magenta); font-weight: 700; margin-right: 0.3rem; }
 .hint-card {
   background: var(--bg-raised); border: 3px dashed rgba(224, 64, 154, 0.6); border-radius: var(--radius);
   padding: 1.4rem 2.4rem; max-width: 50rem;

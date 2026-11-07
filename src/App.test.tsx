@@ -25,7 +25,7 @@ test('Swap burns the live question, shows the spare with Swap disabled; Pass con
   fireEvent.click(screen.getByRole('button', { name: /Geography/ }));
   fireEvent.click(screen.getByRole('button', { name: /^Kids/ }));
   fireEvent.click(screen.getByRole('button', { name: /^US/ }));
-  expect(screen.getByText(/second-largest by area/)).toBeInTheDocument();
+  expect(screen.getByText(/capital of New York/)).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: /swap/i }));
   expect(screen.getByText(/Which Indian state is this/)).toBeInTheDocument();
   expect(screen.getByRole('button', { name: /swap/i })).toBeDisabled();

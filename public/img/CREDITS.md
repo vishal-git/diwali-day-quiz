@@ -21,6 +21,8 @@ Deity art, places, food and faces are from Wikimedia Commons under free licences
 - 4.8-mahavira.jpg — File:Mahavira Bruxelles 02 10 2011.jpg — Vassil (photo of a Mahavira sculpture, Royal Museums of Art and History, Brussels) — CC0 — https://commons.wikimedia.org/wiki/File:Mahavira_Bruxelles_02_10_2011.jpg
 - 1.4-himalayas.jpg — File:Mount Everest as seen from Drukair2 PLW edit.jpg — shrimpo1967 (edit by Papa Lima Whiskey 2) — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg
 - 4.1-rama-return-ayodhya.jpg — File:Bharata welcoming Rama, Sita, Lakshmana and Hanuman to Ayodhya by Raja Ravi Varma.jpg — Raja Ravi Varma (1848-1906) — Public domain — https://commons.wikimedia.org/wiki/File:Bharata_welcoming_Rama,_Sita,_Lakshmana_and_Hanuman_to_Ayodhya_by_Raja_Ravi_Varma.jpg
+- 3.1-richmond-fan-map.jpg — stitched from OpenStreetMap standard tiles (zoom 15), with the Fan District outlined in red and the map's "The Fan" label covered — © OpenStreetMap contributors — ODbL 1.0 / tiles CC BY-SA 2.0 — https://www.openstreetmap.org/copyright
+- 3.5-richmond-skyline-fed.jpg — File:Skyline of Richmond, Virginia.jpg (red arrow added on the Federal Reserve tower) — Jim, originally on Flickr as "Skyline" (2008) — CC BY-SA 2.0 — https://commons.wikimedia.org/wiki/File:Skyline_of_Richmond,_Virginia.jpg
 
 ## Celebrity and editor faces (option cards)
 

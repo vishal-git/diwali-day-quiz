@@ -37,6 +37,8 @@ export function Question({ q, via, canSwap, onDone, onPass, onSwap, onAbandon }:
   // Furthest stage reached: once the options or hint have been seen, Swap and Pass are off the table.
   const [seen, setSeen] = useState(0);
   const [wrong, setWrong] = useState<number[]>([]);
+  // The most recent wrong pick: if the question carries a note for that option, it shows under the cards.
+  const [lastWrong, setLastWrong] = useState<number | null>(null);
   const [celebrate, setCelebrate] = useState(false);
   const stage = stages[i];
   const locked = seen >= 1;
@@ -63,6 +65,7 @@ export function Question({ q, via, canSwap, onDone, onPass, onSwap, onAbandon }:
       setCelebrate(true); setI(at); setSeen((m) => Math.max(m, at));
     } else {
       setWrong((w) => [...w, k]);
+      setLastWrong(k);
     }
   }, [stage, q, wrong, stages]);
   useKey((e) => {
@@ -103,6 +106,11 @@ export function Question({ q, via, canSwap, onDone, onPass, onSwap, onAbandon }:
           {stage !== 'question' && q.type === 'riddle' && q.hint && <HintCard hint={q.hint} />}
           {stage !== 'question' && q.options && (
             <OptionCards q={q} showAnswer={showAnswer} wrong={wrong} celebrate={celebrate} onPick={stage === 'options' ? pickOption : undefined} />
+          )}
+          {stage === 'options' && lastWrong !== null && q.optionNotes?.[lastWrong] && (
+            <p className="wrong-note fade-in" key={`note-${lastWrong}`}>
+              <span className="wrong-note-mark" aria-hidden="true">✕</span> {q.optionNotes[lastWrong]}
+            </p>
           )}
 
           {showAnswer && (

@@ -1,6 +1,6 @@
 # Diwali Quiz 2026 — Web App Build Brief
 
-Companion to `diwali_quiz_2026_v7.md` (the question bank). This brief says what to build; the bank says what to show. Where they disagree, the bank's content wins and this brief's behaviour wins.
+Companion to `diwali_quiz_2026_v8.md` (the question bank; v7 kept for the retired questions). This brief says what to build; the bank says what to show. Where they disagree, the bank's content wins and this brief's behaviour wins.
 
 ## Context
 - Host runs it from a laptop plugged into a TV. One screen, one operator (the host), ~14 people watching from a couch. Everything must be legible from across a living room: big type, high contrast, few words per screen.

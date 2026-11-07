@@ -6,16 +6,22 @@
     "region": "us",
     "live": true,
     "type": "text",
-    "question": "Which US state is the second-largest by area, after Alaska?",
+    "question": "What is the capital of New York State?",
     "options": [
-      "Texas",
-      "California",
-      "Montana",
-      "New Mexico"
+      "New York City",
+      "Albany",
+      "Buffalo",
+      "Rochester"
     ],
-    "answer": 0,
-    "answerText": "Texas",
-    "reveal": "Alaska 665,000 sq mi · Texas 269,000 · California 164,000 · Montana 147,000 · New Mexico 122,000"
+    "optionNotes": [
+      "New York City is the biggest city in America, but the state capital moved up the Hudson to Albany in 1797.",
+      "",
+      "Buffalo is New York's second-biggest city, up on Lake Erie near Niagara Falls.",
+      "Rochester, on Lake Ontario, is the home of Kodak, not the capital."
+    ],
+    "answer": 1,
+    "answerText": "Albany",
+    "reveal": "Albany has been the capital since 1797. New York City is the biggest city in the country, but not a state capital."
   },
   {
     "id": "1.2",
@@ -24,15 +30,22 @@
     "region": "us",
     "live": true,
     "type": "text",
-    "question": "Which river forms most of the border between Texas and Mexico?",
+    "question": "Which is the longest river in the United States?",
     "options": [
-      "Colorado",
-      "Rio Grande",
       "Mississippi",
-      "Brazos"
+      "Missouri",
+      "Colorado",
+      "Rio Grande"
+    ],
+    "optionNotes": [
+      "So close! The Mississippi is 2,340 miles, one mile shorter than the Missouri, which flows into it at St. Louis.",
+      "",
+      "The Colorado carved the Grand Canyon, but it is only about 1,450 miles long.",
+      "The Rio Grande forms the Texas–Mexico border and runs about 1,900 miles."
     ],
     "answer": 1,
-    "answerText": "Rio Grande"
+    "answerText": "Missouri",
+    "reveal": "Missouri 2,341 mi · Mississippi 2,340 · Rio Grande 1,900 · Colorado 1,450. The Missouri wins by a single mile, then flows into the Mississippi at St. Louis."
   },
   {
     "id": "1.3",
@@ -47,6 +60,12 @@
       "Kolkata",
       "New Delhi",
       "Bengaluru"
+    ],
+    "optionNotes": [
+      "Mumbai is the biggest city and the financial capital, but the government sits in Delhi.",
+      "Kolkata was the capital until 1911, when the British moved it to Delhi.",
+      "",
+      "Bengaluru is the tech capital, not the national one."
     ],
     "answer": 2,
     "answerText": "New Delhi"
@@ -69,6 +88,12 @@
       "Andes",
       "Alps"
     ],
+    "optionNotes": [
+      "The Western Ghats run down India's west coast, from Gujarat to Kerala.",
+      "",
+      "The Andes are in South America.",
+      "The Alps are in Europe."
+    ],
     "answer": 1,
     "answerText": "Himalayas"
   },
@@ -85,6 +110,12 @@
       "Florida",
       "Alaska",
       "Washington"
+    ],
+    "optionNotes": [
+      "",
+      "Florida borders two states, Georgia and Alabama.",
+      "Alaska does not share a border with any other US state, only with Canada.",
+      "Washington borders Oregon and Idaho."
     ],
     "answer": 0,
     "answerText": "Maine",
@@ -157,6 +188,12 @@
       "25",
       "28",
       "32"
+    ],
+    "optionNotes": [
+      "22 is the number of official languages in the Constitution, not states.",
+      "India had 25 states from 1987 to 2000, before Chhattisgarh, Uttarakhand and Jharkhand were carved out.",
+      "",
+      "28 states plus 8 union territories make 36, not 32."
     ],
     "answer": 2,
     "answerText": "28",
@@ -282,7 +319,7 @@
     "options": [
       "Border 2",
       "Don 3",
-      "Dhurandhar: The Revenge",
+      "Dhurandhar 2",
       "Pathaan 2"
     ],
     "optionMedia": [
@@ -292,7 +329,7 @@
       "img/2.3-opt-pathaan2.jpg"
     ],
     "answer": 2,
-    "answerText": "Dhurandhar: The Revenge"
+    "answerText": "Dhurandhar 2 (Dhurandhar: The Revenge)"
   },
   {
     "id": "2.4",
@@ -384,6 +421,12 @@
       "img/2.7-opt-mughaleazam.jpg",
       "img/2.7-opt-lagaan.jpg"
     ],
+    "optionNotes": [
+      "Pather Panchali won at Cannes in 1956 but was never an Oscar nominee.",
+      "",
+      "Mughal-e-Azam (1960) was never an Oscar nominee.",
+      "Lagaan was nominated too, in 2002, the third Indian film after Mother India and Salaam Bombay!"
+    ],
     "answer": 1,
     "answerText": "Mother India",
     "reveal": "1957 — it lost by a single vote."
@@ -431,6 +474,12 @@
       "img/2.9-opt-nemo.jpg",
       "img/2.9-opt-incredibles.jpg"
     ],
+    "optionNotes": [
+      "Shrek came in 2001, and won the very first Oscar for Best Animated Feature.",
+      "",
+      "Finding Nemo was 2003, Pixar's fifth feature.",
+      "The Incredibles was 2004."
+    ],
     "answer": 1,
     "answerText": "Toy Story",
     "reveal": "Pixar's first feature."
@@ -454,6 +503,12 @@
       "img/2.10-opt-alamara.jpg",
       "img/2.10-opt-achhutkanya.jpg",
       "img/2.10-opt-devdas.jpg"
+    ],
+    "optionNotes": [
+      "Raja Harishchandra (1913) was India's first feature film, but it was silent.",
+      "",
+      "Achhut Kanya came in 1936, with Ashok Kumar and Devika Rani.",
+      "The 1935 Devdas starred K.L. Saigal, four years after Alam Ara."
     ],
     "answer": 1,
     "answerText": "Alam Ara",
@@ -512,17 +567,27 @@
     "mode": "kids",
     "region": "us",
     "live": true,
-    "type": "text",
-    "question": "During the American Civil War, Richmond was the capital of which side?",
+    "type": "image",
+    "question": "This is central Richmond. What is the neighbourhood outlined in red called?",
+    "media": {
+      "src": "img/3.1-richmond-fan-map.jpg",
+      "alt": "Street map of central Richmond with one neighbourhood outlined in red"
+    },
     "options": [
-      "The Union",
-      "The Confederacy",
-      "Neither",
-      "Both at different times"
+      "Church Hill",
+      "The Fan",
+      "Carytown",
+      "Short Pump"
+    ],
+    "optionNotes": [
+      "Church Hill is the hill east of downtown, around St. John's Church, where Patrick Henry gave his speech.",
+      "",
+      "Carytown is the shopping strip along Cary Street, just west of the outlined area.",
+      "Short Pump is 12 miles west of here, out in Henrico. That is us!"
     ],
     "answer": 1,
-    "answerText": "The Confederacy",
-    "reveal": "1861–65"
+    "answerText": "The Fan",
+    "reveal": "Its streets fan out westward from Monroe Park, between Broad and Main. Monument Avenue runs right through it."
   },
   {
     "id": "3.2",
@@ -531,16 +596,22 @@
     "region": "us",
     "live": true,
     "type": "text",
-    "question": "Patrick Henry's famous 1775 speech, delivered in Richmond, is known by which line?",
+    "question": "Virginia's Mark Warner won another term in the US Senate in Tuesday's election. How long is one Senate term?",
     "options": [
-      "\"I have a dream\"",
-      "\"Give me liberty or give me death\"",
-      "\"Don't tread on me\"",
-      "\"We the people\""
+      "2 years",
+      "4 years",
+      "6 years",
+      "8 years"
     ],
-    "answer": 1,
-    "answerText": "\"Give me liberty or give me death!\"",
-    "reveal": "St. John's Church, Church Hill."
+    "optionNotes": [
+      "Two years is a House term. All 435 House seats were on the ballot this week.",
+      "Four years is the president's term, and Virginia's governor's too.",
+      "",
+      "No federal office has an eight-year term, though two presidential terms add up to eight."
+    ],
+    "answer": 2,
+    "answerText": "Six years",
+    "reveal": "Senators serve 6 years, House members 2, a president 4. Warner first won the seat in 2008, so this is his fourth term."
   },
   {
     "id": "3.3",
@@ -549,7 +620,6 @@
     "region": "india",
     "live": true,
     "type": "text",
-    "mustPlay": true,
     "question": "The world's tallest statue, the Statue of Unity in Gujarat, honours which leader?",
     "media": {
       "src": "img/3.3-statue-of-unity.jpg",
@@ -557,9 +627,15 @@
     },
     "options": [
       "Mahatma Gandhi",
-      "Sardar Vallabhbhai Patel",
+      "Sardar Patel",
       "Jawaharlal Nehru",
       "B.R. Ambedkar"
+    ],
+    "optionNotes": [
+      "Gandhi's statues are everywhere, but the giant at Kevadia is Sardar Patel, who united 560 princely states into India.",
+      "",
+      "Nehru was the first prime minister; Patel was his deputy and home minister.",
+      "Ambedkar wrote the Constitution. A Statue of Equality to him is being built in Mumbai."
     ],
     "answer": 1,
     "answerText": "Sardar Patel",
@@ -571,7 +647,8 @@
         "Statue of Unity 182 m · Spring Temple Buddha 128 m · Statue of Liberty 93 m with pedestal · Christ the Redeemer 38 m with pedestal.",
         "Kevadia, Gujarat — unveiled 2018."
       ]
-    }
+    },
+    "mustPlay": true
   },
   {
     "id": "3.4",
@@ -586,6 +663,12 @@
       "Asiatic lion",
       "Snow leopard",
       "One-horned rhino"
+    ],
+    "optionNotes": [
+      "Tigers live in India too, but across dozens of reserves, not just one.",
+      "",
+      "Snow leopards live up in the Himalaya: Ladakh, Spiti, Sikkim.",
+      "The one-horned rhino is Kaziranga, in Assam."
     ],
     "answer": 1,
     "answerText": "Asiatic lion",
@@ -604,17 +687,27 @@
     "mode": "adult",
     "region": "us",
     "live": true,
-    "type": "text",
-    "question": "Richmond International Airport (RIC) is actually in which county?",
+    "type": "image",
+    "question": "Which Richmond building is the red arrow pointing to?",
+    "media": {
+      "src": "img/3.5-richmond-skyline-fed.jpg",
+      "alt": "Richmond skyline seen across the James River, with a red arrow on one white tower"
+    },
     "options": [
-      "City of Richmond",
-      "Henrico",
-      "Chesterfield",
-      "Hanover"
+      "James Monroe Building",
+      "The Federal Reserve",
+      "Dominion Energy's 600 Canal Place",
+      "Truist Place"
+    ],
+    "optionNotes": [
+      "The James Monroe Building, by Capitol Square, is actually the tallest in Richmond at 449 ft. The Fed is only fourth.",
+      "",
+      "Dominion's glass tower at 600 Canal Place opened in 2019. This photo was taken in 2008.",
+      "Truist Place is the dark tower with the signs on top, further right in the picture."
     ],
     "answer": 1,
-    "answerText": "Henrico",
-    "reveal": "Sandston, Henrico County."
+    "answerText": "The Federal Reserve Bank of Richmond",
+    "reveal": "393 ft, 26 floors, opened 1978. Designed by Minoru Yamasaki, architect of New York's original World Trade Center, which is why it looks like a mini twin tower."
   },
   {
     "id": "3.6",
@@ -623,16 +716,22 @@
     "region": "us",
     "live": true,
     "type": "text",
-    "question": "Capital One was created in 1994 as a spin-off from which Richmond bank?",
+    "question": "Democrats won back the House of Representatives in Tuesday's midterms. How many of its 435 seats does a party need for a majority?",
     "options": [
-      "Crestar",
-      "Signet Bank",
-      "Wachovia",
-      "Central Fidelity"
+      "200",
+      "218",
+      "235",
+      "270"
+    ],
+    "optionNotes": [
+      "200 would still be 18 short. A majority means more than half of 435.",
+      "",
+      "235 is a comfortable majority, but the bare minimum is 218.",
+      "270 is the number of electoral votes needed to win the presidency, a different count."
     ],
     "answer": 1,
-    "answerText": "Signet Bank",
-    "reveal": "Richard Fairbank and Nigel Morris's credit-card division."
+    "answerText": "218",
+    "reveal": "Half of 435 is 217.5, so 218 is the magic number. 51 of 100 controls the Senate, which Democrats also won; 270 is the electoral-college majority for president."
   },
   {
     "id": "3.7",
@@ -650,7 +749,7 @@
       "The Golden Mile",
       "The Queen's Necklace",
       "The Pearl Strand",
-      "The Diamond Curve"
+      "The Diamond Crescent"
     ],
     "answer": 1,
     "answerText": "The Queen's Necklace",
@@ -669,13 +768,13 @@
       "alt": "A rectangular ancient brick basin in a dry landscape"
     },
     "options": [
-      "Mauryan",
-      "Indus Valley (Harappan)",
-      "Gupta",
-      "Chola"
+      "Mauryan Empire",
+      "Indus Valley",
+      "Gupta Empire",
+      "Chola Kingdom"
     ],
     "answer": 1,
-    "answerText": "Indus Valley",
+    "answerText": "Indus Valley (Harappan)",
     "reveal": "One of the world's oldest known docks, ~2400 BCE."
   },
   {
@@ -685,16 +784,22 @@
     "region": null,
     "live": true,
     "type": "text",
-    "question": "How many US presidents were born in Virginia — more than any other state?",
+    "question": "Our corner of Henrico is called Short Pump. Where did the name come from?",
     "options": [
-      "4",
-      "6",
-      "8",
-      "10"
+      "A tavern's well pump with a short handle",
+      "A gas station with unusually short pumps",
+      "A creek that ran dry too soon each summer",
+      "A railroad water tower with a stubby pump"
     ],
-    "answer": 2,
-    "answerText": "Eight",
-    "reveal": "Washington, Jefferson, Madison, Monroe, W.H. Harrison, Tyler, Taylor, Wilson — \"the Mother of Presidents\"."
+    "optionNotes": [
+      "",
+      "Short Pump got its name around 1815, a century before the first gas station.",
+      "Short Pump sits on a crossroads, not a creek. The pump was for stagecoach horses.",
+      "The pump was for stagecoach horses, not steam engines. Short Pump was a coaching stop between Richmond and Charlottesville."
+    ],
+    "answer": 0,
+    "answerText": "A tavern's short-handled pump",
+    "reveal": "Around 1815, Saunders' Tavern at the Three Chopt–Broad crossroads was a stagecoach stop on the road to Charlottesville. The horses' well pump sat under its low porch, so it had a short handle. Drivers said \"see you at the Short Pump\", and the name stuck."
   },
   {
     "id": "3.10",
@@ -723,9 +828,9 @@
     "question": "Richmond's minor-league baseball team is named after which animal?",
     "options": [
       "Squirrels",
-      "Otters",
-      "Crabs",
-      "Hens"
+      "Pelicans",
+      "Alligators",
+      "Otters"
     ],
     "answer": 0,
     "answerText": "Squirrels",
@@ -796,15 +901,21 @@
       "Arjuna",
       "Hanuman"
     ],
-    "answer": 1,
-    "answerText": "Rama",
-    "reveal": "With Sita and Lakshmana.",
     "optionMedia": [
       "img/4.1-opt-krishna.jpg",
       "img/4.1-opt-rama.jpg",
       "img/4.1-opt-arjuna.jpg",
       "img/4.1-opt-hanuman.jpg"
     ],
+    "optionNotes": [
+      "Krishna's festival is Janmashtami, though Kali Chaudas remembers his defeat of Narakasura.",
+      "",
+      "Arjuna is from the Mahabharata, not the Ramayana.",
+      "Hanuman came home with Rama, but the lamps were lit for the prince."
+    ],
+    "answer": 1,
+    "answerText": "Rama",
+    "reveal": "With Sita and Lakshmana.",
     "story": {
       "title": "Home to Ayodhya",
       "image": "img/4.1-rama-return-ayodhya.jpg",
@@ -878,11 +989,11 @@
     "options": [
       "Shravan",
       "Bhadarvo",
-      "Aaso (Ashwin)",
+      "Aaso",
       "Magshar"
     ],
     "answer": 2,
-    "answerText": "Aaso",
+    "answerText": "Aaso (Ashwin)",
     "reveal": "Aaso vad amas; Kartik Sud 1 is New Year."
   },
   {
@@ -899,14 +1010,20 @@
       "Narakasura",
       "Mahishasura"
     ],
-    "answer": 2,
-    "answerText": "Narakasura",
     "optionMedia": [
       "img/4.6-opt-ravana.jpg",
       "img/4.6-opt-hiranyakashipu.jpg",
       "img/4.6-opt-narakasura.jpg",
       "img/4.6-opt-mahishasura.jpg"
-    ]
+    ],
+    "optionNotes": [
+      "Ravana was defeated by Rama. That is Dussehra, twenty days before Diwali.",
+      "Hiranyakashipu was slain by Narasimha, Vishnu's lion avatar. That is the Holika story.",
+      "",
+      "Mahishasura was slain by Durga. That is Navratri and Durga Puja."
+    ],
+    "answer": 2,
+    "answerText": "Narakasura"
   },
   {
     "id": "4.7",
@@ -922,15 +1039,21 @@
       "Kali",
       "Parvati"
     ],
-    "answer": 2,
-    "answerText": "Kali",
-    "reveal": "Kali Puja.",
     "optionMedia": [
       "img/4.7-opt-saraswati.jpg",
       "img/4.7-opt-durga.jpg",
       "img/4.7-opt-kali.jpg",
       "img/4.7-opt-parvati.jpg"
-    ]
+    ],
+    "optionNotes": [
+      "Saraswati's day is Vasant Panchami, in late January or February.",
+      "Durga Puja is Bengal's biggest festival, but it is three weeks earlier, at Navratri.",
+      "",
+      "Parvati is worshipped at Teej and Gauri puja. Kali is her fierce form."
+    ],
+    "answer": 2,
+    "answerText": "Kali",
+    "reveal": "Kali Puja."
   },
   {
     "id": "4.8",
@@ -946,13 +1069,19 @@
     },
     "options": [
       "Birth of Mahavira",
-      "Mahavira attaining nirvana (moksha)",
+      "Mahavira's nirvana",
       "Mahavira's first sermon",
       "The founding of Jainism"
     ],
+    "optionNotes": [
+      "Mahavira's birth is Mahavir Jayanti, in March or April.",
+      "",
+      "",
+      "Jains count 24 tirthankaras. Mahavira was the last of them, not the founder."
+    ],
     "answer": 1,
     "answerText": "Mahavira's nirvana",
-    "reveal": "527 BCE by tradition."
+    "reveal": "Moksha, by tradition in 527 BCE."
   },
   {
     "id": "4.9",
@@ -964,7 +1093,7 @@
     "question": "In 2016 the US Postal Service issued a Diwali \"Forever\" stamp. What did it show?",
     "options": [
       "Lord Ganesha",
-      "A lit diya on a gold background",
+      "A lit diya on gold",
       "A rangoli",
       "Fireworks over the Taj Mahal"
     ],
@@ -987,14 +1116,20 @@
     "type": "text",
     "question": "Why does the date of Diwali change every year on the Western calendar?",
     "options": [
-      "It follows the monsoon",
-      "It's the new-moon night of a lunar month, so it drifts against the solar calendar",
-      "The government picks it",
-      "It follows the autumn equinox"
+      "It moves with the monsoon's last rains",
+      "It is the new moon of a lunar month",
+      "The government picks the date each year",
+      "It follows the autumn equinox each year"
+    ],
+    "optionNotes": [
+      "The monsoon is over by October. Diwali follows the moon, not the rain.",
+      "",
+      "No government sets it. The panchang, the lunar almanac, does.",
+      "The equinox is fixed around 22 September; Diwali wanders from mid-October to mid-November."
     ],
     "answer": 1,
-    "answerText": "New-moon night of a lunar month",
-    "reveal": "Aaso amas."
+    "answerText": "The new-moon night of a lunar month",
+    "reveal": "Aaso amas: the darkest night of the lunar month of Aaso, which drifts against the solar calendar."
   },
   {
     "id": "4.11",
@@ -1009,6 +1144,12 @@
       "Barack Obama",
       "Bill Clinton",
       "Joe Biden"
+    ],
+    "optionNotes": [
+      "George W. Bush's White House hosted the first Diwali in 2003, but he did not attend the ceremony himself.",
+      "",
+      "Clinton left office in 2001, before the White House ever hosted Diwali.",
+      "Biden hosted the biggest White House Diwali in 2023, but Obama lit the first diya in 2009."
     ],
     "answer": 1,
     "answerText": "Barack Obama",
@@ -1029,7 +1170,7 @@
     "options": [
       "John Cena",
       "Vin Diesel",
-      "Dwayne \"The Rock\" Johnson",
+      "The Rock",
       "Jason Momoa"
     ],
     "optionMedia": [
@@ -1447,10 +1588,11 @@
     "region": null,
     "live": true,
     "type": "riddle",
-    "question": "I am taken from a mine and shut up in a wooden case, from which I am never released, and yet almost everyone uses me. What am I?",
-    "hint": "You sharpen me.",
-    "answer": "Pencil lead",
-    "answerText": "Pencil lead (graphite)"
+    "question": "Gujarati ukhanu: \"Kalo ghodo, dholi asvari; ek utre ne biji chade.\" — A black horse with white riders: as one climbs off, the next climbs on.",
+    "hint": "You'll find her in the kitchen every evening.",
+    "answer": "A tavo and rotli",
+    "answerText": "Tavo and rotli (griddle and roti)",
+    "reveal": "The black iron tavo is the horse; each pale rotli rides it in turn."
   },
   {
     "id": "6.S1",
@@ -1486,7 +1628,7 @@
     "question": "Which fast-food chain is famously closed every Sunday?",
     "options": [
       "Chick-fil-A",
-      "Popeyes",
+      "Raising Cane's",
       "Chipotle",
       "Panera"
     ],
@@ -1529,6 +1671,12 @@
       "Peda",
       "Mysore pak"
     ],
+    "optionNotes": [
+      "Barfi is the square milk sweet. Kaju katli is its diamond-shaped cashew cousin, with the silver vark.",
+      "",
+      "Peda is the round, soft milk sweet.",
+      "Mysore pak is the ghee-and-gram-flour block from Karnataka."
+    ],
     "answer": 1,
     "answerText": "Kaju katli"
   },
@@ -1550,6 +1698,12 @@
       "Dabeli",
       "Misal pav"
     ],
+    "optionNotes": [
+      "Pav bhaji is the mashed-vegetable curry with buttered pav on the side.",
+      "",
+      "Dabeli is the Kutchi cousin: sweeter masala, pomegranate and peanuts in the bun.",
+      "Misal is the spicy sprouted-bean curry topped with farsan."
+    ],
     "answer": 1,
     "answerText": "Vada pav",
     "reveal": "Mumbai's \"Bombay burger\". Dabeli is the look-alike trap."
@@ -1568,6 +1722,12 @@
       "Wheat",
       "Corn"
     ],
+    "optionNotes": [
+      "Rye whiskey must be 51% rye. That is the other American classic.",
+      "Malted barley is Scotch's grain.",
+      "Wheated bourbons use wheat as the second grain, but corn still leads.",
+      ""
+    ],
     "answer": 3,
     "answerText": "Corn"
   },
@@ -1578,16 +1738,22 @@
     "region": "us",
     "live": true,
     "type": "text",
-    "question": "Which Virginia town gives its name to America's most famous country ham?",
+    "question": "Which US state grows about half of all the peanuts in America?",
     "options": [
-      "Williamsburg",
-      "Smithfield",
-      "Lynchburg",
-      "Culpeper"
+      "Virginia",
+      "Georgia",
+      "Texas",
+      "Alabama"
+    ],
+    "optionNotes": [
+      "Nice try. The big 'Virginia peanut' is a variety grown mostly in Virginia and North Carolina, but the state grows only a few percent of the crop.",
+      "",
+      "Texas is in the top three, but at around a tenth of the crop.",
+      "Alabama is in the top three too, at around a tenth of the crop."
     ],
     "answer": 1,
-    "answerText": "Smithfield",
-    "reveal": "Isle of Wight County; Virginia law once required the hogs be peanut-fed."
+    "answerText": "Georgia",
+    "reveal": "Georgia grows roughly half the US crop; Alabama, Florida and Texas around a tenth each. Virginia lends its name to the big 'Virginia-type' peanut but grows only a few percent."
   },
   {
     "id": "7.7",
@@ -1600,11 +1766,11 @@
     "options": [
       "Cardamom",
       "Vanilla",
-      "Saffron (kesar)",
+      "Saffron",
       "Cloves"
     ],
     "answer": 2,
-    "answerText": "Saffron",
+    "answerText": "Saffron (kesar)",
     "reveal": "Hand-picked stigmas; ~150,000 flowers per kilo. India's comes from Kashmir."
   },
   {
@@ -1638,6 +1804,12 @@
       "Cacao",
       "Carob",
       "Vanilla"
+    ],
+    "optionNotes": [
+      "Coffee beans give you a different drink. The Aztecs' bitter brew was cacao.",
+      "",
+      "Carob is the Mediterranean pod sold as a chocolate substitute.",
+      "Vanilla comes from an orchid's pod, and is often added to chocolate."
     ],
     "answer": 1,
     "answerText": "Cacao",
@@ -1758,6 +1930,12 @@
       "Javelin throw",
       "Marathon"
     ],
+    "optionNotes": [
+      "No Indian sprinter has ever reached an Olympic 100 m final.",
+      "Long jump is Anju Bobby George's event: World Championship bronze in 2003.",
+      "",
+      ""
+    ],
     "answer": 2,
     "answerText": "Javelin"
   },
@@ -1845,12 +2023,18 @@
     "region": "india",
     "live": true,
     "type": "text",
-    "question": "Who won India's first-ever individual Olympic gold medal, in shooting at Beijing 2008?",
+    "question": "Who won India's first-ever individual Olympic gold medal (in shooting), at Beijing 2008?",
     "options": [
       "Leander Paes",
       "Abhinav Bindra",
       "Rajyavardhan Rathore",
       "Sushil Kumar"
+    ],
+    "optionNotes": [
+      "Leander Paes won bronze in tennis at Atlanta 1996, India's first individual medal in 44 years.",
+      "",
+      "Rajyavardhan Rathore won silver in double-trap shooting at Athens 2004. A medal, not gold.",
+      "Sushil Kumar won wrestling bronze at Beijing 2008 and silver at London 2012."
     ],
     "answer": 1,
     "answerText": "Abhinav Bindra",
@@ -1870,6 +2054,12 @@
       "United States",
       "Japan"
     ],
+    "optionNotes": [
+      "London has hosted three times: 1908, 1948 and 2012. The US has four.",
+      "Paris 1900, 1924 and 2024: three.",
+      "",
+      "Tokyo 1964 and 2021: two."
+    ],
     "answer": 2,
     "answerText": "United States",
     "reveal": "1904 St. Louis, 1932 and 1984 Los Angeles, 1996 Atlanta — and Los Angeles again in 2028."
@@ -1882,6 +2072,16 @@
     "live": true,
     "type": "chart",
     "question": "These are the five highest run-scorers in all international cricket combined. Which bar is Sachin Tendulkar?",
+    "answer": "The tallest bar",
+    "answerText": "The tallest — 34,357 runs",
+    "reveal": "Kohli's total is as of mid-2026 and still moving.",
+    "story": {
+      "title": "Most international runs, all formats",
+      "graphic": "run-chart",
+      "lines": [
+        "Tendulkar 34,357 · Kohli 28,215 (still playing) · Sangakkara 28,016 · Ponting 27,483 · Kallis 25,534."
+      ]
+    },
     "chart": {
       "unit": "runs",
       "bars": [
@@ -1905,16 +2105,6 @@
           "label": "Kumar Sangakkara",
           "value": 28016
         }
-      ]
-    },
-    "answer": "The tallest bar",
-    "answerText": "The tallest — 34,357 runs",
-    "reveal": "Kohli's total is as of mid-2026 and still moving.",
-    "story": {
-      "title": "Most international runs, all formats",
-      "graphic": "run-chart",
-      "lines": [
-        "Tendulkar 34,357 · Kohli 28,215 (still playing) · Sangakkara 28,016 · Ponting 27,483 · Kallis 25,534."
       ]
     }
   },
@@ -1947,7 +2137,7 @@
     "options": [
       "Mumbai Indians",
       "Chennai Super Kings",
-      "Royal Challengers Bengaluru",
+      "Royal Challengers",
       "Gujarat Titans"
     ],
     "answer": 2,
@@ -1996,10 +2186,6 @@
     "live": true,
     "type": "video",
     "question": "Name this song.",
-    "video": {
-      "youtubeId": "XqZsoesa55w",
-      "start": 0
-    },
     "options": [
       "Baby Shark",
       "Wheels on the Bus",
@@ -2008,7 +2194,11 @@
     ],
     "answer": 0,
     "answerText": "Baby Shark",
-    "reveal": "One of the most-viewed videos in YouTube history."
+    "reveal": "One of the most-viewed videos in YouTube history.",
+    "video": {
+      "youtubeId": "XqZsoesa55w",
+      "start": 0
+    }
   },
   {
     "id": "9.3",
@@ -2023,6 +2213,12 @@
       "Shekhar Suman",
       "Jackie Shroff",
       "Arun Govil"
+    ],
+    "optionNotes": [
+      "",
+      "Shekhar Suman hosted Movers & Shakers. No cape.",
+      "",
+      "Arun Govil was Rama in Ramayan. That is the adult question."
     ],
     "answer": 0,
     "answerText": "Mukesh Khanna"
@@ -2040,6 +2236,12 @@
       "Gold",
       "Great",
       "Gujarat"
+    ],
+    "optionNotes": [
+      "",
+      "It was Parle Gluco until the 1980s, when it became Parle-G.",
+      "",
+      "Parle is a Mumbai suburb, Vile Parle, where the factory opened in 1929."
     ],
     "answer": 0,
     "answerText": "Glucose",
@@ -2076,6 +2278,12 @@
       "Friends",
       "How I Met Your Mother"
     ],
+    "optionNotes": [
+      "Seinfeld ran 1989–98, four friends in New York.",
+      "Frasier was Seattle, 1993–2004.",
+      "",
+      "How I Met Your Mother was 2005–14, five friends in New York."
+    ],
     "answer": 2,
     "answerText": "Friends"
   },
@@ -2092,6 +2300,12 @@
       "Arun Govil",
       "Sunil Lahri",
       "Dara Singh"
+    ],
+    "optionNotes": [
+      "Nitish Bharadwaj played Krishna in B.R. Chopra's Mahabharat (1988).",
+      "",
+      "Sunil Lahri played Lakshman, Rama's brother.",
+      "Dara Singh, the wrestler, played Hanuman."
     ],
     "answer": 1,
     "answerText": "Arun Govil",
@@ -2110,6 +2324,12 @@
       "Premier Padmini",
       "Maruti 800",
       "Tata Indica"
+    ],
+    "optionNotes": [
+      "The Ambassador was the government car from 1958, hardly a people's car at its price.",
+      "The Premier Padmini was Mumbai's taxi, built from 1964.",
+      "",
+      "The Tata Indica came in 1998, India's first home-designed car."
     ],
     "answer": 2,
     "answerText": "Maruti 800"

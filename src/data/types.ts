@@ -27,6 +27,8 @@ export interface Question {
   media?: Media;
   options?: string[];
   optionMedia?: string[];
+  /** One note per option, shown when a team picks that option wrongly; '' for options with nothing to say. */
+  optionNotes?: string[];
   hint?: string;
   answer: number | string;
   answerText: string;

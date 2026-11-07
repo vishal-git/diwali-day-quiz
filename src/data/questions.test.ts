@@ -9,7 +9,7 @@ function count(category: CategoryId, mode: Mode, region: Region) {
   return live.filter((q) => q.category === category && q.mode === mode && q.region === region).length;
 }
 
-test('bank totals match the v7 bank: 110 questions, 91 live, 19 spares', () => {
+test('bank totals match the v8 bank: 110 questions, 91 live, 19 spares', () => {
   expect(QUESTIONS).toHaveLength(110);
   expect(live).toHaveLength(91);
   expect(spares).toHaveLength(19);
@@ -74,6 +74,32 @@ test('riddles carry a hint and a text answer, no options', () => {
   }
 });
 
+test('optionNotes, when present, line up with the options and have something to say', () => {
+  const noted = QUESTIONS.filter((q) => q.optionNotes);
+  expect(noted.length).toBeGreaterThanOrEqual(30);
+  for (const q of noted) {
+    expect(q.optionNotes, q.id).toHaveLength(q.options!.length);
+    expect(q.optionNotes![q.answer as number], q.id).toBe('');
+    expect(q.optionNotes!.filter(Boolean).length, q.id).toBeGreaterThanOrEqual(2);
+  }
+});
+
+test('the right answer is not given away by being the longest option', () => {
+  const withOptions = QUESTIONS.filter((q) => q.options && q.options.length > 2);
+  let longest = 0;
+  for (const q of withOptions) {
+    const lens = q.options!.map((o) => o.length);
+    const right = lens[q.answer as number];
+    const longestWrong = Math.max(...lens.filter((_, i) => i !== q.answer));
+    if (right > longestWrong) longest++;
+    // Never a giveaway: the right answer may not dwarf every wrong one.
+    expect(right, `${q.id} ${q.options!.join(' | ')}`).toBeLessThanOrEqual(longestWrong * 1.35);
+  }
+  // Pure chance with four options is 25%: stay close to it either way, so "pick the longest" and "never the longest" both fail.
+  expect(longest / withOptions.length).toBeGreaterThan(0.05);
+  expect(longest / withOptions.length).toBeLessThan(0.3);
+});
+
 test('movies and celebrity options carry one media path per option', () => {
   for (const q of QUESTIONS.filter((x) => (x.category === 'movies' || x.category === 'celebrity') && x.options)) {
     expect(q.optionMedia, q.id).toHaveLength(q.options!.length);
@@ -91,6 +117,11 @@ test('the special records are wired', () => {
   expect(byId['8.10'].story?.graphic).toBe('run-chart');
   expect(byId['1.S1'].story?.graphic).toBe('map-gujarat');
   expect(byId['8.5'].story?.lines.length).toBeGreaterThan(0);
+  expect(byId['3.1'].media?.src).toBe('img/3.1-richmond-fan-map.jpg');
+  expect(byId['3.5'].media?.src).toBe('img/3.5-richmond-skyline-fed.jpg');
+  expect(byId['6.10'].type).toBe('riddle');
+  expect(byId['6.10'].question).toMatch(/ukhanu/i);
+  expect(byId['8.8'].question).toMatch(/\(in shooting\)/);
   expect(byId['9.2'].type).toBe('video');
   expect(byId['9.2'].video?.youtubeId).toBe('XqZsoesa55w');
   expect(byId['2.2'].type).toBe('emoji');
